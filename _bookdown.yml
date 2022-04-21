@@ -1,0 +1,11 @@
+output_dir: "docs"
+book_filename: "rel_mig_cemave4"
+delete_merged_file: true
+new_session: yes
+language:
+  label:
+    fig: 'Figura '
+    tab: 'Tabela '
+  ui:
+    chapter_name: "Capítulo "
+    #rmd_files: ["index.Rmd", "creditos.Rmd", "lista_siglas.Rmd", "apresentacao.Rmd", "como_utilizar.Rmd",  "02-morcegos.Rmd", "anexos.Rmd"]

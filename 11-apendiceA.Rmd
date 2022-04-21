@@ -1,0 +1,106 @@
+<style> {
+    margin: auto;
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r library, echo=FALSE, message=FALSE, warning=FALSE}
+
+library(tidyverse)
+library(data.table)
+library(descr)
+library(RColorBrewer)
+library(kableExtra)
+library(knitr)
+library(DT)
+library(plotly)
+library(ggthemes)
+library(forcats)
+library(leaflet)
+library(sf)
+library(rgdal)
+library(treemapify)
+library(reshape2)
+library(randomcoloR)
+library(survminer)
+```
+
+# Apêndice A {- #apendiceA}
+
+\pagestyle{headings}
+
+
+A1. Espécies de aves migratórias^[Nomenclatura de acordo com o Comitê Brasileiro de Registros Ornitológicos - CBRO (Pacheco et al. 2021).] e seus respectivos escores de vulnerabilidade usados na análise do Zonation. (*A = Reprodução exclusiva no Brasil; B = Flocking; C = Voo noturno ou crepuscular; D =	Planador; E = Alta sensibilidade aos impactos das estruturas de apoio, exceto colisão; F = Massa corporal média (0,25 qdo >300g); G =	categoria de ameaça; H = PESO FINAL*).
+
+```{r tab01, echo=FALSE, message=FALSE, warning=FALSE, encoding="UTF-8", paged.print=TRUE}
+
+#install.packages('kableExtra')
+library(kableExtra)
+library(tidyverse)
+
+tabela_7.1 <- read.csv2("dados/tabelas/Tabela_7.1.csv", encoding="UTF-8")
+kbl(tabela_7.1,
+             booktabs = TRUE,
+             longtable = TRUE,
+             # caption = "Espécies de aves migratórias e seus respectivos escores de vulnerabilidade usados na análise do Zonation.*",
+            col.names = c("Espécie", "A", "B", "C", "D", "E", "F", "G", "H")) %>%
+    column_spec(1, italic = TRUE) %>% 
+kable_styling(full_width = F, bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+
+```
+
+
+<br>
+
+\newpage
+
+A2. Critérios relativos ao escore de vulnerabilidade de aves migratórias a parques eólicos.  
+
+
+```{r tab02, echo=FALSE, message=FALSE, warning=FALSE, encoding="UTF-8", paged.print=TRUE}
+
+#install.packages('kableExtra')
+library(kableExtra)
+library(tidyverse)
+
+tabela_7.2 <- read.csv2("dados/tabelas/Tabela_7.2.csv", encoding="UTF-8")
+kbl(tabela_7.2,
+             booktabs = TRUE,
+             longtable = TRUE,
+             # caption = 'Critérios relativos ao escore de vulnerabilidade de aves migratórias a parques eólicos.',
+             col.names = c("Critério", "Conceito empregado")) %>%
+             column_spec(1, italic = FALSE) %>% 
+kable_styling(full_width = F, bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>% 
+             column_spec(1, width = "5cm") %>% 
+             column_spec(2, width = "10cm")
+
+```
+
+
+<br>
+
+A3.  Parâmetros de configuração utilizados no Zonation.  
+
+
+```{r tab03, echo=FALSE, message=FALSE, warning=FALSE, encoding="UTF-8", paged.print=TRUE}
+
+#install.packages('kableExtra')
+library(kableExtra)
+library(tidyverse)
+
+tabela_7.3 <- read.csv2("dados/tabelas/Tabela_7.3.csv", encoding="UTF-8")
+kbl(tabela_7.3,
+             booktabs = TRUE,
+             longtable = TRUE,
+             align = "lc",
+             # caption = 'Parâmetros de configuração utilizados no Zonation.',
+             col.names = c("Parâmetro", "Valor")) %>%
+             column_spec(1, italic = TRUE) %>% 
+kable_styling(full_width = F, bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+
+```
+
+
