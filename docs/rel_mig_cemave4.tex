@@ -64,6 +64,18 @@
 \usepackage{fancyhdr}
 \usepackage{longtable}
 
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 
 \usepackage{tcolorbox}
 
@@ -284,9 +296,9 @@ Neste cenário, entre os desafios para a expansão da transmissão incluem-se a 
 
 A capacidade instalada de geração de energia elétrica do Brasil em 2021 foi estimada em 186 GW, com a energia eólica representando 9\% desse valor (Figura \ref{fig:01}).
 
-\begin{figure}
+\begin{figure}[H]
 
-{\centering \includegraphics[width=0.55\linewidth]{imagens/cap01/Figura_1.1} 
+{\centering \includegraphics[width=0.6\linewidth]{imagens/cap01/Figura_1.1} 
 
 }
 
@@ -311,7 +323,7 @@ Os principais aspectos relativos ao comportamento do vento considerados na avali
 
 Os estudos de potencial eólico são fundamentais para o planejamento da implantação de empreendimentos eólicos no país. Um dos primeiros atlas do potencial eólico elaborados em escala nacional (Atlas do Potencial Eólico Brasileiro -- Amarante et al.~2001) estimou um potencial eólico para o país da ordem de 143,5 GW (Figura \ref{fig:02}), com as regiões Nordeste (75 GW - 52,3\%), Sudeste (29,7 GW - 20,7\%) e Sul (22,8 GW - 15,8\%) respondendo por 88,8\% desse total. O potencial estimado para as regiões Norte e Centro-Oeste foi de 12,8 GW (8.9\%) e 3.1 GW (2,1\%), respectivamente.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.55\linewidth]{imagens/cap01/Figura_1.2} 
 
@@ -357,7 +369,7 @@ A participação da energia eólica na matriz elétrica brasileira saltou de 0,2
 
 A Figura \ref{fig:03} apresenta a evolução da geração de energia eólica no Brasil de 2005 a 2020, em termos de potências instalada e acumulada por ano.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.7\linewidth]{imagens/cap01/Figura_1.3} 
 
@@ -368,7 +380,7 @@ A Figura \ref{fig:03} apresenta a evolução da geração de energia eólica no 
 
 Uma vez que as condições de vento e, consequentemente, o potencial eólico variam nas diferentes regiões do país, a distribuição espacial dos empreeendimentos eólicos tenderá a se correlacionar positivamente com o potencial eólico. Desta forma, apesar de atualmente os parques eólicos estarem distribuídos em 12 estados, há uma concentração de empreendimentos na regiões Nordeste e Sul, duas regiões com condições de vento bastante favoráveis à exploração comercial (Figura \ref{fig:04}).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.55\linewidth]{imagens/cap01/Figura_1.4} 
 
@@ -381,7 +393,7 @@ Além do mapeamento do potencial eólico, nos últimos anos \href{https://migrat
 
 Atualmente, dentre os diversos estados que contam com empreendimentos eólicos, destacam-se o Rio Grande do Norte e a Bahia, com potência instalada na faixa do 5000 MW (Figura \ref{fig:05}). Um segundo bloco importante é composto por estados com potência instalada de cerca de 2000-2500 MW (Piauí, Ceará e Rio Grande do Sul). Por fim, temos os estados com potência instalada na faixa de 1000 MW ou menos (Pernambuco, Maranhão, Santa Catarina, Paraíba, Sergipe, Rio de Janeio e Paraná).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.65\linewidth]{imagens/cap01/Figura_1.5} 
 
@@ -394,7 +406,7 @@ Considerando o número total de parques eólicos construídos, a Bahia já super
 
 O \emph{ranking} também se altera no segundo bloco, com Ceará superando o Rio Grande do Sul e Piauí, em relação ao número total de parques instalados. Tais diferenças provavelmente estão relacionadas a variações nas tecnologias utilizadas em função da época de construção dos parques. Parques mais novos e mais modernos tendem a ser mais produtivos, de forma que um menor número de parques mais novos ou mesmo parques com um menor número de torres, podem, em determinadas condições, ser mais produtivos e gerar mais energia do que parques utilizando tecnologias mais antigas.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.65\linewidth]{imagens/cap01/Figura_1.6} 
 
@@ -428,7 +440,7 @@ A Dinamarca foi também o primeiro país a instalar um parque eólico \emph{offs
 
 O Brasil tem um grande potencial de exploração e, em pouco mais de duas décadas, teve um avanço muito significativo na sua capacidade instalada. Em 2019 o país subiu uma posição no \emph{ranking} e passou a ocupar a 7ª posição no mundo em termos de potência instalada de energia eólica (Figura \ref{fig:07}). Apesar do bom desempenho, encontra-se ainda bem distante de países também continentais como Estados Unidos e China. Tais países têm uma alta demanda enérgica, seja pelo elevado padrão de consumo de sua população ou pela alta densidade populacional, além de um contínuo crescimento econômico que depende de sua capacidade de geração de energia.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.6\linewidth]{imagens/cap01/Figura_1.7} 
 
@@ -465,7 +477,7 @@ Considerando os mapeamentos do potencial eólico do país, tanto em larga escala
 
 A ABEEólica prevê que a capacidade instalada alcance 28 GW até 2024 (Canal Energia 2021). Estima-se que em 2030 a energia hidrelétrica responderá por 49\% da matriz elétrica, ao tempo que a energia eólica responderá por 14\% (33 GW) dos 236 GW previstos para a matriz (MME 2020a - Figura \ref{fig:08}).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.55\linewidth]{imagens/cap01/Figura_1.8} 
 
@@ -515,8 +527,6 @@ O setor precisará avançar na elaboração e execução de protocolos voltados 
 Ressaltamos que, nos empreendimentos futuros, dois aspectos devem merecer especial atenção: a) o uso de estudos qualificados e participação de diferentes atores nas etapas de planejamento para definição da localização dos parques, buscando-se evitar ou reduzir sua sobreposição com áreas socioambientalmente sensíveis e b) a implementação de programas de monitoramento de médio ou longo prazos, que considerem os períodos pré e pós-instalação dos parques. Alguns estudos de impactos de curta duração têm mostrado respostas conflitantes, espécie-específicas ou bastante dependentes das particularidades locais, dificultando o estabelecimento de generalizações capazes de orientar adequadamente a tomada de decisão pelas instâncias pertinentes (Shöll \& Nopp-Mayr 2021).
 
 Por fim, entendemos que parte da sociedade já reconhece a importância e necessidade de conciliarmos a expansão do uso da energia eólica e consequente redução da emissão de gases do efeito estufa com a proteção da biodiversidade e seus serviços ambientais (ver Neri et al.~2019, Marinho et al.~2021). Assegurar a transparência e a participação qualificada de diferentes segmentos nos processos de planejamento e tomada de decisão sobre o tema, considerando de forma equilibrada aspectos econômicos, políticos, ambientais e sociais, poderá transformar conflitos reais ou potenciais em oportunidades. A participação da energia eólica na matriz elétrica brasileira é crescente e bem-vinda, mas seu crescimento no país deve estar baseado num planejamento adequado que otimize seus benefícios a partir da ponderação dos diferentes interesses da sociedade brasileira.
-
-\newpage
 
 \hypertarget{referuxeancias-bibliogruxe1ficas}{%
 \section{Referências bibliográficas}\label{referuxeancias-bibliogruxe1ficas}}
@@ -839,7 +849,7 @@ Este processo resultou na avaliação de 1977 táxons de aves (incluindo subesp�
 
 Das 176 espécies migratórias apresentadas neste relatório, quatro foram classificadas como Criticamente em Perigo (CR), duas Em Perigo (EN), dez Vulneráveis (VU), sete Quase Ameaçadas (NT), cinco com Dados Insuficientes (DD) (Figura \ref{fig:09}), 128 Menos Preocupantes (LC) e 12 Não Aplicáveis (NA) ao método da IUCN. Oito espécies não foram incluídas nesse primeiro ciclo de avaliação que gerou a Portaria nº 444/2014 (MMA 2014).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.7\linewidth]{04-cap03_files/figure-latex/09-1} 
 
@@ -850,7 +860,7 @@ Das 176 espécies migratórias apresentadas neste relatório, quatro foram class
 
 Das 16 espécies de aves consideradas migratórias e categorizadas em algum grau de ameaça (CR, EN e VU), nove possuem como vetores de ameaça as atividades associadas à agropecuária, oito sofrem com os diversos impactos causados por distúrbios humanos em áreas de turismo e recreação e por espécies invasoras e/ou oportunistas, sete são alvo de caça e captura (Figura \ref{fig:10}). Além destas ameaças e de tantos outros impactos (Figura 3.2), os parques eólicos têm potencializado ainda mais a pressão sobre as espécies migratórias ameaçadas, motivo para o qual se torna fundamental a realização de estudos robustos, como o Estudo de Impacto Ambiental e Relatório de Impacto Ambiental (EIA/RIMA), em suas respectivas áreas de ocorrência, para que medidas de proteção ou mitigação dos impactos sejam implementadas.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.65\linewidth]{04-cap03_files/figure-latex/10-1} 
 
@@ -858,8 +868,6 @@ Das 16 espécies de aves consideradas migratórias e categorizadas em algum grau
 
 \caption{Principais vetores de ameaças às espécies migratórias ameaçadas no Brasil.}\label{fig:10}
 \end{figure}
-
-\newpage
 
 \hypertarget{mapa-de-registros-de-aves-ameauxe7adas-de-extinuxe7uxe3o}{%
 \section{Mapa de registros de aves ameaçadas de extinção}\label{mapa-de-registros-de-aves-ameauxe7adas-de-extinuxe7uxe3o}}
@@ -872,16 +880,14 @@ Para a elaboração do mapa que indica as áreas com ocorrência de aves ameaça
 
 Os dados utilizados foram obtidos no \href{http://ara.cemave.gov.br}{Atlas de Registros de Aves Brasileiras - ARA} e no Sistema de Avaliação da Biodiversidade (SALVE), sob responsabilidade do CEMAVE, bem como no sítio eletrônico \href{http://www.wikiaves.com}{``WikiAves, Enciclopédia das Aves do Brasil''}. Esses dados são uma combinação de registros históricos compilados de publicações científicas e dados fornecidos por pesquisadores, colaboradores e observadores de aves, por meio da ciência cidadã. A lista de espécies seguiu a nomenclatura proposta pelo Comitê Brasileiro de Registros Ornitológicos - CBRO (Pacheco et al.~2021).
 
-\begin{figure}
+\begin{figure}[H]
 
-{\centering \includegraphics[width=0.5\linewidth]{imagens/cap03/Figura_3.3} 
+{\centering \includegraphics[width=0.75\linewidth]{imagens/cap03/Figura_3.3} 
 
 }
 
 \caption{Áreas com registros de aves ameaçadas conforme Portaria MMA 444/14.}\label{fig:11}
 \end{figure}
-
-\newpage
 
 \hypertarget{referuxeancias-bibliogruxe1ficas-2}{%
 \section{Referências bibliográficas}\label{referuxeancias-bibliogruxe1ficas-2}}
@@ -921,7 +927,7 @@ Impactos da instalação dos parques eólicos onshore, como a perda de habitat p
 
 Com relação às aves, a extensão do impacto varia conforme a espécie, a estação, a localização e a disposição ou configuração dos empreendimentos. A localização é tão importante que um parque eólico grande, mas cuidadosamente localizado, pode ter um menor impacto do que um parque eólico menor, mas localizado incorretamente (Gode 2020). Os impactos podem ser permanentes ou temporários, levando em consideração que todo empreendimento possui pelo menos três fases: a implantação, a operação e o descomissionamento, com impactos característicos de cada fase (Figura \ref{fig:12}).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap04/Figura_4.1} 
 
@@ -1002,11 +1008,11 @@ Alguns acidentes geográficos como penínsulas e estreitos podem representar ár
 
 \emph{Disposição e altura dos aerogeradores}
 
-A disposição dos aerogeradores na paisagem pode afetar sobremaneira o risco de colisão. A distribuição linear das torres, perpendicular à principal direção dos ventos, é o modelo menos indicado. O impacto pode ser ainda maior se os aerogeradores estiverem alinhados paralelamente a vales ou a serras utilizadas como referência para as aves em rota de voo (Figura \ref{fig:13}). Parques em áreas planas, com aerogeradores agrupados em blocos e com largos corredores de passagem entre eles, tendem a ter taxas de colisão menores por aparelho. Aerogeradores isolados tendem a possuir uma taxa de colisão maior.
+A disposição dos aerogeradores na paisagem pode afetar sobremaneira o risco de colisão. A distribuição linear das torres, perpendicular à principal direção dos ventos, é o modelo menos indicado. O impacto pode ser ainda maior se os aerogeradores estiverem alinhados paralelamente a vales ou a serras utilizadas como referência para as aves em rota de voo (Figura \ref{fig:13}AB). Parques em áreas planas, com aerogeradores agrupados em blocos e com largos corredores de passagem entre eles, tendem a ter taxas de colisão menores por aparelho. Aerogeradores isolados tendem a possuir uma taxa de colisão maior.
 
 Outro fator que pode influenciar a taxa de colisão é a altura dos aerogeradores (e.g., aerogeradores maiores têm maior probabilidade de interceptar o voo de aves que migram à noite). Para a próxima década, são esperados aerogeradores com altura total superior a 300 m. Todavia, aerogeradores maiores, com maior capacidade, poderiam implicar menor número de aerogeradores por parque eólico, sem que a produção de energia seja comprometida (De Lucas et al.~2004, Drewitt \& Langston 2008).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap04/Figura_4.2ab} 
 
@@ -1027,7 +1033,7 @@ O campo de visão e a acuidade visual das aves é muito variável. A maioria del
 
 Certas características comportamentais tornam algumas aves particularmente sujeitas à colisão: a formação de grandes bandos para deslocamento ou migração (Larsen \& Clausen 2002), o hábito de planar e utilizar correntes termais, o voo noturno e crepuscular (Drewitt \& Langston 2008), voos nupciais ou para atividades predatórias (Madders \& Whitfield 2006, Orloff \& Flannery 1992) ou, ainda, para defesa territorial (Langston \& Pullan 2003). A fase de vida da ave também pode interferir no risco de colisão: pais com filhotes para alimentar (Langston \& Pullan 2003) precisam de itinerários mais curtos e arriscam-se mais (Drewitt \& Langston 2008); jovens são menos experientes e ágeis que os adultos, havendo maior risco de colisão para esse grupo etário (Drewitt \& Langston 2008).
 
-A altura de voo de cada espécie também interfere no risco de colisão. Registros de radar na costa da Inglaterra revelaram que passeriformes migram durante o dia abaixo de 1500 m e à noite podem subir a 4000 m (Sick 1985). Espécies migratórias de longas distâncias em voos diretos (non-stop) atingem altitudes em torno de 6000 m, com variações da altitude entre dia e noite, atingindo as maiores altitudes à noite (Lindström et al.~2021, Pough et al.~1993, Senner et al.~2018). Embora Sick (1985) afirme que geralmente as migrações são realizadas abaixo de 600 m, variando conforme as condições meteorológicas, pouco se sabe sobre as altitudes de migrações na América Latina e mais estudos são necessários para responder essa questão. Mesmo as espécies que realizam voos em altitudes elevadas são sujeitas a colisões nos momentos de aterrissagem e decolagem, ou em condições de mau tempo quando voam a altitudes menores, a depender das suas taxas de ascensão vertical e comportamento de voo, ou ainda em voos de deslocamentos diários (Bernardino et al.~2018, Larsen \& Clausen 2002, Piersma et al.~1997).
+A altura de voo de cada espécie também interfere no risco de colisão. Registros de radar na costa da Inglaterra revelaram que passeriformes migram durante o dia abaixo de 1500 m e à noite podem subir a 4000 m (Sick 1985). Espécies migratórias de longas distâncias em voos diretos (\emph{non-stop}) atingem altitudes em torno de 6.000 m, com variações da altitude entre dia e noite, atingindo as maiores altitudes à noite (Lindström et al.~2021, Pough et al.~1993, Senner et al.~2018). Embora Sick (1985) afirme que geralmente as migrações são realizadas abaixo de 600 m, variando conforme as condições meteorológicas, pouco se sabe sobre as altitudes de migrações na América Latina e mais estudos são necessários para responder essa questão. Mesmo as espécies que realizam voos em altitudes elevadas são sujeitas a colisões nos momentos de aterrissagem e decolagem, ou em condições de mau tempo quando voam a altitudes menores, a depender das suas taxas de ascensão vertical e comportamento de voo, ou ainda em voos de deslocamentos diários (Bernardino et al.~2018, Larsen \& Clausen 2002, Piersma et al.~1997).
 
 Segundo Orloff \& Flannery (1992) a velocidade de voo também afeta a capacidade da ave em detectar o obstáculo, assim como seu tempo de reação. As aves de rapina de voo mais rápido (como os falconídeos) são mais vulneráveis à colisão e eletroplessão que os demais rapinantes. Espécies que apresentam comportamento de peneirar (planar) contra o vento, examinando o solo atentamente, a alturas de cerca de 30 m antes de descer sobre a presa, também podem ser vulneráveis a colisões. As fragatas também se destacam devido ao seu hábito de planar. Registros de mortalidade da espécie decorrente de interação com aerogeradores no Brasil foram descritos inclusive para o arquipélago de Fernando de Noronha, onde um único aerogerador foi instalado (P. Serafini, com. pess. 2009).
 
@@ -1050,7 +1056,7 @@ O impacto dos parques eólicos neste grupo de aves pode estar diretamente relaci
 
 Além dos efeitos negativos das colisões, esse grupo é afetado pela perda de \emph{habitat} funcional. Através do comportamento de evitação das áreas de empreendimentos eólicos, essas aves perdem áreas adequadas ao voo planado e forrageio sofrendo com o efeito barreira, perda de \emph{habitat} e deslocamentos, de forma cumulativa (Marques et al.~2020).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.4\linewidth]{imagens/cap04/Figura_4.3} 
 
@@ -1071,11 +1077,11 @@ Estudos de mortalidade direta de Anatidae (i.e., patos e marrecas) causada por s
 
 \emph{Aves de grande porte com comportamento de empoleirar-se e espécies com alta carga alar}
 
-O grupo de espécies em maior risco de eletroplessão em linhas de transmissão, inclusive associadas a empreendimentos eólicos, são aves de rapina e aves de grande porte que possuem comportamento de empoleirar-se. Essas aves costumam usar os postes, que sustentam as linhas de transmissão, como poleiros para descanso ou para permanecerem à espreita e desempenhar seu comportamento de captura de presas na região (predação), além de, muitas vezes, usarem as estruturas instaladas como locais de nidificação ou mesmo descanso (Figura \ref{fig:15}). Sua grande envergadura aumenta o risco de contato com mais de um cabo da linha de transmissão durante o voo ou quando pousadas, criando inadvertidamente um curto-circuito. A eletroplessão pode ocorrer em duas situações: quando a ave toca ao mesmo tempo dois fios ou quando toca um fio energizado e o poste, de forma a fechar o circuito. Quase todas as eletroplessões ocorrem em linhas de baixa e média tensão (\textless{} 15 kV); linhas de alta tensão raramente possuem componentes próximos o suficiente para uma ave tocar ambos cabos ao mesmo tempo. Fatores de risco associados incluem as dimensões das estruturas potencialmente usadas como poleiro, o espaço entre linhas e outras estruturas (Dixon et al.~2018, Dixon et al.~2019). Na região do Raso da Catarina, Bahia, mais de 50 casos de mortes por eletroplessão de araras-azuis-de-lear (\emph{Anodorhynchus leari}) já foram registrados e têm sido acompanhados pelo CEMAVE. As araras possuem o comportamento de pousar em estruturas altas e devido sua grande envergadura e comportamento social podem fechar o circuito tocando os diferentes cabos da rede. A espécie é também suscetível à colisão com estruturas (aerogeradores, linhas de distribuição/transmissão).
+O grupo de espécies em maior risco de eletroplessão em linhas de transmissão, inclusive associadas a empreendimentos eólicos, são aves de rapina e aves de grande porte que possuem comportamento de empoleirar-se. Essas aves costumam usar os postes, que sustentam as linhas de transmissão, como poleiros para descanso ou para permanecerem à espreita e desempenhar seu comportamento de captura de presas na região (predação), além de, muitas vezes, usarem as estruturas instaladas como locais de nidificação ou mesmo descanso (Figura \ref{fig:15}AB). Sua grande envergadura aumenta o risco de contato com mais de um cabo da linha de transmissão durante o voo ou quando pousadas, criando inadvertidamente um curto-circuito. A eletroplessão pode ocorrer em duas situações: quando a ave toca ao mesmo tempo dois fios ou quando toca um fio energizado e o poste, de forma a fechar o circuito. Quase todas as eletroplessões ocorrem em linhas de baixa e média tensão (\textless{} 15 kV); linhas de alta tensão raramente possuem componentes próximos o suficiente para uma ave tocar ambos cabos ao mesmo tempo. Fatores de risco associados incluem as dimensões das estruturas potencialmente usadas como poleiro, o espaço entre linhas e outras estruturas (Dixon et al.~2018, Dixon et al.~2019). Na região do Raso da Catarina, Bahia, mais de 50 casos de mortes por eletroplessão de araras-azuis-de-lear (\emph{Anodorhynchus leari}) já foram registrados e têm sido acompanhados pelo CEMAVE. As araras possuem o comportamento de pousar em estruturas altas e devido sua grande envergadura e comportamento social podem fechar o circuito tocando os diferentes cabos da rede. A espécie é também suscetível à colisão com estruturas (aerogeradores, linhas de distribuição/transmissão).
 
 Outro grupo que pode ser afetado pela mortalidade em contato com linhas de transmissão e infraestrutura relacionadas à produção e distribuição de energia elétrica são as aves com alta carga alar, ou seja, maior proporção entre massa corporal e área da asa, como por exemplo, rapinantes. Estes animais com alta carga alar estão em maior risco de colisão devido à baixa manobrabilidade (De Lucas et al.~2008).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap04/Figura_4.4ab} 
 
@@ -1094,8 +1100,6 @@ Vieira-Filho et al.~(2014) analisaram uma comunidade de aves antes e após a imp
 Apesar de existirem resultados apontando que as mudanças antrópicas na área do parque eólico podem influenciar na composição das espécies, estudos de longo prazo são necessários para verificar se o grau desses efeitos negativos pode diminuir ao longo dos anos de operação, pois mesmo que muitas espécies abandonem a área por não serem capazes de se habituar, muitas outras podem se adaptar (Falavigna et al.~2020, Langston \& Pullan 2003).
 
 A maioria dos parques eólicos no Brasil está localizada em áreas ambientalmente sensíveis ou de alta prioridade para a conservação (52\% em áreas de vegetação nativa e 10\% em dunas costeiras), de forma diferente do que ocorre na Europa, onde a maior parte está localizada em terras agrícolas (Neri et al.~2019, Turkovska et al.~2021). Tais diferenças de padrão de ocupação levam a diferenças nos impactos ambientais e de uso do solo. Se tal padrão de ocupação continuar com a expansão do uso da energia eólica, haverá uma tendência de aumentarem os conflitos ambientais decorrentes da instalação, operação e descomissionamento dos empreendimentos. Dada a necessidade de expansão das fontes de energia, apesar da necessidade de redução da emissão de gases do efeito estufa, a energia eólica surge como uma alternativa, mas para conciliá-la com a proteção da biodiversidade e seus serviços ambientais é necessário buscar a implantação de parques eólicos fora de áreas ambientalmente vulneráveis, buscando regiões já alteradas por atividades humanas, de forma a minimizar os impactos e conflitos socioambientais.
-
-\newpage
 
 \hypertarget{referuxeancias-bibliogruxe1ficas-3}{%
 \section{Referências bibliográficas}\label{referuxeancias-bibliogruxe1ficas-3}}
@@ -1246,7 +1250,7 @@ Já na fase operacional, medidas para minimizar os impactos envolvem a implement
 
 Como mencionado no capítulo anterior, os impactos da instalação de parques eólicos podem ser diretos e indiretos, sendo observados em pelo menos três fases do empreendimento (Gode 2020, Bennun et al.~2021). A figura \ref{fig:16} apresenta os principais impactos que podem ser observados em cada fase do empreendimento.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap05/Figura_5.1} 
 
@@ -1333,9 +1337,7 @@ Um exemplo disso é a configuração triangular (Figura \ref{fig:17}), com dist�
   Afugentar as aves. Embora as estratégias de afugentamento ainda precisem ser aprimoradas, um recurso que parece ter grande potencial é aquele baseado em sons ``desagradáveis'' para as aves, disparados por sensores de aproximação (Marques et al.~2014).
 \end{itemize}
 
-Por fim, apenas em posse de fartas e precisas informações será possível que o Brasil galgue patamares de excelência em geração de energia e proteção da biodiversidade. Considerando a expressiva quantidade de dados sobre aves que têm sido gerada nos parques eólicos brasileiros, a sua sistematização e compartilhamento em uma plataforma de fácil e livre acesso é de grande interesse para os órgãos gestores, para o mundo acadêmico e para o setor produtor de energia.
-
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap05/Figura_5.2} 
 
@@ -1343,6 +1345,8 @@ Por fim, apenas em posse de fartas e precisas informações será possível que 
 
 \caption{Padrões de cruzetas normalmente utilizados em linhas de transmissão de energia elétrica. Exemplo de modificação de estrutura de fixação a partir da figura A para a B com aumento da distância dos fios e inversão de pontos de fixação dos condutores.}\label{fig:17}
 \end{figure}
+
+Por fim, apenas em posse de fartas e precisas informações será possível que o Brasil galgue patamares de excelência em geração de energia e proteção da biodiversidade. Considerando a expressiva quantidade de dados sobre aves que têm sido gerada nos parques eólicos brasileiros, a sua sistematização e compartilhamento em uma plataforma de fácil e livre acesso é de grande interesse para os órgãos gestores, para o mundo acadêmico e para o setor produtor de energia.
 
 \hypertarget{medidas-de-mitigauxe7uxe3o-dos-principais-impactos-indiretos}{%
 \section{Medidas de mitigação dos principais impactos indiretos}\label{medidas-de-mitigauxe7uxe3o-dos-principais-impactos-indiretos}}
@@ -1468,9 +1472,9 @@ Cabe destacar que o Brasil é signatário da Convenção sobre a Conservação d
 
 Na geração de energia por parques eólicos \emph{onshore} (em contraposição aos \emph{offshore}) a biota terrestre seria a mais vulnerável, principalmente pela supressão vegetal decorrente da abertura de vias de acesso, pela intensificação do tráfego, pela instalação de torres e redes de transmissão e de distribuição, dentre outras atividades (Figura \ref{fig:18}). As linhas de transmissão, de distribuição e as torres geradoras de energia, também chamadas turbinas ou aerogeradores, afetam principalmente as comunidades de aves e morcegos (Choi et al.~2020). Salienta-se que as mortes ou lesões por colisão em aves e morcegos constituem o impacto mais conspícuo, despertando grande interesse da sociedade em geral.
 
-\begin{figure}
+\begin{figure}[H]
 
-{\centering \includegraphics[width=0.5\linewidth]{imagens/cap06/Figura_6.1} 
+{\centering \includegraphics[width=0.6\linewidth]{imagens/cap06/Figura_6.1} 
 
 }
 
@@ -1481,7 +1485,7 @@ Todavia, diferentes espécies de aves respondem de forma distinta aos parques e�
 
 O monitoramento deve ser capaz de avaliar a magnitude dos distintos impactos à fauna, sejam diretos ou indiretos (barreira, deslocamento) e a efetividade das medidas mitigadoras adotadas, gerando informações que contribuam para uma melhor gestão do parque (Smallwood 2017, Bennun et al.~2021) (Figura \ref{fig:19}).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap06/Figura_6.2} 
 
@@ -1508,9 +1512,9 @@ Considerando a longa vida útil destes empreendimentos, o monitoramento também 
 
 Como já mencionado, tanto a magnitude dos distintos impactos à fauna, sejam diretos ou indiretos, quanto a efetividade das medidas mitigadoras adotadas devem ser contempladas pelo monitoramento, proporcionando subsídios à gestão do parque (Smallwood 2017, Bennun et al.~2021).
 
-Os protocolos empregados para o monitoramento da ocorrência e uso do espaço por aves nos parques eólicos, assim como dos impactos desses empreendimentos sobre esse grupo animal ainda são relativamente simples no Brasil, consistindo em observações de campo e métodos clássicos da ornitologia, como ponto de escuta, listas de Mackinnon e uso de redes de neblina, somados ao monitoramento de carcaças (Figura \ref{fig:20}). No entanto, novas tecnologias que permitem o monitoramento remoto, contínuo, mesmo durante a noite, e em tempo real, a despeito das condições climáticas, despontam como alternativas interessantes, ainda mais quando se considera que os monitoramentos correntes nos parques eólicos do país tendem a ser concentrados em curtos períodos de alguns dias, espaçados por vários meses. Dentre essas tecnologias de monitoramento remoto temos: câmeras de vídeo, radares verticais e horizontais, sistemas de detecção termais baseados em câmeras de infravermelho, sensores acústicos e de pressão, essenciais para o monitoramento de parques \emph{offshore}, dado o contexto em que se inserem (Desholm et al.~2004, Walls et al.~2009, Wang et al.~2015), mas que também devem ser aplicadas no monitoramento onshore, devido às inúmeras vantagens citadas acima.
+Os protocolos empregados para o monitoramento da ocorrência e uso do espaço por aves nos parques eólicos, assim como dos impactos desses empreendimentos sobre esse grupo animal ainda são relativamente simples no Brasil, consistindo em observações de campo e métodos clássicos da ornitologia, como ponto de escuta, listas de Mackinnon e uso de redes de neblina, somados ao monitoramento de carcaças (Figura \ref{fig:20}AB). No entanto, novas tecnologias que permitem o monitoramento remoto, contínuo, mesmo durante a noite, e em tempo real, a despeito das condições climáticas, despontam como alternativas interessantes, ainda mais quando se considera que os monitoramentos correntes nos parques eólicos do país tendem a ser concentrados em curtos períodos de alguns dias, espaçados por vários meses. Dentre essas tecnologias de monitoramento remoto temos: câmeras de vídeo, radares verticais e horizontais, sistemas de detecção termais baseados em câmeras de infravermelho, sensores acústicos e de pressão, essenciais para o monitoramento de parques \emph{offshore}, dado o contexto em que se inserem (Desholm et al.~2004, Walls et al.~2009, Wang et al.~2015), mas que também devem ser aplicadas no monitoramento onshore, devido às inúmeras vantagens citadas acima.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap06/Figura_6.3ab} 
 
@@ -1626,7 +1630,7 @@ Wang, S., Wang, S., Smith, P. 2015. Ecological impacts of wind farms on birds: Q
 \emph{Via EPIA - Km 8,5}\\
 \emph{70630-000 Brasília, DF}
 
-Em atendimento à Resolução CONAMA nº. 462/14, para a identificação das Áreas de Concentração para Aves Migratórias no Brasil, foram utilizadas duas abordagens: a primeira busca contemplar áreas que concentram espécies migratórias sensíveis a empreendimentos eólicos e a segunda busca contemplar áreas com expressiva agregação de indivíduos de uma ou mais espécies migratórias. Os detalhes de cada abordagem serão tratados ao longo deste capítulo.
+Em atendimento à Resolução CONAMA nº 462/14, para a identificação das Áreas de Concentração para Aves Migratórias no Brasil, foram utilizadas duas abordagens: a primeira busca contemplar áreas que concentram espécies migratórias sensíveis a empreendimentos eólicos e a segunda busca contemplar áreas com expressiva agregação de indivíduos de uma ou mais espécies migratórias. Os detalhes de cada abordagem serão tratados ao longo deste capítulo.
 
 Em razão da escassez de informações e da flexibilidade de rotas utilizadas pela maioria das aves migratórias do Brasil e dada a imprevisibilidade e a incompatibilidade desses movimentos na escala aqui tratada, as rotas de deslocamento não são apresentadas no mapa final das Áreas de Concentração constante neste relatório.
 
@@ -1650,24 +1654,36 @@ Não foi utilizada nenhuma camada de informação ambiental ou \emph{layer} como
 
 A grade criada sobre o território brasileiro para as análises do Zonation gerou um total de 26.256 células. Desse total, 7.726 (aproximadamente 31\% do território nacional) apresentaram ao menos um registro de espécie de ave migratória ou parcialmente migratória. \textbf{Para atingir a meta de conservação proposta, ou seja, que a solução contemplasse, ao menos, 70\% das células com registros para as quinze espécies migratórias mais sensíveis, foi necessário resguardar 7\% das células com maior valor de conservação.} A solução representa, portanto, o recrutamento de 1.838 células, o que também se traduz no resguardo médio de 80\% (proporção 0,8) das células com registro para as 176 espécies migratórias consideradas (Figura \ref{fig:21} e Apêndice A3).
 
-\textbackslash begin\{figure\}
-
-\{\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.1}
-
-\}
-
-\textbackslash caption\{Máximas, médias e mínimas das proporções totais de células por espécie de ave migratória conforme percentual de células totais remanescentes durante a priorização pelo Zonation e destaque do limiar de corte em 7\%.\}\label{fig:21}
+\textbackslash begin\{figure\}{[}H{]}
+\includegraphics[width=0.85\linewidth]{imagens/cap07/Figura_7.1} \textbackslash caption\{Máximas, médias e mínimas das proporções totais de células por espécie de ave migratória conforme percentual de células totais remanescentes durante a priorização pelo Zonation e destaque do limiar de corte em 7\%.\}\label{fig:21}
 \textbackslash end\{figure\}
 
 Entre os padrões percebidos na solução por priorização por riqueza, ponderada pelos escores de vulnerabilidade para espécies de aves migratórias, está um adensamento das células recrutadas para a solução nas regiões Sul e Sudeste (Figura \ref{fig:30}). Tal fato decorre não só da relativa importância de áreas nessas regiões para as espécies de aves migratórias, mas também reflete um esforço de amostragem de aves em campo historicamente maior nessas duas regiões. Um segundo padrão que emerge é o recrutamento da maior parte do litoral brasileiro, justificado pela abundância de registros ao longo de toda rota Atlântica no país.
 
 Com a meta de conservação adotada, das 16 espécies de aves migratórias nacionalmente ameaçadas, 14 tiveram 90\% ou mais das células com seus registros resguardadas na solução da priorização pelo Zonation (Tabela \ref{tab:tab04}).
 
-\begin{longtable}[t]{>{}l>{\centering\arraybackslash}p{4cm}>{\centering\arraybackslash}p{4cm}}
+\newpage
+
+\begin{ThreePartTable}
+\begin{TableNotes}
+\item[1] A riqueza foi ponderada pelos escores de vulnerabilidade, para espécies de aves migratórias ameaçadas (conforme Portaria MMA nº 444/14).
+\end{TableNotes}
+\begin{longtable}[t]{>{}l>{\centering\arraybackslash}p{3cm}>{\centering\arraybackslash}p{3cm}}
 \caption{\label{tab:tab04}Percentual de células constantes na solução de priorização por riqueza.}\\
 \toprule
 Espécie & Categoria & Porcentagem de células na solução\\
 \midrule
+\endfirsthead
+\caption[]{\label{tab:tab04}Percentual de células constantes na solução de priorização por riqueza. \textit{(continuação)}}\\
+\toprule
+Espécie & Categoria & Porcentagem de células na solução\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\insertTableNotes
+\endlastfoot
 \em{Amazona pretrei} & VU & 70\%\\
 \em{Sporophila melanogaster} & VU & 86\%\\
 \em{Sporophila hypoxantha} & VU & 90\%\\
@@ -1686,20 +1702,23 @@ Espécie & Categoria & Porcentagem de células na solução\\
 \em{Sporophila beltoni} & VU & 100\%\\
 \em{Sporophila ruficollis} & VU & 100\%\\
 \addlinespace
-\em{Sterna dougallii} & VU & 100\%\\
-\bottomrule
-\multicolumn{3}{l}{\rule{0pt}{1em}\textsuperscript{1} A riqueza foi ponderada pelos escores de vulnerabilidade, para espécies de aves migratórias ameaçadas (conforme Portaria MMA nº 444/14).}\\
+\em{Sterna dougallii} & VU & 100\%\\*
 \end{longtable}
+\end{ThreePartTable}
 
 Do mesmo modo, a meta de conservação adotada também garantiu que, para as espécies menos comuns, ou seja, aquelas com registros em 20 células ou menos, 100\% das suas células estejam presentes na solução (Tabela \ref{tab:tab05}).
 
+\begin{ThreePartTable}
+\begin{TableNotes}
+\item[1] Com corte em 7\%, para as espécies de aves migratórias, ordenadas pelas espécies menos comuns.
+\end{TableNotes}
 \begin{longtable}[t]{>{}l>{\centering\arraybackslash}p{4cm}>{\centering\arraybackslash}p{4cm}}
 \caption{\label{tab:tab05}Percentual de células com registros na solução de priorização pelo Zonation.}\\
 \toprule
 Espécie & Nº de células com registros pré priorização & \% de células com registro na solução\\
 \midrule
 \endfirsthead
-\caption[]{\label{tab:tab05}Percentual de células com registros na solução de priorização pelo Zonation. continua}\\
+\caption[]{\label{tab:tab05}Percentual de células com registros na solução de priorização pelo Zonation. \textit{(continuação)}}\\
 \toprule
 Espécie & Nº de células com registros pré priorização & \% de células com registro na solução\\
 \midrule
@@ -1707,7 +1726,7 @@ Espécie & Nº de células com registros pré priorização & \% de células com
 
 \endfoot
 \bottomrule
-\multicolumn{3}{l}{\rule{0pt}{1em}\textsuperscript{1} Com corte em 7\%, para as espécies de aves migratórias, ordenadas pelas espécies menos comuns.}\\
+\insertTableNotes
 \endlastfoot
 \em{} & NA & \\
 \em{Myiodynastes luteiventris} & 1 & 100\%\\
@@ -1922,6 +1941,7 @@ Espécie & Nº de células com registros pré priorização & \% de células com
 \em{Pitangus sulphuratus} & 3048 & 43\%\\
 \em{Tyrannus melancholicus} & 3250 & 40\%\\*
 \end{longtable}
+\end{ThreePartTable}
 
 \hypertarget{abordagem-2-uxe1reas-de-agregauxe7uxe3o-de-indivuxedduos}{%
 \section{Abordagem 2: Áreas de agregação de indivíduos}\label{abordagem-2-uxe1reas-de-agregauxe7uxe3o-de-indivuxedduos}}
@@ -1939,8 +1959,6 @@ Aves limícolas podem ser vistas em pequenos bandos em qualquer lugar da zona co
 Em vista do que foi aqui exposto, conclui-se que a definição das áreas de concentração de aves migratórias não é matemática e não segue uma regra geral, mas deve considerar os parâmetros aqui citados, que são variáveis de acordo com a espécie ou grupo alvo.
 
 As áreas de expressiva agregação validadas foram sobrepostas à mesma grade de células utilizada pelo método anterior, de modo a padronizar os dois métodos e delimitar com precisão a localização geográfica das Áreas de Concentração para Aves Migratórias no Brasil. Todas as células que continham as áreas de agregação foram marcadas como solução deste método. Devido ao fato de a grade ser a mesma, muitas células selecionadas na solução da priorização pelo Zonation podem ser coincidentes com aquelas indicadas na solução pelo critério de agregação.
-
-\newpage
 
 \hypertarget{resultados-1}{%
 \section{Resultados}\label{resultados-1}}
@@ -1979,7 +1997,7 @@ A seguir são apresentadas as áreas de agregação de indivíduos de aves migra
 
 \textbf{10 - Reentrâncias Maranhenses}: área litorânea que se estende desde a foz do rio Gurupi, divisa com o estado do Pará a oeste, até a ilha do Cajual a leste, já limitando com o golfo do Maranhão. Distribui-se entre os biomas amazônico e marinho costeiro, estando parcialmente protegida pela Reserva Extrativista (RESEX) de Cururupu (Figura \ref{fig:22}) e pela APA das Reentrâncias Maranhenses. Desde 1991, é \href{http://whsrn.org/whsrn_sites/reentrancias-maranhenses}{reconhecida como de importância hemisférica para aves limícolas migratórias pela WHSRN}. Foi incluída na Convenção de Ramsar em 1993 (Serrano 2011) e, em composição com as Reentrâncias Paraenses, considerada uma IBA (Área Importante para a Conservação de Aves) (De Luca et al.~2009). Morrison et al.~(1989) destacam a área como a terceira maior em importância no continente para as aves limícolas neárticas e a mais importante do Brasil. Em termos de diversidade e abundância, as principais baías e localidades conhecidas das Reentrâncias Maranhenses utilizadas pelos migrantes neárticos são: Lençóis (ilhas de Maiaú, Campechá e salina de Iguará), Turiaçu (ilha da Croa dos Ovos e salina do Inglês) (Schulz-Neto \& Sousa 1995), croa Alta, ponta Seca, ilha de São Lucas, ponta de Muricitiuia, Mangunça, ponta da Croa, Porto Alegre, São João Mirim, Mangue Seco, Caçacueira e ilha do Cajual (Rodrigues \& Carvalho 2011a). Como exemplos de agregações temos a ilha do Cajual, com mais de 20 mil indivíduos de \emph{Calidris pusilla} e 3600 de \emph{Limnodromus griseus} (Rodrigues 2000), a ponta Seca, em Cururupu, com 1200 indivíduos de \emph{Limnodromus griseus} (Rodrigues 2007), a croa Alta, também em Cururupu, com 700 indivíduos de \emph{Pluvialis squatarola} (Rodrigues \& Carvalho 2011a) e mesmo número de \emph{Numenius hudsonicus} (Rodrigues 2007).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.2} 
 
@@ -2008,7 +2026,7 @@ A seguir são apresentadas as áreas de agregação de indivíduos de aves migra
 
 \textbf{17 - Complexo Litorâneo da Bacia Potiguar}: abrange várias localidades importantes por concentrações de aves migratórias desde Macau (Figura \ref{fig:23}), a oeste, a Galinhos, a leste: as salinas de Macau e de Galinhos, salina Diamante Branco, a área em torno de Soledade e a lagoa Lagamar (Carnaubais e Porto de Mangue). Destacam-se os registros de grupos de mais de 1000 indivíduos de \emph{Limnodromus griseus}, 2800 \emph{Calidris pusilla} e mais de 400 indivíduos de \emph{Tringa flavipes} e \emph{Tringa melanoleuca} (Azevedo-Júnior \& Larrazábal 2011, Irusta \& Sagot-Martin 2011).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.3} 
 
@@ -2037,7 +2055,7 @@ A seguir são apresentadas as áreas de agregação de indivíduos de aves migra
 
 \textbf{24 - Praias do Parque Nacional do Cabo Orange}: a área do Parque Nacional (PARNA) registra agregações de 10000 indivíduos de \emph{Calidris pusilla} (Figura \ref{fig:24}), além de outras 17 espécies migratórias: \emph{Phoenicopterus ruber}, \emph{Platalea ajaja}, \emph{Pandion haliaetus}, \emph{Pluvialis squatarola}, \emph{Charadrius semipalmatus}, \emph{Numenius hudsonicus}, \emph{Actitis macularius}, \emph{Tringa solitaria}, \emph{T. melanoleuca}, \emph{T. semipalmata}, \emph{T. flavipes}, \emph{Arenaria interpres}, \emph{Calidris canutus}, \emph{C. alba}, \emph{C. pusilla}, \emph{Sterna hirundo} e \emph{Rynchops niger} (P. Silvestre \& D. Paludo, com. pess. 2021).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.4} 
 
@@ -2069,7 +2087,7 @@ A seguir são apresentadas as áreas de agregação de indivíduos de aves migra
 
 \textbf{31 - Ilhas dos municípios de Vila Velha, Guarapari e Marataízes}: as ilhas Itatiaia, Escalvada (Figura \ref{fig:25}) e Branca abrigam as maiores colônias reprodutivas de \emph{Thalasseus acuflavidus} no Atlântico Sul, correspondendo a mais de 1\% da população global da espécie. Foram estimados 10000 indivíduos na ilha Branca e de 10000 a 13000 indivíduos na ilha Escalvada (Efe et al.~2000). Ocorrem também colônias de \emph{Sterna hirundinacea} (Efe 2004). Nas ilhas Itatiaia há registros históricos de nidificação de \emph{Puffinus lherminieri} (Bencke et al.~2006).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.4\linewidth]{imagens/cap07/Figura_7.5} 
 
@@ -2098,7 +2116,7 @@ A seguir são apresentadas as áreas de agregação de indivíduos de aves migra
 
 \textbf{37 - Chapada dos Guimarães}: área de ocorrência das espécies migratórias \emph{Ictinia mississippiensis} e \emph{Rostrhamus sociabilis} (Figura \ref{fig:26}), sendo que esse último foi observado em grupos de mais de 2500 indivíduos (P. P. Amaral, com. pess. 2010).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.6} 
 
@@ -2143,7 +2161,7 @@ A seguir são apresentadas as áreas de agregação de indivíduos de aves migra
 
 \textbf{52 - Margem oeste da Lagoa Mirim}: concentrações de até 500 indivíduos de \emph{Calidris subruficollis} foram registradas nessa área, formando por vezes bandos mistos com \emph{Pluvialis dominica} em grupos de até 440 indivíduos. Em 2012, uma consultoria ambiental registrou um pequeno bando de \emph{Calidris canutus} (Figura \ref{fig:27} - A. Mader, com. pess. 2021).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.7} 
 
@@ -2164,7 +2182,7 @@ A seguir são apresentadas as áreas de agregação de indivíduos de aves migra
 
 \textbf{57 - Praias entre a foz do rio Urussanga e a foz do rio Araranguá}: trecho entre os municípios de Balneário Rincão (Figura \ref{fig:28}) e Araranguá. A importância dessa região litorânea para a avifauna migratória e limícola já é mencionada há pelo menos três décadas (Rosário-Bege \& Marterer 1991). Recentes estudos confirmam tal indicação (Branco et al.~2004, Romagna 2015, Gava-Just et al.~2018). Por exemplo, das 28 espécies listadas no ``Plano de Ação Nacional para Conservação das Aves Limícolas Migratórias'', 18 possuem ocorrência confirmada nas praias entre as fozes do rio Urussanga e Araranguá (Gava-Just et al.~2018, WikiAves 2021). A região serve como área de alimentação, descanso e abrigo para Scolopacidae e Sterninae, incluindo espécies ameaçadas de extinção como \emph{Calidris canutus} (bandos de até 160 indivíduos, em abril de 2014) e \emph{Sterna hirundinacea} (bandos de até 650 indivíduos, em julho de 2014). Destaque ainda para grandes concentrações de \emph{Calidris alba}, com contagem máxima de 2500 indivíduos no outono de 2018. Outros migrantes neárticos, como \emph{Charadrius semipalmatus}, \emph{Calidris fuscicollis}, \emph{Tringa flavipes}, \emph{Sterna hirundo} e \emph{Pluvialis dominica} ocorrem em bandos de dezenas de indivíduos. Além dos migrantes neárticos, pequenos bandos de migrantes austrais como \emph{Charadrius falklandicus}, \emph{Charadrius modestus} e \emph{Larus atlanticus} ocorrem regularmente na região (J. Gava-Just, com. pess. 2021)\\
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.8} 
 
@@ -2177,7 +2195,7 @@ A seguir são apresentadas as áreas de agregação de indivíduos de aves migra
 
 \textbf{58 - Ilhas oceânicas}: as ilhas oceânicas são, via de regra, áreas extremamente importantes para a avifauna marinha e migratória. Os arquipélagos de Fernando de Noronha (PE) e de Abrolhos (BA), o Atol das Rocas (RN) e as ilhas de Trindade e Martim Vaz (ES) são pontos críticos de pouso, descanso, alimentação e reprodução. \emph{Onychoprion fuscatus} nidifica em todas estas ilhas oceânicas (Figura \ref{fig:29}). O Arquipélago de Fernando de Noronha é, atualmente, o único local reprodutivo de \emph{Puffinus lherminieri} no Brasil. \emph{Pterodroma arminjoniana}, no Atlântico Sul, reproduz-se apenas em Trindade e Martim Vaz e o Atol das Rocas destaca-se por ser a área com a maior agregação de aves marinhas em nidificação no Brasil. Alguns migrantes também utilizam a área do Atol para repouso e alimentação: \emph{Pluvialis squatarola}, \emph{Charadrius semipalmatus}, \emph{Arenaria interpres}, \emph{Numenius hudsonicus} e \emph{Limnodromus griseus} (Sick 1997, Alves et al.~2004, Fonseca-Neto 2004, Bencke et al.~2006).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.9} 
 
@@ -2191,7 +2209,7 @@ A seguir são apresentadas as áreas de agregação de indivíduos de aves migra
 
 Considerando conjuntamente as áreas priorizadas com base na riqueza e sensibilidade de espécies migratórias (Zonation) e as áreas de agregação com expressivo número de indivíduos (revisão bibliográfica e consulta a especialistas), o mapa final de Áreas de Concentração para Aves Migratórias resultou na seleção de 2.149 células, totalizando 737.000 km² ou, aproximadamente, 8\% da superfície do Brasil (Figura \ref{fig:30}).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.10} 
 
@@ -2206,7 +2224,7 @@ Cabe ressaltar que o planejamento sistemático para conservação por meio da pr
 
 Sendo assim, a priorização precisa ser constantemente revisada para que novos cenários sejam considerados e para que o planejamento esteja condizente com a realidade do momento. O aporte de críticas ao processo de análise e aos métodos aqui utilizados, bem como o compartilhamento de novas informações para alimentar esse modelo, são muito bem-vindos. Sabemos que este documento é resultado do empenho de muitas pessoas, mesmo que indiretamente, e esperamos que a colaboração entre aqueles que detêm conhecimento sobre nossa biodiversidade e as instituições que trabalham por sua conservação seja cada vez maior, a fim de que possamos gerar produtos cada vez melhores.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.11_AL} 
 
@@ -2215,7 +2233,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado de Alagoas.}\label{fig:31}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.12_BA} 
 
@@ -2224,7 +2242,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado da Bahia.}\label{fig:32}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.13_CE} 
 
@@ -2233,7 +2251,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado do Ceará.}\label{fig:33}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.14_MA} 
 
@@ -2242,7 +2260,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado do Maranhão.}\label{fig:34}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.15_PB} 
 
@@ -2251,7 +2269,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado da Paraíba.}\label{fig:35}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.16_PE} 
 
@@ -2260,7 +2278,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado de Pernambuco.}\label{fig:36}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.17_PI} 
 
@@ -2269,7 +2287,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado do Piauí.}\label{fig:37}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.18_RN} 
 
@@ -2278,7 +2296,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado do Rio Grande do Norte.}\label{fig:38}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.19_SE} 
 
@@ -2287,7 +2305,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado de Sergipe.}\label{fig:39}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.20_AC} 
 
@@ -2296,7 +2314,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado do Acre.}\label{fig:40}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.21_AP} 
 
@@ -2305,7 +2323,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado do Amapá.}\label{fig:41}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.22_AM} 
 
@@ -2314,7 +2332,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado do Amazonas.}\label{fig:42}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.23_PA} 
 
@@ -2323,7 +2341,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado do Pará.}\label{fig:43}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.24_RO} 
 
@@ -2332,7 +2350,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado de Rondônia.}\label{fig:44}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.25_RR} 
 
@@ -2341,7 +2359,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado de Roraima.}\label{fig:45}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.26_TO} 
 
@@ -2350,7 +2368,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado do Tocantins.}\label{fig:46}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.27_ES} 
 
@@ -2359,7 +2377,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado do Espírito Santo.}\label{fig:47}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.28_MG} 
 
@@ -2368,7 +2386,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado de Minas Gerais.}\label{fig:48}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.29_RJ} 
 
@@ -2377,7 +2395,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado do Rio de Janeiro.}\label{fig:49}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.30_SP} 
 
@@ -2386,7 +2404,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado de São Paulo.}\label{fig:50}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.31_DF} 
 
@@ -2395,7 +2413,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no Distrito Federal.}\label{fig:51}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.32_GO} 
 
@@ -2404,7 +2422,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado de Goiás.}\label{fig:52}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.33_MT} 
 
@@ -2413,7 +2431,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado de Mato Grosso.}\label{fig:53}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.34_MS} 
 
@@ -2422,7 +2440,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado de Mato Grosso do Sul.}\label{fig:54}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.35_PR} 
 
@@ -2431,7 +2449,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado do Paraná.}\label{fig:55}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.36_RS} 
 
@@ -2440,7 +2458,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado do Rio Grande do Sul.}\label{fig:56}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.37_SC} 
 
@@ -2449,7 +2467,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no estado de Santa Catarina.}\label{fig:57}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.38_Abrolhos} 
 
@@ -2458,7 +2476,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no arquipélago de Abrolhos.}\label{fig:58}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.39_Rocas_Noronha} 
 
@@ -2467,7 +2485,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 \caption{Áreas de Concentração para Aves Migratórias no atol das Rocas e no arquipélago de Fernando de Noronha.}\label{fig:59}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.40_Trindade_M_Vaz} 
 
@@ -2489,9 +2507,13 @@ O Capítulo 4 deste relatório traz os principais impactos, diretos e indiretos,
 
 Informações obtidas no \href{https://sigel.aneel.gov.br/Down}{sítio eletrônico da ANEEL} revelam a existência de 18.129 aerogeradores instalados na área continental do Brasil (\emph{download} do \emph{shapefile} ``Aerogeradores'' em 26 janeiro de 2022). Esses aerogeradores estão localizados em 13 estados brasileiros em quantidades muito variadas (Tabela \ref{tab:tab06}), mas com sua distribuição espacial bastante concentrada em algumas áreas (Figura \ref{fig:61a}, sendo a Bahia e o Rio Grande no Norte os estados com o maior número.
 
+A grande concentração de aerogeradores em determinados locais pode representar obstáculos para animais que voam nas faixas de altura dos seus rotores. Isto aconteceria devido à disposição espacial das grandes estruturas construídas em linhas, frequentemente paralelas, que muitas vezes se distribuem numa sequência (Figura \ref{fig:61b}, além, principalmente, do tamanho de suas pás, que podem ultrapassar os 150 metros de diâmetro de rotor.
+
+Assim, a área de varredura das pás em movimento é um fator determinante na constituição de impactos à fauna voadora, como o efeito de barreira, pois se projeta verticalmente na faixa voo como um grande obstáculo, que pode causar injúria ou mortalidade por colisão, sendo potencializado nos locais com maior adensamento de aerogeradores. O efeito cumulativo e sinérgico de empreendimentos próximos também merece atenção no planejamento regional (SNH 2012).
+
 \end{blackbox}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.41} 
 
@@ -2500,14 +2522,7 @@ Informações obtidas no \href{https://sigel.aneel.gov.br/Down}{sítio eletrôni
 \caption{. Distribuição dos aerogeradores nos estados da Bahia, Ceará, Maranhão, Paraíba, Pernambuco, Piauí, Rio Grande do Norte e Sergipe.}\label{fig:61a}
 \end{figure}
 
-\begin{blackbox}
-A grande concentração de aerogeradores em determinados locais pode representar obstáculos para animais que voam nas faixas de altura dos seus rotores. Isto aconteceria devido à disposição espacial das grandes estruturas construídas em linhas, frequentemente paralelas, que muitas vezes se distribuem numa sequência (Figura \ref{fig:61b}, além, principalmente, do tamanho de suas pás, que podem ultrapassar os 150 metros de diâmetro de rotor.
-
-Assim, a área de varredura das pás em movimento é um fator determinante na constituição de impactos à fauna voadora, como o efeito de barreira, pois se projeta verticalmente na faixa voo como um grande obstáculo, que pode causar injúria ou mortalidade por colisão, sendo potencializado nos locais com maior adensamento de aerogeradores. O efeito cumulativo e sinérgico de empreendimentos próximos também merece atenção no planejamento regional (SNH 2012).
-
-\end{blackbox}
-
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap07/Figura_7.42} 
 
@@ -2519,33 +2534,6 @@ Assim, a área de varredura das pás em movimento é um fator determinante na co
 \begin{blackbox}
 A fim de avaliar a distribuição e a magnitude potencial de geração do ``efeito de barreira'' sobre a fauna alada, a partir dos dados da ANEEL, na tabela \ref{tab:tab06} são apresentadas informações relativas ao número de aerogeradores por estado, a soma das áreas de varredura das pás dos rotores* e uma estimativa do que isso representaria em quilômetros de extensão se essas áreas somadas fossem projetadas verticalmente, com 100 m de altura, para fins comparativos.
 
-\end{blackbox}
-
-\begin{longtable}[t]{>{}lr>{\raggedleft\arraybackslash}p{4cm}>{\raggedleft\arraybackslash}p{4cm}}
-\caption{\label{tab:tab06}Número de aerogeradores por estado, áreas de varredura dos rotores e comparativo em projeção vertical.}\\
-\toprule
-Estado & Nº de aerogeradores & Soma da área de varredura das pás (m2) & Dimensão em projeção vertical, com 100 m de altura, da soma da área de varredura das pás (km)\\
-\midrule
-\cellcolor{gray!6}{BA} & \cellcolor{gray!6}{6113} & \cellcolor{gray!6}{92366748.66} & \cellcolor{gray!6}{923.67}\\
-CE & 1705 & 21389264.02 & 213.89\\
-\cellcolor{gray!6}{MA} & \cellcolor{gray!6}{193} & \cellcolor{gray!6}{2229425.16} & \cellcolor{gray!6}{22.29}\\
-MG & 320 & 6247513.62 & 62.48\\
-\cellcolor{gray!6}{PB} & \cellcolor{gray!6}{1003} & \cellcolor{gray!6}{16221772.19} & \cellcolor{gray!6}{162.22}\\
-\addlinespace
-PE & 698 & 8337202.50 & 83.37\\
-\cellcolor{gray!6}{PI} & \cellcolor{gray!6}{1641} & \cellcolor{gray!6}{20960472.05} & \cellcolor{gray!6}{209.60}\\
-PR & 34 & 281965.69 & 2.82\\
-\cellcolor{gray!6}{RJ} & \cellcolor{gray!6}{12} & \cellcolor{gray!6}{63370.34} & \cellcolor{gray!6}{0.63}\\
-RN & 4693 & 61088354.36 & 610.88\\
-\addlinespace
-\cellcolor{gray!6}{RS} & \cellcolor{gray!6}{1530} & \cellcolor{gray!6}{16832971.43} & \cellcolor{gray!6}{168.30}\\
-SC & 164 & 713224.17 & 7.13\\
-\cellcolor{gray!6}{SE} & \cellcolor{gray!6}{23} & \cellcolor{gray!6}{124140.64} & \cellcolor{gray!6}{1.24}\\
-\bottomrule
-\multicolumn{4}{l}{\rule{0pt}{1em}\textsuperscript{1} Os diâmetros das pás dos rotores dos aerogeradores são disponibilizados no sítio eletrônico da ANEEL. A partir desses valores foi calculada a área de varredura de cada aerogerador (Área=pr2). As áreas de varredura de todos os aerogeradores listados para cada estado foram somadas e apresentadas na tabela acima. Para fins de comparação, na última coluna a soma das áreas de varredura das pás é apresentada em projeção vertical, com 100 m de altura, simulando os círculos do giro das hélices, alinhados, justapostos, lado a lado, com seu comprimento total expresso em quilômetros.}\\
-\end{longtable}
-
-\begin{blackbox}
 Assim, considerando os valores da última coluna da tabela, a soma das áreas de varredura das pás em projeção vertical, assumindo uma altura de 100 m, produziria uma barreira à fauna voadora de extensão considerável em algumas células. A célula da grade com maior extensão somada de áreas de varredura das pás (4.677.737,48 m\textsuperscript{2}), se projetadas verticalmente, apresentaria uma barreira vertical de cerca de 47 km de comprimento. O estado da Bahia, por exemplo, que detém o maior número de aerogeradores, teria em seu território uma barreira de 923 km de comprimento, seguido pelo estado do Rio Grande do Norte, que teria um muro virtual com 610 km de extensão.
 
 Tendo em vista os valores observados, com as áreas de varredura das pás somadas ultrapassando milhões de metros quadrados, pode-se deduzir que, para algumas áreas, especialmente as mais adensadas de torres eólicas, as hélices em movimento de giro podem constituir obstáculos relevantes para espécies voadoras.
@@ -2553,6 +2541,37 @@ Tendo em vista os valores observados, com as áreas de varredura das pás somada
 Isto reforça ainda mais a importância da realização de estudos ambientais robustos, no contexto dos processos de licenciamento ambiental, que possam subsidiar, com informações qualificadas, a proposição de medidas para evitar ou minimizar os impactos cumulativos sobre a fauna voadora relacionados à geração eólica de energia.
 
 \end{blackbox}
+
+\newpage
+
+\begin{ThreePartTable}
+\begin{TableNotes}
+\item[1] Os diâmetros das pás dos rotores dos aerogeradores são disponibilizados no sítio eletrônico da ANEEL. A partir desses valores foi calculada a área de varredura de cada aerogerador (Área=pr2). As áreas de varredura de todos os aerogeradores listados para cada estado foram somadas e apresentadas na tabela acima. Para fins de comparação, na última coluna a soma das áreas de varredura das pás é apresentada em projeção vertical, com 100 m de altura, simulando os círculos do giro das hélices, alinhados, justapostos, lado a lado, com seu comprimento total expresso em quilômetros.
+\end{TableNotes}
+\begin{longtable}[t]{>{}lr>{\raggedleft\arraybackslash}p{4cm}>{\raggedleft\arraybackslash}p{4cm}}
+\caption{\label{tab:tab06}Número de aerogeradores por estado, áreas de varredura dos rotores e comparativo em projeção vertical.}\\
+\toprule
+Estado & Nº de aerogeradores & Soma da área de varredura das pás (m2) & Dimensão em projeção vertical, com 100 m de altura, da soma da área de varredura das pás (km)\\
+\midrule
+BA & 6113 & 92366748.66 & 923.67\\
+CE & 1705 & 21389264.02 & 213.89\\
+MA & 193 & 2229425.16 & 22.29\\
+MG & 320 & 6247513.62 & 62.48\\
+PB & 1003 & 16221772.19 & 162.22\\
+\addlinespace
+PE & 698 & 8337202.50 & 83.37\\
+PI & 1641 & 20960472.05 & 209.60\\
+PR & 34 & 281965.69 & 2.82\\
+RJ & 12 & 63370.34 & 0.63\\
+RN & 4693 & 61088354.36 & 610.88\\
+\addlinespace
+RS & 1530 & 16832971.43 & 168.30\\
+SC & 164 & 713224.17 & 7.13\\
+SE & 23 & 124140.64 & 1.24\\
+\bottomrule
+\insertTableNotes
+\end{longtable}
+\end{ThreePartTable}
 
 \textbf{\emph{Agradecimentos}} - À Sociedade Brasileira de Ornitologia e aos seguintes ornitólogos/profissionais pela contribuição para a elaboração deste capítulo:
 Alberto Urben-Filho,
@@ -2828,9 +2847,9 @@ MMA (Ministério do Meio Ambiente). 2014. Portaria MMA 444/2014, p.~121-125. Lis
 \emph{Rodovia Maurício Sirotski Sobrinho s/n - Trevo Jurerê}\\
 \emph{88053-700 Florianópolis, SC}
 
-A energia eólica em escala comercial desenvolveu-se a partir da década de 1980, em resposta à crise do petróleo que marcou a década anterior. Inicialmente com torres instaladas em terra, exibiu um forte crescimento a partir dos anos 2000, superando os 700 GW de capacidade instalada no mundo ao final de 2020 (GWEC 2021) (Figura \ref{fig:61}). Recentemente, a crescente saturação da paisagem e redução na disponibilidade de áreas continentais, em particular na Europa, associada aos ventos de maior velocidade média, mais constantes e confiáveis, característicos do ambiente marinho (Zheng et al.~2016, EPE 2019), fizeram com que o olhar de parte significativa dos investidores voltasse para o potencial eólico no mar. Essa tendência tem impulsionado uma evolução tecnológica dos aerogeradores, associada à contínua queda nos custos de implantação, e capacidades de geração cada vez maiores. Os atuais modelos \emph{offshore} em desenvolvimento têm potência nominal que varia de 10 a 16 MW, contra 4 a 6 MW das máquinas em terra. Consequentemente, há um crescimento global anual médio de 25\% na capacidade instalada no mar nos últimos 5 anos, contrastando com o crescimento em terra de 11\% ao ano no mesmo período (GWEC 2021).
+A energia eólica em escala comercial desenvolveu-se a partir da década de 1980, em resposta à crise do petróleo que marcou a década anterior. Inicialmente com torres instaladas em terra, exibiu um forte crescimento a partir dos anos 2000, superando os 700 GW de capacidade instalada no mundo ao final de 2020 (GWEC 2021) (Figura \ref{fig:61}).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap08/Figura_8.1ab} 
 
@@ -2839,9 +2858,11 @@ A energia eólica em escala comercial desenvolveu-se a partir da década de 1980
 \caption{Evolução da capacidade instalada de energia eólica, em terra e no mar, no mundo (em gigawatts GW, acima) (GWEC 2021), e no Brasil, atualmente somente em terra (em megawatts MW, abaixo) (ABEEólica 2021).}\label{fig:61}
 \end{figure}
 
+Recentemente, a crescente saturação da paisagem e redução na disponibilidade de áreas continentais, em particular na Europa, associada aos ventos de maior velocidade média, mais constantes e confiáveis, característicos do ambiente marinho (Zheng et al.~2016, EPE 2019), fizeram com que o olhar de parte significativa dos investidores voltasse para o potencial eólico no mar. Essa tendência tem impulsionado uma evolução tecnológica dos aerogeradores, associada à contínua queda nos custos de implantação, e capacidades de geração cada vez maiores. Os atuais modelos \emph{offshore} em desenvolvimento têm potência nominal que varia de 10 a 16 MW, contra 4 a 6 MW das máquinas em terra. Consequentemente, há um crescimento global anual médio de 25\% na capacidade instalada no mar nos últimos 5 anos, contrastando com o crescimento em terra de 11\% ao ano no mesmo período (GWEC 2021).
+
 No Brasil, a partir dos incentivos governamentais instituídos pela Lei nº 10.438/2002 (Programa de Incentivo às Fontes Alternativas de Energia Elétrica -- Proinfa), criou-se um cenário favorável ao desenvolvimento da energia eólica que, de inexpressiva até 2005, já representa cerca de 10\% da matriz elétrica nacional, com um crescimento médio de 36\% ao ano na última década (Figura \ref{fig:62}). Em 2020, a energia eólica respondeu por 10\% da geração injetada no Sistema Interligado Nacional (SIN) e, em dias de pico, representou quase 95\% da energia consumida no subsistema Nordeste (ABEEólica 2021). A totalidade dos parques eólicos instalados no país está em terra, ocupando especialmente o litoral do Nordeste e do extremo Sul do país (Figura 8.2). Nos últimos anos, entretanto, houve uma substancial expansão para o interior, no Estado da Bahia, fazendo com que essa unidade da federação assumisse a co-liderança nacional em capacidade ao lado do Rio Grande do Norte. Cada um desses Estados conta com cerca de 7,5 GW em operação ou construção, em um universo que totaliza 25,1 GW de potência outorgada (ANEEL 2021a) (Figura \ref{fig:63}).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.55\linewidth]{imagens/cap08/Figura_8.2} 
 
@@ -2850,7 +2871,7 @@ No Brasil, a partir dos incentivos governamentais instituídos pela Lei nº 10.4
 \caption{Localização das usinas eólicas instaladas ou em instalação no Brasil. Fonte: ANEEL (2021b)}\label{fig:62}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.65\linewidth]{imagens/cap08/Figura_8.3} 
 
@@ -2870,7 +2891,7 @@ As diversas outras fontes de energia utilizadas no país tiveram o licenciamento
 
 Apesar de se diferenciar do ambiente terrestre pela ausência de propriedades privadas, o espaço marinho é palco de inúmeros usos e destinações, como exploração de óleo e gás, pesquisa sísmica, cabos e emissários submarinos, dragagens, navegação, pesca artesanal e industrial, turismo, militar, conservação ambiental, entre outros, nem sempre compatíveis entre si. A experiência europeia mostra que um elemento-chave para a redução de impactos ambientais e conflitos de uso é a definição de um Planejamento Espacial Marinho (PEM), instrumento a ser obrigatoriamente elaborado pelos países-membros da União Europeia até 2021, conforme a Diretiva 2014/89/EU. No Brasil, que assumiu o compromisso de implantar o PEM até 2030, como signatário da Conferência da ONU para os Oceanos, de 2017, a Comissão Interministerial para os Recursos do Mar (CIRM) coordena as ações para sua elaboração. Até lá, essa lacuna de planejamento agrega ao processo incertezas e custos desnecessários, pois áreas inadequadas, seja por questões ambientais, seja por incompatibilidade com outras atividades, são objeto de desenvolvimento de projetos que, preliminarmente, poderiam ter sido identificados como inviáveis. Como produto intermediário há a indicação de implantação, pelo governo brasileiro, de um projeto piloto do PEM em uma região do país; seria altamente recomendável que essa iniciativa ocorresse em alguma das regiões de maior potencial eólico (Figura \ref{fig:64}), antecipando, ao menos parcialmente, os benefícios desse instrumento de ordenamento e gestão territorial.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap08/Figura_8.4} 
 
@@ -2891,9 +2912,9 @@ A definição do tipo de estudo exigido e de seu escopo, apresentada no termo de
 
 Analisando-se sua distribuição espacial, constata-se, como esperado, a atração pelas três regiões com maior potencial eólico ao longo da costa brasileira: litoral do Nordeste, do Piauí ao Rio Grande do Norte; litoral Sudeste, do Rio de Janeiro ao Espírito Santo; e litoral Sul, em especial, no Rio Grande do Sul (Figura 8.4). O afastamento médio da costa é de cerca de 14 km e as configurações propostas apresentam aerogeradores com potência de 12 a 15 MW, torres de 150 m e pás de 120 m em média, resultando em alturas máximas de aproximadamente 270 m. A princípio, dadas as profundidades tipicamente inferiores a 50 m, todos os parques preveem fundações do tipo \emph{monopile}, com estacas cravadas no solo marinho. Essas estruturas são de instalação mais fácil e menores custos, razões pelas quais são as mais utilizadas nessa faixa de profundidade globalmente (Hernandez-C et al.~2021) (Figura \ref{fig:65}).
 
-\begin{figure}
+\begin{figure}[H]
 
-{\centering \includegraphics[width=0.75\linewidth]{imagens/cap08/Figura_8.5} 
+{\centering \includegraphics[width=0.85\linewidth]{imagens/cap08/Figura_8.5} 
 
 }
 
@@ -2953,7 +2974,7 @@ Em uma escala espacial mais ampla, a linha de costa brasileira também é utiliz
 
 A informação ambiental, já existente ou especialmente produzida, fundamenta a tomada de decisão acerca da viabilidade de um empreendimento com potencial de geração de impacto, apontando para as medidas necessárias dentro da clássica hierarquia da mitigação -- evitar, mitigar, compensar (Sánchez 2013). Assim, diferentes métodos podem ser empregados a fim de criar uma base de conhecimento tanto na escala da área do empreendimento, quanto em uma escala mais ampla (e.g., regional, nacional). Tais informações de base são extremamente relevantes, ainda, para a definição de um programa de monitoramento adequado às condições locais e para uma avaliação da efetividade de mitigação em médio e longo prazos. Em conjunto, os diversos empreendimentos podem gerar informações que, somadas, contribuirão para evitar impactos cumulativos desta tipologia sobre populações de aves marinhas e costeiras. Inexistindo um Plano de Gestão Espacial Marinho, o empreendedor, ainda na fase de projeto e preventivamente, para reduzir a probabilidade de se defrontar com um licenciamento de maior complexidade, deve considerar, na seleção da área, aspectos de risco relacionados a atributos da biodiversidade conhecidos que apontem para um elevado grau de sensibilidade, tais como Unidades de Conservação, áreas-chave de biodiversidade, a distribuição de espécies ameaçadas potencialmente vulneráveis à tipologia e rotas migratórias. Diversas fontes disponibilizam informações geográficas que possibilitam realizar esta avaliação prévia (Bennun et al.~2021a), indispensável, porém não suficiente, para prescindir de diagnóstico em escala local. Assim, como sugestão aos empreendedores e consultores ambientais, propomos uma estrutura de trabalho baseada na experiência internacional, na literatura científica e no TR, com procedimentos, abordagens metodológicas e perguntas a serem respondidas (Figura \ref{fig:66}).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.65\linewidth]{imagens/cap08/Figura_8.6} 
 
@@ -2976,6 +2997,8 @@ Por fim, a caracterização do comportamento das aves na área do empreendimento
 
 O processo ideal de diagnóstico na escala do empreendimento demanda alguns produtos cruciais para a efetiva continuidade das etapas de licenciamento e monitoramento. A modelagem do risco de colisão é uma técnica quantitativa que identifica a vulnerabilidade das espécies que utilizam a região em relação ao impacto com aerogeradores, pois associa características do voo com informações sobre o uso do \emph{habitat} e parâmetros populacionais (Furness et al.~2013). Entretanto, os modelos existentes, se aplicados no Brasil, ainda contêm importantes graus de incertezas, dado o desconhecimento de parâmetros comportamentais e populacionais da maioria das espécies, em particular no Hemisfério Sul. Assim, seus resultados devem ser considerados com cautela, embora possam ser úteis para apontar espécies e grupos críticos. Nesse sentido, uma indicação qualitativa inicial de risco potencial, que serve como primeiro passo para futuros estudos, é apresentada na Tabela 8.1. Esses indicadores devem ser examinados com cautela, dadas as várias lacunas no conhecimento no Brasil e a heterogeneidade ambiental inerente à extensa costa do país. A caracterização da assembleia de aves e os modelos de risco de colisão serão úteis, também, na identificação de potenciais efeitos diretos e indiretos dos aerogeradores nas espécies que utilizam a área do empreendimento. A partir disso, outro importante produto da fase de diagnóstico é a proposta de \emph{layout} do CEO, buscando mitigar seu impacto sobre as espécies mais vulneráveis. A proposta deve considerar o risco de colisão e o uso do espaço tridimensional por parte da avifauna na área no empreendimento, visando proteger altitudes de voo e áreas importantes (e.g.~estuários, parcéis) para as aves, além de indicar corredores de deslocamento, por exemplo entre colônias, ou entre áreas de descanso em terra e áreas de alimentação no mar. Estes corredores devem ser planejados em nível de empreendimento, mas idealmente também em escala mais ampla, considerando-se o efeito barreira oriundo de vários empreendimentos dispostos lado a lado.
 
+\bigskip
+
 Por fim, as informações obtidas na fase inicial subsidiarão a elaboração do Programa de Monitoramento da Biota, o qual está previsto no item 11 do TR e demanda recomendações específicas sobre as aves. A parte do Programa de Monitoramento da Biota destinada à avifauna deve conter ferramentas, estratégias e demais informações necessárias ao monitoramento nas fases de instalação e operação e, idealmente, deve possuir sinergia com programas destinados a outros grupos taxonômicos. O programa pode ser dividido em estratégias destinadas ao monitoramento das áreas controle e do empreendimento e às espécies indicadoras identificadas na fase de diagnóstico. O monitoramento das áreas deve considerar o mesmo desenho amostral e as mesmas plataformas de observação da fase de diagnóstico, visando à comparação entre os períodos pré e pós-instalação dos aerogeradores. Adicionalmente, os aerogeradores podem servir como base para fixação de equipamentos de registro autônomo da ocorrência de aves, como câmeras, microfones e receptores de VHF para detecção de aves equipadas com transmissores. Em relação a esse último ponto, cabe ressaltar que a costa brasileira representa uma lacuna importante no rastreamento remoto de aves migratórias utilizando o sistema VHF, através da rede internacional colaborativa Motus. Portanto, a instalação de receptores de VHF em aerogeradores ou em áreas costeiras adjacentes pode fornecer informações sobre o uso das rotas migratórias, visto que a distribuição das áreas com potencial de geração de energia eólica possui forte sobreposição com sítios chave para a \href{https://atlanticflywayshorebirds.org/pt-br/}{Rota Atlântica}. Assim, a caracterização da assembleia de aves que utiliza a área do empreendimento e seu entorno é fundamental para avaliar a continuidade de uso da região, e até mesmo para direcionar esforços àquelas espécies que permaneçam usando a área durante a operação.
 
 O monitoramento das espécies indicadoras selecionadas na fase de diagnóstico fornecerá informações sobre a continuidade de uso da área e as estratégias comportamentais perante os aerogeradores (i.e., evitação em microescala). Para isso, o uso de rastreamento remoto com receptores de GNSS com alta frequência de amostragem permite a caracterização da distribuição espacial e a segmentação da trajetória em diferentes comportamentos -- descanso, voo de deslocamento, forrageio, dentre outros -- através de técnicas estatísticas. Adicionalmente, acelerômetros triaxiais também podem ser utilizados em associação aos estimadores de posição para refinar a classificação de comportamentos a partir de informações de acelerações estática e dinâmica, uma vez que operam em frequências de amostragem abaixo de 1 Hz. Por fim, a combinação de sensores de pressão é uma importante estratégia para avaliar a continuidade de uso como área de forrageio por espécies mergulhadoras, as quais têm sido apontadas como as mais vulneráveis aos CEOs (Bradbury et al.~2014).
@@ -2992,15 +3015,20 @@ Adicionalmente às lacunas de conhecimento indicadas acima, há a oportunidade d
 
 Em suma, a exploração do ambiente marinho para geração de energia eólica é uma realidade no Brasil, devido ao crescente número de projetos já protocolados para licenciamento ambiental. Não restam dúvidas de que o mar é a nova fronteira de desenvolvimento econômico em âmbito global e que a geração de energia \emph{offshore} é um dos pilares mais importantes da Economia Azul. A demanda por licenciamento para CEOs no Brasil vem em um momento em que há importantes aprendizados de experiências internacionais, bem como tecnologias existentes para o aprimoramento do diagnóstico e do monitoramento ambiental, as quais precisam ser incorporadas ao desenvolvimento dos projetos e das atividades de consultoria ambiental para uma eficaz mitigação do desenvolvimento das atividades de geração de energia. Além disso, parte-se de um abrangente e moderno balizamento inicial contido no TR, o qual aponta importantes direções através das quais o processo de licenciamento deve seguir, ao mesmo tempo em que deixa em aberto possibilidades de aperfeiçoamento das diretrizes apontadas. Por fim, cabe ainda destacar que a demanda de exploração do ambiente marinho brasileiro vem também no início da Década da Ciência Oceânica da ONU, reforçando a importância de um desenvolvimento econômico além da linha de costa fortemente baseado no conhecimento científico e comprometido com a conservação do capital natural.
 
-\begingroup\fontsize{8}{10}\selectfont
+\begingroup\fontsize{7}{9}\selectfont
 
-\begin{longtable}[t]{>{\raggedright\arraybackslash}p{0.5in}>{\raggedright\arraybackslash}p{0.5in}>{\centering\arraybackslash}p{0.5in}>{\centering\arraybackslash}p{0.5in}>{\raggedright\arraybackslash}p{0.5in}>{\raggedright\arraybackslash}p{0.5in}>{\raggedright\arraybackslash}p{0.5in}>{\raggedright\arraybackslash}p{0.5in}}
+\begin{ThreePartTable}
+\begin{TableNotes}
+\item[1] Sequências e nomenclaturas estão de acordo com a lista brasileira de aves (Pacheco et al. 2021).
+\item[2] As espécies vagantes foram excluídas, pois tem baixa probabilidade de impacto oriundo dos CEOs e baixo risco presumível.
+\end{TableNotes}
+\begin{longtable}[t]{>{\raggedright\arraybackslash}p{1.7cm}>{\raggedright\arraybackslash}p{1.7cm}>{\centering\arraybackslash}p{1.2cm}>{\centering\arraybackslash}p{1.2cm}>{\centering\arraybackslash}p{1.7cm}>{\centering\arraybackslash}p{1.7cm}>{\raggedright\arraybackslash}p{1.7cm}>{\raggedright\arraybackslash}p{1.7cm}}
 \caption{\label{tab:tab07}Espécies de aves marinhas e costeiras de interesse para os Complexos Eólicos Offshore no Brasil.}\\
 \toprule
 Táxon & Nome comum & Ameaça global (IUCN, 2020) & Ameaça nacional (MMA, 2014) & Área de ocorrência predominante & Habitat (Costeiro Nerítico Oceânico) & Status migratório & Impacto e risco potencial dos CEOs\\
 \midrule
 \endfirsthead
-\caption[]{\label{tab:tab07}Espécies de aves marinhas e costeiras de interesse para os Complexos Eólicos Offshore no Brasil. \textit{(continued)}}\\
+\caption[]{\label{tab:tab07}Espécies de aves marinhas e costeiras de interesse para os Complexos Eólicos Offshore no Brasil. \textit{(continuação)}}\\
 \toprule
 Táxon & Nome comum & Ameaça global (IUCN, 2020) & Ameaça nacional (MMA, 2014) & Área de ocorrência predominante & Habitat (Costeiro Nerítico Oceânico) & Status migratório & Impacto e risco potencial dos CEOs\\
 \midrule
@@ -3008,134 +3036,134 @@ Táxon & Nome comum & Ameaça global (IUCN, 2020) & Ameaça nacional (MMA, 2014)
 
 \endfoot
 \bottomrule
-\multicolumn{8}{l}{\rule{0pt}{1em}\textsuperscript{1} Sequências e nomenclaturas estão de acordo com a lista brasileira de aves (Pacheco et al. 2021).}\\
-\multicolumn{8}{l}{\rule{0pt}{1em}\textsuperscript{2} As espécies vagantes foram excluídas, pois tem baixa probabilidade de impacto oriundo dos CEOs e baixo risco presumível.}\\
+\insertTableNotes
 \endlastfoot
-\em{\textbf{Phoenicopterus chilensis}} & \em{\textbf{Flamingo-chileno}} & \em{\textbf{NT}} & \em{\textbf{LC}} & \em{\textbf{Sul}} & \em{\textbf{Costeiro / Interior}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Phoenicopterus ruber}} & \em{\textbf{Flamingo-americano}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Norte}} & \em{\textbf{Costeiro}} & \em{\textbf{Residente / Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Podicephorus major}} & \em{\textbf{Mergulhão-grande}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Interior / Nerítico}} & \em{\textbf{Residente}} & \em{\textbf{Colisão / perda de habitat, risco moderado}}\\
-\em{\textbf{Pluvialis dominica}} & \em{\textbf{Batuiruçu}} & \em{\textbf{LC}} & \em{\textbf{DD}} & \em{\textbf{Sul}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Pluvialis squatarola}} & \em{\textbf{Batuiruçu-de-axila-preta}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
+\em{Phoenicopterus chilensis} & Flamingo-chileno & NT & LC & Sul & Costeiro / Interior & Migrante austral & Colisão\\
+\em{Phoenicopterus ruber} & Flamingo-americano & LC & LC & Norte & Costeiro & Residente / Migrante boreal & Colisão\\
+\em{Podicephorus major} & Mergulhão-grande & LC & LC & Sul e Sudeste & Interior / Nerítico & Residente & Colisão / perda de habitat, risco moderado\\
+\em{Pluvialis dominica} & Batuiruçu & LC & DD & Sul & Costeiro & Migrante boreal & Colisão\\
+\em{Pluvialis squatarola} & Batuiruçu-de-axila-preta & LC & LC & Toda a costa & Costeiro & Migrante boreal & Colisão\\
 \addlinespace
-\em{\textbf{Oreopholus ruficollis}} & \em{\textbf{Batuíra-de-papo-ferrugíneo}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Charadrius modestus}} & \em{\textbf{Batuíra-de-peito-tijolo}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Charadrius semipalmatus}} & \em{\textbf{Batuíra-de-bando}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa do Brasil}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Charadrius wilsonia}} & \em{\textbf{Batuíra-bicuda}} & \em{\textbf{LC}} & \em{\textbf{VU}} & \em{\textbf{Norte e Nordeste}} & \em{\textbf{Costeiro}} & \em{\textbf{Residente}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Charadrius collaris}} & \em{\textbf{Batuíra-de-coleira}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro}} & \em{\textbf{Residente}} & \em{\textbf{Colisão}}\\
+\em{Oreopholus ruficollis} & Batuíra-de-papo-ferrugíneo & LC & LC & Sul & Costeiro & Migrante austral & Colisão\\
+\em{Charadrius modestus} & Batuíra-de-peito-tijolo & LC & LC & Sul & Costeiro & Migrante austral & Colisão\\
+\em{Charadrius semipalmatus} & Batuíra-de-bando & LC & LC & Toda a costa do Brasil & Costeiro & Migrante boreal & Colisão\\
+\em{Charadrius wilsonia} & Batuíra-bicuda & LC & VU & Norte e Nordeste & Costeiro & Residente & Colisão\\
+\em{Charadrius collaris} & Batuíra-de-coleira & LC & LC & Toda a costa & Costeiro & Residente & Colisão\\
 \addlinespace
-\em{\textbf{Charadrius falklandicus}} & \em{\textbf{Batuíra-de-coleira-dupla}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante austral/Residente no RS}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Haematopus palliatus}} & \em{\textbf{Piru-piru}} & \em{\textbf{LC}} & \em{\textbf{NT}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro}} & \em{\textbf{Residente, parcialmente migratória no extremo Norte}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Himantopus mexicanus}} & \em{\textbf{Pernilongo-de-costas-negras}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Norte e Nordeste}} & \em{\textbf{Costeiro}} & \em{\textbf{Residente, parcialmente migratória no extremo Norte}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Himantopus melanurus}} & \em{\textbf{Pernilongo-de-costas-brancas}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro}} & \em{\textbf{Residente}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Bartramia longicauda}} & \em{\textbf{Maçarico-do-campo}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Interior}} & \em{\textbf{Interior}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
+\em{Charadrius falklandicus} & Batuíra-de-coleira-dupla & LC & LC & Sul & Costeiro & Migrante austral/Residente no RS & Colisão\\
+\em{Haematopus palliatus} & Piru-piru & LC & NT & Toda a costa & Costeiro & Residente, parcialmente migratória no extremo Norte & Colisão\\
+\em{Himantopus mexicanus} & Pernilongo-de-costas-negras & LC & LC & Norte e Nordeste & Costeiro & Residente, parcialmente migratória no extremo Norte & Colisão\\
+\em{Himantopus melanurus} & Pernilongo-de-costas-brancas & LC & LC & Toda a costa & Costeiro & Residente & Colisão\\
+\em{Bartramia longicauda} & Maçarico-do-campo & LC & LC & Interior & Interior & Migrante boreal & Colisão\\
 \addlinespace
-\em{\textbf{Numenius hudsonicus}} & \em{\textbf{Maçarico-de-bico-torto}} & \em{\textbf{LC}} & \em{\textbf{NT}} & \em{\textbf{Toda a costa do Brasil}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Limosa haemastica}} & \em{\textbf{Maçarico-de-bico-virado}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Arenaria interpres}} & \em{\textbf{Vira-pedras}} & \em{\textbf{LC}} & \em{\textbf{NT}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Calidris canutus}} & \em{\textbf{Maçarico-de-papo-vermelho}} & \em{\textbf{NT}} & \em{\textbf{CR}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Calidris himantopus}} & \em{\textbf{Maçarico-pernilongo}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro / Interior}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Vagante (risco baixo)}}\\
+\em{Numenius hudsonicus} & Maçarico-de-bico-torto & LC & NT & Toda a costa do Brasil & Costeiro & Migrante boreal & Colisão\\
+\em{Limosa haemastica} & Maçarico-de-bico-virado & LC & LC & Sul e Sudeste & Costeiro & Migrante boreal & Colisão\\
+\em{Arenaria interpres} & Vira-pedras & LC & NT & Toda a costa & Costeiro & Migrante boreal & Colisão\\
+\em{Calidris canutus} & Maçarico-de-papo-vermelho & NT & CR & Toda a costa & Costeiro & Migrante boreal & Colisão\\
+\em{Calidris himantopus} & Maçarico-pernilongo & LC & LC & Toda a costa & Costeiro / Interior & Migrante boreal & Vagante (risco baixo)\\
 \addlinespace
-\em{\textbf{Calidris alba}} & \em{\textbf{Maçarico-branco}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Calidris bairdii}} & \em{\textbf{Maçarico-de-bico-fino}} & \em{\textbf{LC}} & \em{\textbf{NA}} & \em{\textbf{Norte e Sul}} & \em{\textbf{Interior / Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Calidris minutilla}} & \em{\textbf{Maçariquinho}} & \em{\textbf{LC}} & \em{\textbf{DD}} & \em{\textbf{Toda a costa, mais comum no Norte e Nordeste}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Calidris fuscicollis}} & \em{\textbf{Maçarico-de-sobre-branco}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro / Interior}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Calidris subruficollis}} & \em{\textbf{Maçarico-acanelado}} & \em{\textbf{NT}} & \em{\textbf{VU}} & \em{\textbf{Sul}} & \em{\textbf{Costeiro / Interior}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
+\em{Calidris alba} & Maçarico-branco & LC & LC & Toda a costa & Costeiro & Migrante boreal & Colisão\\
+\em{Calidris bairdii} & Maçarico-de-bico-fino & LC & NA & Norte e Sul & Interior / Costeiro & Migrante boreal & Colisão\\
+\em{Calidris minutilla} & Maçariquinho & LC & DD & Toda a costa, mais comum no Norte e Nordeste & Costeiro & Migrante boreal & Colisão\\
+\em{Calidris fuscicollis} & Maçarico-de-sobre-branco & LC & LC & Toda a costa & Costeiro / Interior & Migrante boreal & Colisão\\
+\em{Calidris subruficollis} & Maçarico-acanelado & NT & VU & Sul & Costeiro / Interior & Migrante boreal & Colisão\\
 \addlinespace
-\em{\textbf{Calidris melanotos}} & \em{\textbf{Maçarico-de-colete}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Calidris pusilla}} & \em{\textbf{Maçarico-rasteirinho}} & \em{\textbf{NT}} & \em{\textbf{EN}} & \em{\textbf{Toda a costa, mais comum no Norte e Nordeste}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Limnodromus griseus}} & \em{\textbf{Maçarico-de-costas-brancas}} & \em{\textbf{LC}} & \em{\textbf{CR}} & \em{\textbf{Norte e Nordeste}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Phalaropus tricolor}} & \em{\textbf{pisa-n'água}} & \em{\textbf{LC}} & \em{\textbf{DD}} & \em{\textbf{Vagante}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Raro (risco baixo)}}\\
-\em{\textbf{Actitis macularius}} & \em{\textbf{Maçarico-pintado}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa, mais comun no Sudeste, Norte e Nordeste}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
+\em{Calidris melanotos} & Maçarico-de-colete & LC & LC & Toda a costa & Costeiro & Migrante boreal & Colisão\\
+\em{Calidris pusilla} & Maçarico-rasteirinho & NT & EN & Toda a costa, mais comum no Norte e Nordeste & Costeiro & Migrante boreal & Colisão\\
+\em{Limnodromus griseus} & Maçarico-de-costas-brancas & LC & CR & Norte e Nordeste & Costeiro & Migrante boreal & Colisão\\
+\em{Phalaropus tricolor} & pisa-n'água & LC & DD & Vagante & Costeiro & Migrante boreal & Raro (risco baixo)\\
+\em{Actitis macularius} & Maçarico-pintado & LC & LC & Toda a costa, mais comun no Sudeste, Norte e Nordeste & Costeiro & Migrante boreal & Colisão\\
 \addlinespace
-\em{\textbf{Tringa solitaria}} & \em{\textbf{Maçarico-solitário}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro / Interior}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Tringa melanoleuca}} & \em{\textbf{Maçarico-grande-de-perna-amarela}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Tringa semipalmata}} & \em{\textbf{Maçarico-de-asa-branca}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Tringa flavipes}} & \em{\textbf{Maçarico-de-perna-amarela}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa, mais comum no interior}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão}}\\
-\em{\textbf{Stercorarius skua}} & \em{\textbf{Mandrião-grande}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa, mais comum no Norte e Nordeste}} & \em{\textbf{Costeiro / Oceânico}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão / perda de habitat}}\\
+\em{Tringa solitaria} & Maçarico-solitário & LC & LC & Toda a costa & Costeiro / Interior & Migrante boreal & Colisão\\
+\em{Tringa melanoleuca} & Maçarico-grande-de-perna-amarela & LC & LC & Toda a costa & Costeiro & Migrante boreal & Colisão\\
+\em{Tringa semipalmata} & Maçarico-de-asa-branca & LC & LC & Toda a costa & Costeiro & Migrante boreal & Colisão\\
+\em{Tringa flavipes} & Maçarico-de-perna-amarela & LC & LC & Toda a costa, mais comum no interior & Costeiro & Migrante boreal & Colisão\\
+\em{Stercorarius skua} & Mandrião-grande & LC & LC & Toda a costa, mais comum no Norte e Nordeste & Costeiro / Oceânico & Migrante boreal & Colisão / perda de habitat\\
 \addlinespace
-\em{\textbf{Stercorarius chilensis}} & \em{\textbf{Mandrião-chileno}} & \em{\textbf{LC}} & \em{\textbf{NA}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Costeiro / Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat}}\\
-\em{\textbf{Stercorarius maccormicki}} & \em{\textbf{Mandrião-do-sul}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro / Oceânico}} & \em{\textbf{Migrante austral, transequatorial}} & \em{\textbf{Colisão / perda de habitat}}\\
-\em{\textbf{Stercorarius antarcticus}} & \em{\textbf{Mandrião-antártico}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro / Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat}}\\
-\em{\textbf{Stercorarius pomarinus}} & \em{\textbf{Mandrião-pomarino}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro / Oceânico}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão / perda de habitat}}\\
-\em{\textbf{Stercorarius parasiticus}} & \em{\textbf{Mandrião-parasítico}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro / Oceânico}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão / perda de habitat}}\\
+\em{Stercorarius chilensis} & Mandrião-chileno & LC & NA & Sul e Sudeste & Costeiro / Oceânico & Migrante austral & Colisão / perda de habitat\\
+\em{Stercorarius maccormicki} & Mandrião-do-sul & LC & LC & Toda a costa & Costeiro / Oceânico & Migrante austral, transequatorial & Colisão / perda de habitat\\
+\em{Stercorarius antarcticus} & Mandrião-antártico & LC & LC & Toda a costa & Costeiro / Oceânico & Migrante austral & Colisão / perda de habitat\\
+\em{Stercorarius pomarinus} & Mandrião-pomarino & LC & LC & Toda a costa & Costeiro / Oceânico & Migrante boreal & Colisão / perda de habitat\\
+\em{Stercorarius parasiticus} & Mandrião-parasítico & LC & LC & Toda a costa & Costeiro / Oceânico & Migrante boreal & Colisão / perda de habitat\\
 \addlinespace
-\em{\textbf{Stercorarius longicaudus}} & \em{\textbf{Mandrião-de-cauda-comprida}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro / Oceânico}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão / perda de habitat}}\\
-\em{\textbf{Chroicocephalus maculipennis}} & \em{\textbf{Gaivota-maria-velha}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul e sudeste}} & \em{\textbf{Costeiro / Interior}} & \em{\textbf{Residente}} & \em{\textbf{Colisão / perda de habitat}}\\
-\em{\textbf{Chroicocephalus cirrocephalus}} & \em{\textbf{Gaivota-de-cabeça-cinza}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa/interior}} & \em{\textbf{Costeiro}} & \em{\textbf{Residente}} & \em{\textbf{Colisão / perda de habitat}}\\
-\em{\textbf{Leucophaeus atricilla}} & \em{\textbf{Gaivota-alegre}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Norte e Nordeste}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão / perda de habitat}}\\
-\em{\textbf{Larus atlanticus}} & \em{\textbf{Gaivota-de-rabo-preto}} & \em{\textbf{NT}} & \em{\textbf{NA}} & \em{\textbf{Sul}} & \em{\textbf{Costeiro / Incomum}} & \em{\textbf{Migrante austral (vagante?)}} & \em{\textbf{Incomum, risco baixo}}\\
+\em{Stercorarius longicaudus} & Mandrião-de-cauda-comprida & LC & LC & Toda a costa & Costeiro / Oceânico & Migrante boreal & Colisão / perda de habitat\\
+\em{Chroicocephalus maculipennis} & Gaivota-maria-velha & LC & LC & Sul e sudeste & Costeiro / Interior & Residente & Colisão / perda de habitat\\
+\em{Chroicocephalus cirrocephalus} & Gaivota-de-cabeça-cinza & LC & LC & Toda a costa/interior & Costeiro & Residente & Colisão / perda de habitat\\
+\em{Leucophaeus atricilla} & Gaivota-alegre & LC & LC & Norte e Nordeste & Costeiro & Migrante boreal & Colisão / perda de habitat\\
+\em{Larus atlanticus} & Gaivota-de-rabo-preto & NT & NA & Sul & Costeiro / Incomum & Migrante austral (vagante?) & Incomum, risco baixo\\
 \addlinespace
-\em{\textbf{Larus dominicanus}} & \em{\textbf{Gaivotão}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Costeiro}} & \em{\textbf{Residente}} & \em{\textbf{Colisão / perda de habitat / Atração}}\\
-\em{\textbf{Anous stolidus}} & \em{\textbf{Trinta-réis-escuro}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Nordeste e Norte}} & \em{\textbf{Oceânico}} & \em{\textbf{Residente}} & \em{\textbf{Colisão / perda de habitat / Atração}}\\
-\em{\textbf{Anous minutus}} & \em{\textbf{Trinta-réis-preto}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Norte e Nordeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Residente}} & \em{\textbf{Colisão, risco baixo, restrito a ilhas}}\\
-\em{\textbf{Gygis alba}} & \em{\textbf{Grazina}} & \em{\textbf{LC}} & \em{\textbf{NT}} & \em{\textbf{Nordeste e sudeste (ilhas oceânicas)}} & \em{\textbf{Oceânico}} & \em{\textbf{Residente}} & \em{\textbf{Colisão, risco baixo, restrito a ilhas}}\\
-\em{\textbf{Rynchops niger}} & \em{\textbf{Talha-mar}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa do Brasil}} & \em{\textbf{Costeiro / Interior}} & \em{\textbf{Residente, migra para o interior}} & \em{\textbf{Risco baixo, improvável deslocamentos sobre o oceano aberto}}\\
+\em{Larus dominicanus} & Gaivotão & LC & LC & Sul e Sudeste & Costeiro & Residente & Colisão / perda de habitat / Atração\\
+\em{Anous stolidus} & Trinta-réis-escuro & LC & LC & Nordeste e Norte & Oceânico & Residente & Colisão / perda de habitat / Atração\\
+\em{Anous minutus} & Trinta-réis-preto & LC & LC & Norte e Nordeste & Oceânico & Residente & Colisão, risco baixo, restrito a ilhas\\
+\em{Gygis alba} & Grazina & LC & NT & Nordeste e sudeste (ilhas oceânicas) & Oceânico & Residente & Colisão, risco baixo, restrito a ilhas\\
+\em{Rynchops niger} & Talha-mar & LC & LC & Toda a costa do Brasil & Costeiro / Interior & Residente, migra para o interior & Risco baixo, improvável deslocamentos sobre o oceano aberto\\
 \addlinespace
-\em{\textbf{Onychoprion fuscatus}} & \em{\textbf{Trinta-réis-das-rocas}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Nordeste e Norte}} & \em{\textbf{Oceânico}} & \em{\textbf{Migratório, reproduz no Brasil}} & \em{\textbf{Colisão / perda de habitat}}\\
-\em{\textbf{Sternula antillarum}} & \em{\textbf{Trinta-réis-miúdo}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Norte e Nordeste}} & \em{\textbf{Costeiro}} & \em{\textbf{Migrante boreal/Residente no MA}} & \em{\textbf{Colisão / perda de habitat}}\\
-\em{\textbf{Sternula superciliaris}} & \em{\textbf{Trinta-réis-pequeno}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro / Interior}} & \em{\textbf{Residente}} & \em{\textbf{Risco baixo, improvável deslocamentos sobre o oceano aberto}}\\
-\em{\textbf{Phaetusa simplex}} & \em{\textbf{Trinta-réis-grande}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro / Interior}} & \em{\textbf{Residente}} & \em{\textbf{Risco baixo, improvável deslocamentos sobre o oceano aberto}}\\
-\em{\textbf{Gelochelidon nilotica}} & \em{\textbf{Trinta-réis-de-bico-preto}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Norte e Nordeste}} & \em{\textbf{Costeiro / Interior}} & \em{\textbf{Parcialmente migratório (norte)}} & \em{\textbf{Risco baixo, improvável deslocamentos sobre o oceano aberto}}\\
+\em{Onychoprion fuscatus} & Trinta-réis-das-rocas & LC & LC & Nordeste e Norte & Oceânico & Migratório, reproduz no Brasil & Colisão / perda de habitat\\
+\em{Sternula antillarum} & Trinta-réis-miúdo & LC & LC & Norte e Nordeste & Costeiro & Migrante boreal/Residente no MA & Colisão / perda de habitat\\
+\em{Sternula superciliaris} & Trinta-réis-pequeno & LC & LC & Toda a costa & Costeiro / Interior & Residente & Risco baixo, improvável deslocamentos sobre o oceano aberto\\
+\em{Phaetusa simplex} & Trinta-réis-grande & LC & LC & Toda a costa & Costeiro / Interior & Residente & Risco baixo, improvável deslocamentos sobre o oceano aberto\\
+\em{Gelochelidon nilotica} & Trinta-réis-de-bico-preto & LC & LC & Norte e Nordeste & Costeiro / Interior & Parcialmente migratório (norte) & Risco baixo, improvável deslocamentos sobre o oceano aberto\\
 \addlinespace
-\em{\textbf{Sterna hirundo}} & \em{\textbf{Trinta-réis-boreal}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro / Nerítico}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão / perda de habitat, risco elevado}}\\
-\em{\textbf{Sterna dougallii}} & \em{\textbf{Trinta-réis-róseo}} & \em{\textbf{LC}} & \em{\textbf{VU}} & \em{\textbf{Nordeste}} & \em{\textbf{Costeiro / Nerítico}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão / perda de habitat, risco elevado}}\\
-\em{\textbf{Sterna paradisaea}} & \em{\textbf{Trinta-réis-ártico}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa do Brasil}} & \em{\textbf{Oceânico, raramente Costeiro}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão, risco moderado}}\\
-\em{\textbf{Sterna hirundinacea}} & \em{\textbf{Trinta-réis-de-bico-vermelho}} & \em{\textbf{LC}} & \em{\textbf{VU}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Costeiro / Nerítico}} & \em{\textbf{Parcialmente migratório austral no RS/Residente)}} & \em{\textbf{Colisão / perda de habitat, risco elevado}}\\
-\em{\textbf{Sterna trudeaui}} & \em{\textbf{Trinta-réis-de-coroa-branca}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul e sudeste}} & \em{\textbf{Costeiro}} & \em{\textbf{Parcialmente migratório (sul)}} & \em{\textbf{Risco baixo, improvável deslocamentos sobre o oceano aberto}}\\
+\em{Sterna hirundo} & Trinta-réis-boreal & LC & LC & Toda a costa & Costeiro / Nerítico & Migrante boreal & Colisão / perda de habitat, risco elevado\\
+\em{Sterna dougallii} & Trinta-réis-róseo & LC & VU & Nordeste & Costeiro / Nerítico & Migrante boreal & Colisão / perda de habitat, risco elevado\\
+\em{Sterna paradisaea} & Trinta-réis-ártico & LC & LC & Toda a costa do Brasil & Oceânico, raramente Costeiro & Migrante boreal & Colisão, risco moderado\\
+\em{Sterna hirundinacea} & Trinta-réis-de-bico-vermelho & LC & VU & Sul e Sudeste & Costeiro / Nerítico & Parcialmente migratório austral no RS/Residente) & Colisão / perda de habitat, risco elevado\\
+\em{Sterna trudeaui} & Trinta-réis-de-coroa-branca & LC & LC & Sul e sudeste & Costeiro & Parcialmente migratório (sul) & Risco baixo, improvável deslocamentos sobre o oceano aberto\\
 \addlinespace
-\em{\textbf{Thalasseus acuflavidus}} & \em{\textbf{Trinta-réis-de-bando}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Costeiro / Nerítico}} & \em{\textbf{Parcialmente migratório austral no RS / Residente)}} & \em{\textbf{Colisão / perda de habitat, risco elevado}}\\
-\em{\textbf{Thalasseus maximus}} & \em{\textbf{Trinta-réis-real}} & \em{\textbf{LC}} & \em{\textbf{EN}} & \em{\textbf{Toda a costa do Brasil (exceto RN a norte da BA)}} & \em{\textbf{Costeiro / Nerítico}} & \em{\textbf{Parcialmente migratório austral no RS, migratório boreal no Norte e / Residente no Sudeste)}} & \em{\textbf{Colisão / perda de habitat, risco elevado}}\\
-\em{\textbf{Phaethon aethereus}} & \em{\textbf{Rabo-de-palha-de-bico-vermelho}} & \em{\textbf{LC}} & \em{\textbf{EN}} & \em{\textbf{Nordeste (principalmente Abrolhos e secundariamente Fernando de Noronha)}} & \em{\textbf{Oceânico}} & \em{\textbf{Residente}} & \em{\textbf{Colisão / perda de habitat, risco baixo, restrito a ilhas}}\\
-\em{\textbf{Phaethon lepturus}} & \em{\textbf{Rabo-de-palha-de-bico-laranja}} & \em{\textbf{LC}} & \em{\textbf{EN}} & \em{\textbf{Nordeste (principalmente e Fernando de Noronha e secundariamente Abrolhos)}} & \em{\textbf{Oceânico}} & \em{\textbf{Residente}} & \em{\textbf{Colisão / perda de habitat, risco baixo, restrito a ilhas}}\\
-\em{\textbf{Spheniscus magellanicus}} & \em{\textbf{Pinguim-de-magalhães}} & \em{\textbf{LC}} & \em{\textbf{NT}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Nerítico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Alteração de habitat de alimentação no Sul, risco elevado}}\\
+\em{Thalasseus acuflavidus} & Trinta-réis-de-bando & LC & LC & Toda a costa & Costeiro / Nerítico & Parcialmente migratório austral no RS / Residente) & Colisão / perda de habitat, risco elevado\\
+\em{Thalasseus maximus} & Trinta-réis-real & LC & EN & Toda a costa do Brasil (exceto RN a norte da BA) & Costeiro / Nerítico & Parcialmente migratório austral no RS, migratório boreal no Norte e / Residente no Sudeste) & Colisão / perda de habitat, risco elevado\\
+\em{Phaethon aethereus} & Rabo-de-palha-de-bico-vermelho & LC & EN & Nordeste (principalmente Abrolhos e secundariamente Fernando de Noronha) & Oceânico & Residente & Colisão / perda de habitat, risco baixo, restrito a ilhas\\
+\em{Phaethon lepturus} & Rabo-de-palha-de-bico-laranja & LC & EN & Nordeste (principalmente e Fernando de Noronha e secundariamente Abrolhos) & Oceânico & Residente & Colisão / perda de habitat, risco baixo, restrito a ilhas\\
+\em{Spheniscus magellanicus} & Pinguim-de-magalhães & LC & NT & Sul e Sudeste & Nerítico & Migrante austral & Alteração de habitat de alimentação no Sul, risco elevado\\
 \addlinespace
-\em{\textbf{Diomedea epomophora}} & \em{\textbf{Albatroz-real}} & \em{\textbf{VU}} & \em{\textbf{VU}} & \em{\textbf{Sul}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco moderado}}\\
-\em{\textbf{Diomedea sanfordi}} & \em{\textbf{Albatroz-real-do-norte}} & \em{\textbf{EN}} & \em{\textbf{EN}} & \em{\textbf{Sul}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco moderado}}\\
-\em{\textbf{Diomedea exulans}} & \em{\textbf{Albatroz-errante}} & \em{\textbf{VU}} & \em{\textbf{CR}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco moderado}}\\
-\em{\textbf{Diomedea dabbenena}} & \em{\textbf{Albatroz-de-tristão}} & \em{\textbf{CR}} & \em{\textbf{CR}} & \em{\textbf{Sul}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco moderado}}\\
-\em{\textbf{Phoebetria fusca}} & \em{\textbf{Piau-preto}} & \em{\textbf{EN}} & \em{\textbf{NA}} & \em{\textbf{Sul}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco baixo, raro}}\\
+\em{Diomedea epomophora} & Albatroz-real & VU & VU & Sul & Oceânico & Migrante austral & Colisão / perda de habitat, risco moderado\\
+\em{Diomedea sanfordi} & Albatroz-real-do-norte & EN & EN & Sul & Oceânico & Migrante austral & Colisão / perda de habitat, risco moderado\\
+\em{Diomedea exulans} & Albatroz-errante & VU & CR & Sul e Sudeste & Oceânico & Migrante austral & Colisão / perda de habitat, risco moderado\\
+\em{Diomedea dabbenena} & Albatroz-de-tristão & CR & CR & Sul & Oceânico & Migrante austral & Colisão / perda de habitat, risco moderado\\
+\em{Phoebetria fusca} & Piau-preto & EN & NA & Sul & Oceânico & Migrante austral & Colisão / perda de habitat, risco baixo, raro\\
 \addlinespace
-\em{\textbf{Thalassarche chlororhynchos}} & \em{\textbf{Albatroz-de-nariz-amarelo-do-atlântico}} & \em{\textbf{EN}} & \em{\textbf{EN}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Oceânico / Nerítico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco elevado}}\\
-\em{\textbf{Thalassarche melanophris}} & \em{\textbf{Albatroz-de-sobrancelha-negra}} & \em{\textbf{LC}} & \em{\textbf{NT}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Oceânico / Nerítico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco elevado}}\\
-\em{\textbf{Fregetta grallaria}} & \em{\textbf{Painho-de-barriga-branca}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sudeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco baixo, voo baixa altitude}}\\
-\em{\textbf{Fregetta tropica}} & \em{\textbf{Painho-de-barriga-preta}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco baixo, voo baixa altitude}}\\
-\em{\textbf{Oceanites oceanicus}} & \em{\textbf{Alma-de-mestre}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco baixo, voo baixa altitude}}\\
+\em{Thalassarche chlororhynchos} & Albatroz-de-nariz-amarelo-do-atlântico & EN & EN & Sul e Sudeste & Oceânico / Nerítico & Migrante austral & Colisão / perda de habitat, risco elevado\\
+\em{Thalassarche melanophris} & Albatroz-de-sobrancelha-negra & LC & NT & Sul e Sudeste & Oceânico / Nerítico & Migrante austral & Colisão / perda de habitat, risco elevado\\
+\em{Fregetta grallaria} & Painho-de-barriga-branca & LC & LC & Sudeste & Oceânico & Migrante austral & Colisão / perda de habitat, risco baixo, voo baixa altitude\\
+\em{Fregetta tropica} & Painho-de-barriga-preta & LC & LC & Sul e Sudeste & Oceânico & Migrante austral & Colisão / perda de habitat, risco baixo, voo baixa altitude\\
+\em{Oceanites oceanicus} & Alma-de-mestre & LC & LC & Toda a costa & Oceânico & Migrante austral & Colisão / perda de habitat, risco baixo, voo baixa altitude\\
 \addlinespace
-\em{\textbf{Hydrobates leucorhous}} & \em{\textbf{Painho-de-cauda-furcada}} & \em{\textbf{VU}} & \em{\textbf{LC}} & \em{\textbf{Norte e Nordeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão / perda de habitat, risco baixo, voo baixa altitude}}\\
-\em{\textbf{Macronectes giganteus}} & \em{\textbf{Petrel-grande}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Oceânico / Nerítico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco elevado}}\\
-\em{\textbf{Macronectes halli}} & \em{\textbf{Petrel-grande-do-norte}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco moderado, alto mar, raro}}\\
-\em{\textbf{Fulmarus glacialoides}} & \em{\textbf{Pardelão-Prateado}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco baixo}}\\
-\em{\textbf{Daption capense}} & \em{\textbf{Pomba-do-cabo}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco baixo}}\\
+\em{Hydrobates leucorhous} & Painho-de-cauda-furcada & VU & LC & Norte e Nordeste & Oceânico & Migrante boreal & Colisão / perda de habitat, risco baixo, voo baixa altitude\\
+\em{Macronectes giganteus} & Petrel-grande & LC & LC & Sul e Sudeste & Oceânico / Nerítico & Migrante austral & Colisão / perda de habitat, risco elevado\\
+\em{Macronectes halli} & Petrel-grande-do-norte & LC & LC & Sul e Sudeste & Oceânico & Migrante austral & Colisão / perda de habitat, risco moderado, alto mar, raro\\
+\em{Fulmarus glacialoides} & Pardelão-Prateado & LC & LC & Sul e Sudeste & Oceânico & Migrante austral & Colisão / perda de habitat, risco baixo\\
+\em{Daption capense} & Pomba-do-cabo & LC & LC & Sul e Sudeste & Oceânico & Migrante austral & Colisão / perda de habitat, risco baixo\\
 \addlinespace
-\em{\textbf{Pterodroma madeira}} & \em{\textbf{Grazina-da-madeira}} & \em{\textbf{EN}} & \em{\textbf{EN}} & \em{\textbf{Nordeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão / perda de habitat, alto mar, risco moderado}}\\
-\em{\textbf{Pterodroma deserta}} & \em{\textbf{Grazina-de-desertas}} & \em{\textbf{VU}} & \em{\textbf{CR}} & \em{\textbf{Nordeste ao Sul}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão / perda de habitat, alto mar, risco moderado}}\\
-\em{\textbf{Pterodroma mollis}} & \em{\textbf{Grazina-delicada}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, alto mar, risco moderado}}\\
-\em{\textbf{Pterodroma incerta}} & \em{\textbf{Grazina-de-barriga-branca}} & \em{\textbf{EN}} & \em{\textbf{EN}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, alto mar, risco moderado}}\\
-\em{\textbf{Pterodroma arminjoniana}} & \em{\textbf{Grazina-de-trindade}} & \em{\textbf{VU}} & \em{\textbf{CR}} & \em{\textbf{Sudeste (Ilha da Trindade) e Nordeste durante a migração}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante para o hemisfério Norte / Residente no Brasil}} & \em{\textbf{Colisão / perda de habitat, alto mar, risco alto no Nordeste}}\\
+\em{Pterodroma madeira} & Grazina-da-madeira & EN & EN & Nordeste & Oceânico & Migrante boreal & Colisão / perda de habitat, alto mar, risco moderado\\
+\em{Pterodroma deserta} & Grazina-de-desertas & VU & CR & Nordeste ao Sul & Oceânico & Migrante boreal & Colisão / perda de habitat, alto mar, risco moderado\\
+\em{Pterodroma mollis} & Grazina-delicada & LC & LC & Sul e Sudeste & Oceânico & Migrante austral & Colisão / perda de habitat, alto mar, risco moderado\\
+\em{Pterodroma incerta} & Grazina-de-barriga-branca & EN & EN & Sul e Sudeste & Oceânico & Migrante austral & Colisão / perda de habitat, alto mar, risco moderado\\
+\em{Pterodroma arminjoniana} & Grazina-de-trindade & VU & CR & Sudeste (Ilha da Trindade) e Nordeste durante a migração & Oceânico & Migrante para o hemisfério Norte / Residente no Brasil & Colisão / perda de habitat, alto mar, risco alto no Nordeste\\
 \addlinespace
-\em{\textbf{Pachyptila desolata}} & \em{\textbf{Faigão-rola}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, alto mar, risco moderado}}\\
-\em{\textbf{Pachyptila belcheri}} & \em{\textbf{Faigão-de-bico-fino}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul e Sudeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco baixo, voo baixa altitude}}\\
-\em{\textbf{Bulweria bulwerii}} & \em{\textbf{Alma-negra}} & \em{\textbf{LC}} & \em{\textbf{NA}} & \em{\textbf{Sudeste e Nordeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão / perda de habitat, risco baixo, voo baixa altitude}}\\
-\em{\textbf{Procellaria aequinoctialis}} & \em{\textbf{Pardela-preta}} & \em{\textbf{VU}} & \em{\textbf{VU}} & \em{\textbf{Sul a Nordeste}} & \em{\textbf{Oceânico / Nerítico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco elevado}}\\
-\em{\textbf{Procellaria conspicillata}} & \em{\textbf{Pardela-de-óculos}} & \em{\textbf{VU}} & \em{\textbf{VU}} & \em{\textbf{Sul a Nordeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, alto mar, risco moderado}}\\
+\em{Pachyptila desolata} & Faigão-rola & LC & LC & Sul e Sudeste & Oceânico & Migrante austral & Colisão / perda de habitat, alto mar, risco moderado\\
+\em{Pachyptila belcheri} & Faigão-de-bico-fino & LC & LC & Sul e Sudeste & Oceânico & Migrante austral & Colisão / perda de habitat, risco baixo, voo baixa altitude\\
+\em{Bulweria bulwerii} & Alma-negra & LC & NA & Sudeste e Nordeste & Oceânico & Migrante boreal & Colisão / perda de habitat, risco baixo, voo baixa altitude\\
+\em{Procellaria aequinoctialis} & Pardela-preta & VU & VU & Sul a Nordeste & Oceânico / Nerítico & Migrante austral & Colisão / perda de habitat, risco elevado\\
+\em{Procellaria conspicillata} & Pardela-de-óculos & VU & VU & Sul a Nordeste & Oceânico & Migrante austral & Colisão / perda de habitat, alto mar, risco moderado\\
 \addlinespace
-\em{\textbf{Calonectris borealis}} & \em{\textbf{Cagarra-grande}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão / perda de habitat, risco elevado}}\\
-\em{\textbf{Calonectris edwardsii}} & \em{\textbf{Cagarra-de-cabo-verde}} & \em{\textbf{NT}} & \em{\textbf{NT}} & \em{\textbf{Sul a Nordeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão / perda de habitat, risco elevado}}\\
-\em{\textbf{Ardenna grisea}} & \em{\textbf{Pardela-escura}} & \em{\textbf{NT}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Oceânico / Nerítico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco elevado}}\\
-\em{\textbf{Ardenna gravis}} & \em{\textbf{Pardela-de-barrete}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Oceânico / Nerítico}} & \em{\textbf{Migrante austral}} & \em{\textbf{Colisão / perda de habitat, risco elevado}}\\
-\em{\textbf{Puffinus puffinus}} & \em{\textbf{Pardela-sombria}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Colisão / perda de habitat, risco alto}}\\
+\em{Calonectris borealis} & Cagarra-grande & LC & LC & Toda a costa & Oceânico & Migrante boreal & Colisão / perda de habitat, risco elevado\\
+\em{Calonectris edwardsii} & Cagarra-de-cabo-verde & NT & NT & Sul a Nordeste & Oceânico & Migrante boreal & Colisão / perda de habitat, risco elevado\\
+\em{Ardenna grisea} & Pardela-escura & NT & LC & Toda a costa & Oceânico / Nerítico & Migrante austral & Colisão / perda de habitat, risco elevado\\
+\em{Ardenna gravis} & Pardela-de-barrete & LC & LC & Toda a costa & Oceânico / Nerítico & Migrante austral & Colisão / perda de habitat, risco elevado\\
+\em{Puffinus puffinus} & Pardela-sombria & LC & LC & Toda a costa & Oceânico & Migrante boreal & Colisão / perda de habitat, risco alto\\
 \addlinespace
-\em{\textbf{Puffinus boydi}} & \em{\textbf{Pardela-de-cabo-verde}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Nordeste e Norte}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante boreal}} & \em{\textbf{Vagante}}\\
-\em{\textbf{Puffinus lherminieri}} & \em{\textbf{Pardela-de-asa-larga}} & \em{\textbf{LC}} & \em{\textbf{CR}} & \em{\textbf{Sudeste e Nordeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Migrante boreal / Residente}} & \em{\textbf{Colisão / perda de habitat, raro, risco baixo}}\\
-\em{\textbf{Fregata trinitatis}} & \em{\textbf{Fragata-pequena}} & \em{\textbf{NA}} & \em{\textbf{CR}} & \em{\textbf{Sudeste - Trindade e Martin Vaz}} & \em{\textbf{Oceânico}} & \em{\textbf{Residente}} & \em{\textbf{Endêmico da ilha da Trindade, risco baixo}}\\
-\em{\textbf{Fregata magnificens}} & \em{\textbf{Fragata}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Oceânico}} & \em{\textbf{Residente}} & \em{\textbf{Colisão / perda de habitat, risco elevado}}\\
-\em{\textbf{Fregata minor}} & \em{\textbf{Fragata-grande}} & \em{\textbf{LC}} & \em{\textbf{CR}} & \em{\textbf{Sudeste - Trindade e Martin Vaz}} & \em{\textbf{Oceânico}} & \em{\textbf{Residente}} & \em{\textbf{Endêmico da ilha da Trindade, risco baixo}}\\
+\em{Puffinus boydi} & Pardela-de-cabo-verde & LC & LC & Nordeste e Norte & Oceânico & Migrante boreal & Vagante\\
+\em{Puffinus lherminieri} & Pardela-de-asa-larga & LC & CR & Sudeste e Nordeste & Oceânico & Migrante boreal / Residente & Colisão / perda de habitat, raro, risco baixo\\
+\em{Fregata trinitatis} & Fragata-pequena & NA & CR & Sudeste - Trindade e Martin Vaz & Oceânico & Residente & Endêmico da ilha da Trindade, risco baixo\\
+\em{Fregata magnificens} & Fragata & LC & LC & Toda a costa & Oceânico & Residente & Colisão / perda de habitat, risco elevado\\
+\em{Fregata minor} & Fragata-grande & LC & CR & Sudeste - Trindade e Martin Vaz & Oceânico & Residente & Endêmico da ilha da Trindade, risco baixo\\
 \addlinespace
-\em{\textbf{Sula dactylatra}} & \em{\textbf{Atobá-grande}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa}} & \em{\textbf{Oceânico}} & \em{\textbf{Residente}} & \em{\textbf{Colisão / perda de habitat, risco elevado}}\\
-\em{\textbf{Sula sula}} & \em{\textbf{Atobá-de-pé-vermelho}} & \em{\textbf{LC}} & \em{\textbf{EN}} & \em{\textbf{Sudeste e Nordeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Residente}} & \em{\textbf{Colisão / perda de habitat, restrito a ilhas, risco baixo}}\\
-\em{\textbf{Sula leucogaster}} & \em{\textbf{Atobá-pardo}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Sul a Nordeste}} & \em{\textbf{Oceânico}} & \em{\textbf{Residente}} & \em{\textbf{Colisão / perda de habitat, risco elevado}}\\
-\em{\textbf{Nannopterum brasilianum}} & \em{\textbf{Biguá}} & \em{\textbf{LC}} & \em{\textbf{LC}} & \em{\textbf{Toda a costa e Interior}} & \em{\textbf{Costeiro / Interior}} & \em{\textbf{Residente / Deslocamentos para o interior}} & \em{\textbf{Colisão / perda de habitat, atração, risco moderado}}\\*
+\em{Sula dactylatra} & Atobá-grande & LC & LC & Toda a costa & Oceânico & Residente & Colisão / perda de habitat, risco elevado\\
+\em{Sula sula} & Atobá-de-pé-vermelho & LC & EN & Sudeste e Nordeste & Oceânico & Residente & Colisão / perda de habitat, restrito a ilhas, risco baixo\\
+\em{Sula leucogaster} & Atobá-pardo & LC & LC & Sul a Nordeste & Oceânico & Residente & Colisão / perda de habitat, risco elevado\\
+\em{Nannopterum brasilianum} & Biguá & LC & LC & Toda a costa e Interior & Costeiro / Interior & Residente / Deslocamentos para o interior & Colisão / perda de habitat, atração, risco moderado\\*
 \end{longtable}
+\end{ThreePartTable}
 \endgroup{}
 
 \hypertarget{referuxeancias-bibliogruxe1ficas-7}{%
@@ -3325,7 +3353,7 @@ A metodologia para a avaliação do potencial de colisão entre morcegos e aerog
 
 \emph{Riqueza potencial} -- Como detalhado na análise de 2019, a riqueza potencial de espécies de morcegos no Brasil varia de 23 a 117 espécies/25 km\textsuperscript{2} (média 80.74 ± 14.76 espécies; moda 74-85 espécies/25 km\textsuperscript{2}; Figura \ref{fig:67}). A riqueza de espécies de morcegos é elevada em quase todo o território nacional: 70\% do país tem riqueza potencial de 50 a 90 espécies, e 25\% \textgreater{} 90 espécies; apenas 5\% tem potencial \textless{} 50 espécies/25 km\textsuperscript{2} (Figura \ref{fig:67}). A porção costeira da Mata Atlântica (nas quadrículas Q17, Q18, R11 -- R16 e T7 -- T9), principalmente na região Nordeste, e ao longo de sua zona de contato com o bioma Caatinga, são as áreas com maior potencial de riqueza de espécies, seguidas pelas regiões central e norte da Amazônia, no leste do Amazonas, no centro e norte do Pará (quadrículas H6, I6, J5, J6, K5 -- K7, L3 - L7, M4, M5), noroeste de Roraima (G2, H2), norte do Maranhão e costa do Piauí (O5 -- O7, P6, P7, Q6).
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap09/Figura_9.1} 
 
@@ -3336,7 +3364,7 @@ A metodologia para a avaliação do potencial de colisão entre morcegos e aerog
 
 \emph{Espécies ameaçadas e endêmicas} -- Mantivemos o critério de considerar como mais relevantes para espécies ameaçadas de extinção aquelas quadrículas que continham pelo menos cinco das sete espécies ameaçadas de morcegos reconhecidas no Brasil. Estas quadrículas estão distribuídas nos biomas Cerrado (com a maior área) e Caatinga (Figura \ref{fig:68}). As quadrículas com o maior número de espécies ameaçadas de morcegos no Brasil são encontradas na Bahia (Q11 -- Q13), na fronteira entre Piauí, Ceará, Pernambuco e Paraíba (Q8, R8, R9, S9) e pequenas porções entre os estados de Minas Gerais e São Paulo (N16 -- 18, O18). Todas estas quadrículas contêm seis espécies ameaçadas.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap09/Figura_9.2} 
 
@@ -3347,7 +3375,7 @@ A metodologia para a avaliação do potencial de colisão entre morcegos e aerog
 
 \emph{Área de colisão potencial} -- Baseado nos dados disponíveis até 26 de janeiro de 2022, 13 estados brasileiros possuem parques eólicos em operação (Figura \ref{fig:69}). A base de dados do SIGEL aponta, em todo o Brasil, 18.129 aerogeradores, sendo que 8.410 destes constam como ``em operação''. A Bahia é o estado com o maior número total de aerogeradores (6.113), seguida pelo Rio Grande do Norte (4.693), Ceará (1.705), Piauí (1.641) e Rio Grande do Sul (1.530). Quanto à área total de rotor, a Bahia também aparece em primeiro lugar, com 92.366.748 m\textsuperscript{2}, enquanto o Rio Grande do Norte tem 61.088.354 m\textsuperscript{2}, Ceará tem 21.389.264 m\textsuperscript{2}, Piauí tem 20.960.472 m\textsuperscript{2}, e o Rio Grande do Sul tem 16.832.971 m\textsuperscript{2}.
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap09/Figura_9.3} 
 
@@ -3362,8 +3390,12 @@ A geração eólica é bastante desproporcional quando sobreposta aos biomas bra
 
 Não estão computadas em nossa análise dados para a geração eólica \emph{offshore} no Brasil, pois até a redação deste capítulo não havia parques nestes ambientes em operação no país. Entretanto, o Brasil deve experimentar nos próximos anos um \emph{boom} de pedidos de licenciamento de parques eólicos \emph{offshore} na costa do Nordeste, apontando também a necessidade de estudos prioritários para estes ambientes na região (Veja Capítulo 8).
 
+\begin{ThreePartTable}
+\begin{TableNotes}
+\item[1] Dados da ANEEL para janeiro de 2022.
+\end{TableNotes}
 \begin{longtable}[t]{>{}lrr}
-\caption{\label{tab:tab09}Distribuição de aerogeradores por bioma no Brasil. Dados da ANEEL para janeiro de 2022.}\\
+\caption{\label{tab:tab09}Distribuição de aerogeradores por bioma no Brasil.}\\
 \toprule
 Bioma & Nº de aerogeradores & \% por Bioma\\
 \midrule
@@ -3373,9 +3405,11 @@ Mata Atlântica & 458 & 2.53\\
 Cerrado & 1621 & 8.94\\
 Total & 18129 & 100.00\\
 \bottomrule
+\insertTableNotes
 \end{longtable}
+\end{ThreePartTable}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap09/Figura_9.5} 
 
@@ -3384,7 +3418,7 @@ Total & 18129 & 100.00\\
 \caption{Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Maranhão. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.}\label{fig:70}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap09/Figura_9.6} 
 
@@ -3393,7 +3427,7 @@ Total & 18129 & 100.00\\
 \caption{Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Piauí. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.}\label{fig:71}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap09/Figura_9.7} 
 
@@ -3402,7 +3436,7 @@ Total & 18129 & 100.00\\
 \caption{Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Ceará. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.}\label{fig:72}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap09/Figura_9.8} 
 
@@ -3411,7 +3445,7 @@ Total & 18129 & 100.00\\
 \caption{Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Rio Grande do Norte. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.}\label{fig:73}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap09/Figura_9.9} 
 
@@ -3420,7 +3454,7 @@ Total & 18129 & 100.00\\
 \caption{Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado da Paraíba. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.}\label{fig:74}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap09/Figura_9.10} 
 
@@ -3429,7 +3463,7 @@ Total & 18129 & 100.00\\
 \caption{Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado de Pernambuco. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.}\label{fig:75}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap09/Figura_9.11} 
 
@@ -3438,7 +3472,7 @@ Total & 18129 & 100.00\\
 \caption{Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado de Sergipe. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.}\label{fig:76}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap09/Figura_9.12} 
 
@@ -3447,7 +3481,7 @@ Total & 18129 & 100.00\\
 \caption{Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado da Bahia. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.}\label{fig:77}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap09/Figura_9.13} 
 
@@ -3456,7 +3490,7 @@ Total & 18129 & 100.00\\
 \caption{Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado de Minas Gerais. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.}\label{fig:78}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap09/Figura_9.14} 
 
@@ -3465,7 +3499,7 @@ Total & 18129 & 100.00\\
 \caption{Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Rio de Janeiro. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.}\label{fig:79}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap09/Figura_9.15} 
 
@@ -3474,7 +3508,7 @@ Total & 18129 & 100.00\\
 \caption{Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Paraná. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.}\label{fig:80}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap09/Figura_9.16} 
 
@@ -3483,7 +3517,7 @@ Total & 18129 & 100.00\\
 \caption{Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado de Santa Catarina. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.}\label{fig:81}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 
 {\centering \includegraphics[width=0.75\linewidth]{imagens/cap09/Figura_9.17} 
 
@@ -3521,18 +3555,37 @@ Neri, M., Jameli, D., Bernard, E., Melo, F.P.L. 2019. Green versus green? Advert
 
 Phillips, S.J., Anderson, R.P., Schapire, R.E., 2006. Maximum entropy modeling of species geographic distributions. Ecological Modelling 190, 231-259.
 
-\hypertarget{apendiceA}{%
-\chapter*{Apêndice A}\label{apendiceA}}
-\addcontentsline{toc}{chapter}{Apêndice A}
+\hypertarget{Apendice}{%
+\appendix}
+
 
 \pagestyle{headings}
 
-A1. Espécies de aves migratórias\footnote{Nomenclatura de acordo com o Comitê Brasileiro de Registros Ornitológicos - CBRO (Pacheco et al.~2021).} e seus respectivos escores de vulnerabilidade usados na análise do Zonation. (\emph{A = Reprodução exclusiva no Brasil; B = Flocking; C = Voo noturno ou crepuscular; D = Planador; E = Alta sensibilidade aos impactos das estruturas de apoio, exceto colisão; F = Massa corporal média (0,25 qdo \textgreater300g); G = categoria de ameaça; H = PESO FINAL}).
+\hypertarget{apuxeandice}{%
+\chapter{Apêndice}\label{apuxeandice}}
 
+A1. Espécies de aves migratórias e seus respectivos escores de vulnerabilidade usados na análise do Zonation.
+
+\begin{ThreePartTable}
+\begin{TableNotes}
+\item[1] Nomenclatura de acordo com o Comitê Brasileiro de Registros Ornitológicos - CBRO (Pacheco et al. 2021).
+\item[2] A = Reprodução exclusiva no Brasil; B = Flocking; C = Voo noturno ou crepuscular; D =  Planador; E = Alta sensibilidade aos impactos das estruturas de apoio, exceto colisão; F = Massa corporal média (0,25 qdo >300g); G =   categoria de ameaça; H = PESO FINAL
+\end{TableNotes}
 \begin{longtable}[t]{>{}lrrrrrlrl}
 \toprule
 Espécie & A & B & C & D & E & F & G & H\\
 \midrule
+\endfirsthead
+\multicolumn{9}{@{}l}{\textit{(continuação)}}\\
+\toprule
+Espécie & A & B & C & D & E & F & G & H\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\insertTableNotes
+\endlastfoot
 \em{Amazona pretrei} & 1 & 1 & 1 & 0 & 1 & 0.25 & 2 & 6.25\\
 \em{Calidris canutus} & 0 & 1 & 1 & 0 & 0 & 0 & 4 & 6\\
 \em{Limnodromus griseus} & 0 & 1 & 1 & 0 & 0 & 0 & 4 & 6\\
@@ -3743,9 +3796,9 @@ Espécie & A & B & C & D & E & F & G & H\\
 \em{Mimus triurus} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
 \em{Pheucticus aureoventris} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
 \addlinespace
-\em{Phytotoma rutila} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
-\bottomrule
+\em{Phytotoma rutila} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\*
 \end{longtable}
+\end{ThreePartTable}
 
 \newpage
 
@@ -3780,9 +3833,8 @@ Parâmetro & Valor\\
 \bottomrule
 \end{longtable}
 
-\hypertarget{apendiceB}{%
-\chapter*{Apêndice B}\label{apendiceB}}
-\addcontentsline{toc}{chapter}{Apêndice B}
+\hypertarget{apuxeandice-1}{%
+\chapter{Apêndice}\label{apuxeandice-1}}
 
 B1. Algumas normas, diretrizes e orientações relacionadas ao planejamento, implantação e operação de empreendimentos eólicos.
 

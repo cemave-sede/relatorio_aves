@@ -68,7 +68,7 @@ A metodologia para a avaliação do potencial de colisão entre morcegos e aerog
 
 <br>
 
-```{r 67, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Riqueza potencial de espécies de morcegos modelada para o Brasil.'}
+```{r 67, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Riqueza potencial de espécies de morcegos modelada para o Brasil.'}
 
 knitr::include_graphics("imagens/cap09/Figura_9.1.png")
 
@@ -81,7 +81,7 @@ knitr::include_graphics("imagens/cap09/Figura_9.1.png")
 
 <br>
 
-```{r 68, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Distribuição potencial de espécies ameaçadas de morcegos no Brasil, considerando as sete espécies oficialmente listadas para o país: Eptesicus taddeii (VU), Furipterus horrens (VU), Glyphonycteris behnii (VU), Lonchorhina aurita (VU), Natalus macrourus (VU), Xeronycteris vieirai (VU), e Lonchophylla dekeyseri (EN).'}
+```{r 68, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Distribuição potencial de espécies ameaçadas de morcegos no Brasil, considerando as sete espécies oficialmente listadas para o país: Eptesicus taddeii (VU), Furipterus horrens (VU), Glyphonycteris behnii (VU), Lonchorhina aurita (VU), Natalus macrourus (VU), Xeronycteris vieirai (VU), e Lonchophylla dekeyseri (EN).'}
 
 knitr::include_graphics("imagens/cap09/Figura_9.2.png")
 
@@ -94,7 +94,7 @@ knitr::include_graphics("imagens/cap09/Figura_9.2.png")
 
 <br>
 
-```{r 69, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Riqueza potencial de espécies de morcegos e localização de parques eólicos em atividade no Brasil.'}
+```{r 69, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Riqueza potencial de espécies de morcegos e localização de parques eólicos em atividade no Brasil.'}
 
 knitr::include_graphics("imagens/cap09/Figura_9.3.png")
 
@@ -123,17 +123,18 @@ kbl(tabela_9.1,
              booktabs = TRUE,
              longtable = TRUE,
              align = "lrr",
-             caption = 'Distribuição de aerogeradores por bioma no Brasil. Dados da ANEEL para janeiro de 2022.',
+             caption = 'Distribuição de aerogeradores por bioma no Brasil.',
              col.names = c("Bioma", "Nº de aerogeradores", "% por Bioma")) %>%
              column_spec(1, italic = FALSE) %>% 
-kable_styling(full_width = F, bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+kable_styling(full_width = F, bootstrap_options = c("striped", "hover", "condensed", "responsive"))  %>%
+             footnote(number = c("Dados da ANEEL para janeiro de 2022."), threeparttable=T) 
 
 ```
 
 <br>
 <br>
 
-```{r 70, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Maranhão. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
+```{r 70, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Maranhão. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
 
 knitr::include_graphics("imagens/cap09/Figura_9.5.png")
 
@@ -142,7 +143,7 @@ knitr::include_graphics("imagens/cap09/Figura_9.5.png")
 
 <br>
 
-```{r 71, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Piauí. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
+```{r 71, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Piauí. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
 
 knitr::include_graphics("imagens/cap09/Figura_9.6.png")
 
@@ -152,7 +153,7 @@ knitr::include_graphics("imagens/cap09/Figura_9.6.png")
 
 <br>
 
-```{r 72, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Ceará. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
+```{r 72, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Ceará. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
 
 knitr::include_graphics("imagens/cap09/Figura_9.7.png")
 
@@ -162,7 +163,7 @@ knitr::include_graphics("imagens/cap09/Figura_9.7.png")
 
 <br>
 
-```{r 73, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Rio Grande do Norte. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
+```{r 73, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Rio Grande do Norte. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
 
 knitr::include_graphics("imagens/cap09/Figura_9.8.png")
 
@@ -171,7 +172,7 @@ knitr::include_graphics("imagens/cap09/Figura_9.8.png")
 
 <br>
 
-```{r 74, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado da Paraíba. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
+```{r 74, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado da Paraíba. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
 
 knitr::include_graphics("imagens/cap09/Figura_9.9.png")
 
@@ -180,7 +181,7 @@ knitr::include_graphics("imagens/cap09/Figura_9.9.png")
 
 <br>
 
-```{r 75, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado de Pernambuco. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
+```{r 75, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado de Pernambuco. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
 
 knitr::include_graphics("imagens/cap09/Figura_9.10.png")
 
@@ -189,7 +190,7 @@ knitr::include_graphics("imagens/cap09/Figura_9.10.png")
 
 <br>
 
-```{r 76, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado de Sergipe. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
+```{r 76, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado de Sergipe. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
 
 knitr::include_graphics("imagens/cap09/Figura_9.11.png")
 
@@ -198,7 +199,7 @@ knitr::include_graphics("imagens/cap09/Figura_9.11.png")
 
 <br>
 
-```{r 77, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado da Bahia. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
+```{r 77, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado da Bahia. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
 
 knitr::include_graphics("imagens/cap09/Figura_9.12.png")
 
@@ -207,7 +208,7 @@ knitr::include_graphics("imagens/cap09/Figura_9.12.png")
 
 <br>
 
-```{r 78, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado de Minas Gerais. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
+```{r 78, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado de Minas Gerais. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
 
 knitr::include_graphics("imagens/cap09/Figura_9.13.png")
 
@@ -215,7 +216,7 @@ knitr::include_graphics("imagens/cap09/Figura_9.13.png")
 
 <br>
 
-```{r 79, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Rio de Janeiro. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
+```{r 79, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Rio de Janeiro. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
 
 knitr::include_graphics("imagens/cap09/Figura_9.14.png")
 
@@ -224,7 +225,7 @@ knitr::include_graphics("imagens/cap09/Figura_9.14.png")
 
 <br>
 
-```{r 80, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Paraná. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
+```{r 80, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Paraná. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
 
 knitr::include_graphics("imagens/cap09/Figura_9.15.png")
 
@@ -233,7 +234,7 @@ knitr::include_graphics("imagens/cap09/Figura_9.15.png")
 
 <br>
 
-```{r 81, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado de Santa Catarina. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
+```{r 81, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado de Santa Catarina. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
 
 knitr::include_graphics("imagens/cap09/Figura_9.16.png")
 
@@ -242,7 +243,7 @@ knitr::include_graphics("imagens/cap09/Figura_9.16.png")
 
 <br>
 
-```{r 82, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Rio Grande do Sul. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
+```{r 82, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Número total de aerogeradores (acima) e área de rotor (abaixo) em quadrículas de 18 × 18 km, sobrepostos à riqueza potencial de espécies de morcegos para o estado do Rio Grande do Sul. Dados de turbinas para fevereiro de 2022. Fonte SIGEL/ANEEL.'}
 
 knitr::include_graphics("imagens/cap09/Figura_9.17.png")
 

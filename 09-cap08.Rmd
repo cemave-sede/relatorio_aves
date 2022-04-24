@@ -68,11 +68,11 @@ library(survminer)
 
 <br>
 
-A energia eólica em escala comercial desenvolveu-se a partir da década de 1980, em resposta à crise do petróleo que marcou a década anterior. Inicialmente com torres instaladas em terra, exibiu um forte crescimento a partir dos anos 2000, superando os 700 GW de capacidade instalada no mundo ao final de 2020 (GWEC 2021) (Figura \@ref(fig:61)). Recentemente, a crescente saturação da paisagem e redução na disponibilidade de áreas continentais, em particular na Europa, associada aos ventos de maior velocidade média, mais constantes e confiáveis, característicos do ambiente marinho (Zheng et al. 2016, EPE 2019), fizeram com que o olhar de parte significativa dos investidores voltasse para o potencial eólico no mar. Essa tendência tem impulsionado uma evolução tecnológica dos aerogeradores, associada à contínua queda nos custos de implantação, e capacidades de geração cada vez maiores. Os atuais modelos *offshore* em desenvolvimento têm potência nominal que varia de 10 a 16 MW, contra 4 a 6 MW das máquinas em terra. Consequentemente, há um crescimento global anual médio de 25% na capacidade instalada no mar nos últimos 5 anos, contrastando com o crescimento em terra de 11% ao ano no mesmo período (GWEC 2021).  
+A energia eólica em escala comercial desenvolveu-se a partir da década de 1980, em resposta à crise do petróleo que marcou a década anterior. Inicialmente com torres instaladas em terra, exibiu um forte crescimento a partir dos anos 2000, superando os 700 GW de capacidade instalada no mundo ao final de 2020 (GWEC 2021) (Figura \@ref(fig:61)).  
 
 <br>
 
-```{r 61, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Evolução da capacidade instalada de energia eólica, em terra e no mar, no mundo (em gigawatts GW, acima) (GWEC 2021), e no Brasil, atualmente somente em terra (em megawatts MW, abaixo) (ABEEólica 2021).'}
+```{r 61, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Evolução da capacidade instalada de energia eólica, em terra e no mar, no mundo (em gigawatts GW, acima) (GWEC 2021), e no Brasil, atualmente somente em terra (em megawatts MW, abaixo) (ABEEólica 2021).'}
 
 knitr::include_graphics("imagens/cap08/Figura_8.1ab.jpg")
 
@@ -80,12 +80,14 @@ knitr::include_graphics("imagens/cap08/Figura_8.1ab.jpg")
 
 
 <br>
- 
+
+Recentemente, a crescente saturação da paisagem e redução na disponibilidade de áreas continentais, em particular na Europa, associada aos ventos de maior velocidade média, mais constantes e confiáveis, característicos do ambiente marinho (Zheng et al. 2016, EPE 2019), fizeram com que o olhar de parte significativa dos investidores voltasse para o potencial eólico no mar. Essa tendência tem impulsionado uma evolução tecnológica dos aerogeradores, associada à contínua queda nos custos de implantação, e capacidades de geração cada vez maiores. Os atuais modelos *offshore* em desenvolvimento têm potência nominal que varia de 10 a 16 MW, contra 4 a 6 MW das máquinas em terra. Consequentemente, há um crescimento global anual médio de 25% na capacidade instalada no mar nos últimos 5 anos, contrastando com o crescimento em terra de 11% ao ano no mesmo período (GWEC 2021).  
+
 No Brasil, a partir dos incentivos governamentais instituídos pela Lei nº 10.438/2002 (Programa de Incentivo às Fontes Alternativas de Energia Elétrica – Proinfa), criou-se um cenário favorável ao desenvolvimento da energia eólica que, de inexpressiva até 2005, já representa cerca de 10% da matriz elétrica nacional, com um crescimento médio de 36% ao ano na última década (Figura \@ref(fig:62)). Em 2020, a energia eólica respondeu por 10% da geração injetada no Sistema Interligado Nacional (SIN) e, em dias de pico, representou quase 95% da energia consumida no subsistema Nordeste (ABEEólica 2021). A totalidade dos parques eólicos instalados no país está em terra, ocupando especialmente o litoral do Nordeste e do extremo Sul do país (Figura 8.2). Nos últimos anos, entretanto, houve uma substancial expansão para o interior, no Estado da Bahia, fazendo com que essa unidade da federação assumisse a co-liderança nacional em capacidade ao lado do Rio Grande do Norte. Cada um desses Estados conta com cerca de 7,5 GW em operação ou construção, em um universo que totaliza 25,1 GW de potência outorgada (ANEEL 2021a) (Figura \@ref(fig:63)).  
 
 <br>
 
-```{r 62, echo = FALSE, out.width = '55%', fig.align="center", fig.cap = 'Localização das usinas eólicas instaladas ou em instalação no Brasil. Fonte: ANEEL (2021b)'}
+```{r 62, echo = FALSE, out.width = '55%', fig.align="center", fig.pos = 'H', fig.cap = 'Localização das usinas eólicas instaladas ou em instalação no Brasil. Fonte: ANEEL (2021b)'}
 
 knitr::include_graphics("imagens/cap08/Figura_8.2.jpg")
 
@@ -93,7 +95,7 @@ knitr::include_graphics("imagens/cap08/Figura_8.2.jpg")
 
 <br>
 
-```{r 63, echo = FALSE, out.width = '65%', fig.align="center", fig.cap = 'Usinas eólicas no Brasil: potência outorgada por estado da federação, em operação ou em fase de construção (Fonte: ANEEL 2021a)'}
+```{r 63, echo = FALSE, out.width = '65%', fig.pos = 'H', fig.align="center", fig.cap = 'Usinas eólicas no Brasil: potência outorgada por estado da federação, em operação ou em fase de construção (Fonte: ANEEL 2021a)'}
 
 knitr::include_graphics("imagens/cap08/Figura_8.3.jpg")
 
@@ -113,7 +115,7 @@ Apesar de se diferenciar do ambiente terrestre pela ausência de propriedades pr
 
 <br>
 
-```{r 64, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Potencial eólico no mar ao longo da costa brasileira (World Bank 2019) e localização dos empreendimentos em licenciamento ambiental (IBAMA 2022), detalhados nas três áreas de maior potencial eólico: a) litoral do Nordeste, entre Piauí e Rio Grande do Norte; b) litoral Sudeste, entre o sul do Espírito Santo e o norte do Rio de Janeiro; c) litoral Sul, ao longo da costa central e norte do Rio Grande do Sul.'}
+```{r 64, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Potencial eólico no mar ao longo da costa brasileira (World Bank 2019) e localização dos empreendimentos em licenciamento ambiental (IBAMA 2022), detalhados nas três áreas de maior potencial eólico: a) litoral do Nordeste, entre Piauí e Rio Grande do Norte; b) litoral Sudeste, entre o sul do Espírito Santo e o norte do Rio de Janeiro; c) litoral Sul, ao longo da costa central e norte do Rio Grande do Sul.'}
 
 knitr::include_graphics("imagens/cap08/Figura_8.4.png")
 
@@ -136,7 +138,7 @@ Analisando-se sua distribuição espacial, constata-se, como esperado, a atraç�
 
 <br>
 
-```{r 65, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Tipos de estrutura de fixação de turbinas eólicas offshore. A - Monopés ou estacas (Monopile), B - Base gravitacional (Gravity base) e C - Tripés (Jacket and tripods). (Imagem de Manzano-Agugliaro et al. 2020; CC BY)'}
+```{r 65, echo = FALSE, out.width = '85%', fig.pos = 'H', fig.align="center", fig.cap = 'Tipos de estrutura de fixação de turbinas eólicas offshore. A - Monopés ou estacas (Monopile), B - Base gravitacional (Gravity base) e C - Tripés (Jacket and tripods). (Imagem de Manzano-Agugliaro et al. 2020; CC BY)'}
 
 knitr::include_graphics("imagens/cap08/Figura_8.5.jpg")
 
@@ -199,7 +201,7 @@ A informação ambiental, já existente ou especialmente produzida, fundamenta a
 
 <br>
 
-```{r 66, echo = FALSE, out.width = '65%', fig.align="center", fig.cap = 'Proposta de estrutura de trabalho aplicável ao planejamento de estudos de impacto ambiental e de monitoramento ambiental em áreas de exploração de energia eólica offshore ao longo da costa brasileira. CEO – Complexo Eólico Offshore; ADA – Área Diretamente Afetada; AID – Área de Influência Direta; AII – Área de Influência Indireta. Definições segundo Termo de Referência padrão para Estudo de Impacto Ambiental e Relatório de Impacto Ambiental de Complexos Eólicos Offshore (IBAMA 2020).'}
+```{r 66, echo = FALSE, out.width = '65%', fig.pos = 'H', fig.align="center", fig.cap = 'Proposta de estrutura de trabalho aplicável ao planejamento de estudos de impacto ambiental e de monitoramento ambiental em áreas de exploração de energia eólica offshore ao longo da costa brasileira. CEO – Complexo Eólico Offshore; ADA – Área Diretamente Afetada; AID – Área de Influência Direta; AII – Área de Influência Indireta. Definições segundo Termo de Referência padrão para Estudo de Impacto Ambiental e Relatório de Impacto Ambiental de Complexos Eólicos Offshore (IBAMA 2020).'}
 
 knitr::include_graphics("imagens/cap08/Figura_8.6.jpg")
 
@@ -221,6 +223,9 @@ As técnicas supramencionadas são igualmente úteis para identificar padrões d
 Por fim, a caracterização do comportamento das aves na área do empreendimento é imprescindível para complementar as informações necessárias à modelagem do risco de colisão. Tais informações podem ser obtidas da literatura, das observações nas plataformas de observação e contagem (i.e., embarcações e aeronaves) ou, ainda, de equipamentos de rastreamento remoto. A identificação dos comportamentos realizados previamente à instalação dos aerogeradores representa a base para avaliar a ocorrência de evitação durante a fase de operação. Ou seja, será útil para avaliar como as espécies que permaneceram usando a área do empreendimento comportam-se em relação aos aerogeradores, o que, em última instância, pode representar alterações na alocação de tempo e energia e, consequentemente, em sucesso de alimentação e/ou reprodução (Cook et al. 2012).  
 
 O processo ideal de diagnóstico na escala do empreendimento demanda alguns produtos cruciais para a efetiva continuidade das etapas de licenciamento e monitoramento. A modelagem do risco de colisão é uma técnica quantitativa que identifica a vulnerabilidade das espécies que utilizam a região em relação ao impacto com aerogeradores, pois associa características do voo com informações sobre o uso do *habitat* e parâmetros populacionais (Furness et al. 2013). Entretanto, os modelos existentes, se aplicados no Brasil, ainda contêm importantes graus de incertezas, dado o desconhecimento de parâmetros comportamentais e populacionais da maioria das espécies, em particular no Hemisfério Sul. Assim, seus resultados devem ser considerados com cautela, embora possam ser úteis para apontar espécies e grupos críticos. Nesse sentido, uma indicação qualitativa inicial de risco potencial, que serve como primeiro passo para futuros estudos, é apresentada na Tabela 8.1. Esses indicadores devem ser examinados com cautela, dadas as várias lacunas no conhecimento no Brasil e a heterogeneidade ambiental inerente à extensa costa do país. A caracterização da assembleia de aves e os modelos de risco de colisão serão úteis, também, na identificação de potenciais efeitos diretos e indiretos dos aerogeradores nas espécies que utilizam a área do empreendimento. A partir disso, outro importante produto da fase de diagnóstico é a proposta de *layout* do CEO, buscando mitigar seu impacto sobre as espécies mais vulneráveis. A proposta deve considerar o risco de colisão e o uso do espaço tridimensional por parte da avifauna na área no empreendimento, visando proteger altitudes de voo e áreas importantes (e.g. estuários, parcéis) para as aves, além de indicar corredores de deslocamento, por exemplo entre colônias, ou entre áreas de descanso em terra e áreas de alimentação no mar. Estes corredores devem ser planejados em nível de empreendimento, mas idealmente também em escala mais ampla, considerando-se o efeito barreira oriundo de vários empreendimentos dispostos lado a lado.  
+
+\bigskip
+
 
 Por fim, as informações obtidas na fase inicial subsidiarão a elaboração do Programa de Monitoramento da Biota, o qual está previsto no item 11 do TR e demanda recomendações específicas sobre as aves. A parte do Programa de Monitoramento da Biota destinada à avifauna deve conter ferramentas, estratégias e demais informações necessárias ao monitoramento nas fases de instalação e operação e, idealmente, deve possuir sinergia com programas destinados a outros grupos taxonômicos. O programa pode ser dividido em estratégias destinadas ao monitoramento das áreas controle e do empreendimento e às espécies indicadoras identificadas na fase de diagnóstico. O monitoramento das áreas deve considerar o mesmo desenho amostral e as mesmas plataformas de observação da fase de diagnóstico, visando à comparação entre os períodos pré e pós-instalação dos aerogeradores. Adicionalmente, os aerogeradores podem servir como base para fixação de equipamentos de registro autônomo da ocorrência de aves, como câmeras, microfones e receptores de VHF para detecção de aves equipadas com transmissores. Em relação a esse último ponto, cabe ressaltar que a costa brasileira representa uma lacuna importante  no rastreamento remoto de aves migratórias utilizando o sistema VHF, através da rede internacional colaborativa Motus. Portanto, a instalação de receptores de VHF em aerogeradores ou em áreas costeiras adjacentes pode fornecer informações sobre o uso das rotas migratórias, visto que a distribuição das áreas com potencial de geração de energia eólica possui forte sobreposição com sítios chave para a [Rota Atlântica](https://atlanticflywayshorebirds.org/pt-br/). Assim, a caracterização da assembleia de aves que utiliza a área do empreendimento e seu entorno é fundamental para avaliar a continuidade de uso da região, e até mesmo para direcionar esforços àquelas espécies que permaneçam usando a área durante a operação.  
 
@@ -254,12 +259,15 @@ tabela_8.1 <- read.csv2("dados/tabelas/Tabela_8.1.csv", encoding="UTF-8")
 kbl(tabela_8.1,
              booktabs = TRUE,
              longtable = TRUE,
-             align = "llccll",
+             align = "llccccll",
              caption = 'Espécies de aves marinhas e costeiras de interesse para os Complexos Eólicos Offshore no Brasil.',
              col.names = c("Táxon", "Nome comum", "Ameaça global (IUCN, 2020)", "Ameaça nacional (MMA, 2014)", "Área de ocorrência predominante", "Habitat (Costeiro Nerítico Oceânico)", "Status migratório", "Impacto e risco potencial dos CEOs")) %>%
-            column_spec(1, italic = TRUE, column = 1:8, width ="0.5in") %>% 
-kable_styling(full_width = F, bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 8, latex_options = c("repeat_header", repeat_header_text = "continua")) %>%
-            footnote(number = c("Sequências e nomenclaturas estão de acordo com a lista brasileira de aves (Pacheco et al. 2021).", "As espécies vagantes foram excluídas, pois tem baixa probabilidade de impacto oriundo dos CEOs e baixo risco presumível."))
+            column_spec(1, italic = TRUE) %>%
+            column_spec(1:8, width ="1.7cm") %>% 
+            column_spec(3, width ="1.2cm") %>%
+            column_spec(4, width ="1.2cm") %>%
+kable_styling(full_width = F, bootstrap_options = c("striped", "hover", "condensed", "responsive"), font_size = 7, latex_options = c("repeat_header", "repeat_header"), repeat_header_text = "\\textit{(continuação)}") %>%
+            footnote(number = c("Sequências e nomenclaturas estão de acordo com a lista brasileira de aves (Pacheco et al. 2021).", "As espécies vagantes foram excluídas, pois tem baixa probabilidade de impacto oriundo dos CEOs e baixo risco presumível."), threeparttable=T)
 
 ``` 
 

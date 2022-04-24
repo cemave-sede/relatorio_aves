@@ -37,6 +37,7 @@ library(reshape2)
 library(randomcoloR)
 ```
 
+
 # Apresentação {- #apresentacao} 
 
 <a href="https://cemave-sede.github.io/painel-aves-migratorias/#vis%C3%A3o-geral"><img src="imagens/capa/capa.jpg" width="500" height="675" alt="painel do relatorio" align="right" style="margin: 0 0 0 0" /></a> O Brasil é um país megadiverso que abriga mais de 13% da riqueza de espécies do globo. É o terceiro país em número de espécies de aves. Das 1971 espécies atualmente registradas pelo Comitê Brasileiro de Registros Ornitológicos, pouco mais de 10% são atualmente definidas como migratórias, mas este número ainda pode aumentar conforme cresça o conhecimento sobre o grupo.  

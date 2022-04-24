@@ -61,7 +61,7 @@ library(survminer)
 
 <br>
 
-Em atendimento à Resolução CONAMA nº. 462/14, para a identificação das Áreas de Concentração para Aves Migratórias no Brasil, foram utilizadas duas abordagens: a primeira busca contemplar áreas que concentram espécies migratórias sensíveis a empreendimentos eólicos e a segunda busca contemplar áreas com expressiva agregação de indivíduos de uma ou mais espécies migratórias. Os detalhes de cada abordagem serão tratados ao longo deste capítulo.  
+Em atendimento à Resolução CONAMA nº 462/14, para a identificação das Áreas de Concentração para Aves Migratórias no Brasil, foram utilizadas duas abordagens: a primeira busca contemplar áreas que concentram espécies migratórias sensíveis a empreendimentos eólicos e a segunda busca contemplar áreas com expressiva agregação de indivíduos de uma ou mais espécies migratórias. Os detalhes de cada abordagem serão tratados ao longo deste capítulo.  
 
 Em razão da escassez de informações e da flexibilidade de rotas utilizadas pela maioria das aves migratórias do Brasil e dada a imprevisibilidade e a incompatibilidade desses movimentos na escala aqui tratada, as rotas de deslocamento não são apresentadas no mapa final das Áreas de Concentração constante neste relatório.  
 
@@ -85,12 +85,15 @@ Não foi utilizada nenhuma camada de informação ambiental ou *layer* como cond
  
 A grade criada sobre o território brasileiro para as análises do Zonation gerou um total de 26.256 células. Desse total, 7.726 (aproximadamente 31% do território nacional) apresentaram ao menos um registro de espécie de ave migratória ou parcialmente migratória. **Para atingir a meta de conservação proposta, ou seja, que a solução contemplasse, ao menos, 70% das células com registros para as quinze espécies migratórias mais sensíveis, foi necessário resguardar 7% das células com maior valor de conservação.** A solução representa, portanto, o recrutamento de 1.838 células, o que também se traduz no resguardo médio de 80% (proporção 0,8) das células com registro para as 176 espécies migratórias consideradas (Figura \@ref(fig:21) e Apêndice A3).  
 
-```{r 21, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Máximas, médias e mínimas das proporções totais de células por espécie de ave migratória conforme percentual de células totais remanescentes durante a priorização pelo Zonation e destaque do limiar de corte em 7%.'}
+<center>
+
+```{r 21, echo = FALSE, out.width = '85%', fig.pos = 'H', fig.cap = 'Máximas, médias e mínimas das proporções totais de células por espécie de ave migratória conforme percentual de células totais remanescentes durante a priorização pelo Zonation e destaque do limiar de corte em 7%.'}
+
 
 knitr::include_graphics("imagens/cap07/Figura_7.1.jpg")
 
 ```
-
+</center>
 
 Entre os padrões percebidos na solução por priorização por riqueza, ponderada pelos escores de vulnerabilidade para espécies de aves migratórias, está um adensamento das células recrutadas para a solução nas regiões Sul e Sudeste (Figura \@ref(fig:30)). Tal fato decorre não só da relativa importância de áreas nessas regiões para as espécies de aves migratórias, mas também reflete um esforço de amostragem de aves em campo historicamente maior nessas duas regiões. Um segundo padrão que emerge é o recrutamento da maior parte do litoral brasileiro, justificado pela abundância de registros ao longo de toda rota Atlântica no país.  
 
@@ -99,6 +102,7 @@ Com a meta de conservação adotada, das 16 espécies de aves migratórias nacio
 <br>
 <br>
 
+\newpage
 
 ```{r tab04, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, encoding="UTF-8", paged.print=TRUE}
 
@@ -114,11 +118,10 @@ kbl(tabela_7.4,
              caption = 'Percentual de células constantes na solução de priorização por riqueza.',
              col.names = c("Espécie", "Categoria", "Porcentagem de células na solução")) %>%
              column_spec(1, italic = TRUE) %>% 
-kable_styling(full_width = F, bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>% 
-             column_spec(2, width = "4cm") %>%
-             column_spec(3, width = "4cm") %>%
-footnote(number = c("A riqueza foi ponderada pelos escores de vulnerabilidade, para espécies de aves migratórias ameaçadas (conforme Portaria MMA nº 444/14)."))
-
+kable_styling(full_width = F, bootstrap_options = c("striped", "hover", "condensed", "responsive"), latex_options = c("repeat_header"), repeat_header_text = "\\textit{(continuação)}") %>% 
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             footnote(number = c("A riqueza foi ponderada pelos escores de vulnerabilidade, para espécies de aves migratórias ameaçadas (conforme Portaria MMA nº 444/14)."), threeparttable=T) 
 
 ``` 
 
@@ -145,9 +148,12 @@ kbl(tabela_7.5,
              caption = 'Percentual de células com registros na solução de priorização pelo Zonation.',
              col.names = c("Espécie", "Nº de células com registros pré priorização", "% de células com registro na solução")) %>%
              column_spec(1, italic = TRUE) %>%
-             column_spec(2:3, width = "4cm") %>%
-kable_styling(full_width = F, bootstrap_options = c("striped", "hover", "condensed", "responsive"), latex_options = c("repeat_header"), repeat_header_text = "continua") %>%
-            footnote(number = c("Com corte em 7%, para as espécies de aves migratórias, ordenadas pelas espécies menos comuns."))
+             #column_spec(1, width = '5cm') %>%
+             column_spec(2, width = "4cm") %>%
+             column_spec(3, width = "4cm") %>%
+kable_styling(full_width = F, bootstrap_options = c("striped", "hover", "condensed", "responsive"), latex_options = c("repeat_header"), repeat_header_text = "\\textit{(continuação)}") %>%
+          footnote(number = c("Com corte em 7%, para as espécies de aves migratórias, ordenadas pelas espécies menos comuns."), threeparttable=T) 
+            
 
 ``` 
 
@@ -168,8 +174,6 @@ Aves limícolas podem ser vistas em pequenos bandos em qualquer lugar da zona co
 Em vista do que foi aqui exposto, conclui-se que a definição das áreas de concentração de aves migratórias não é matemática e não segue uma regra geral, mas deve considerar os parâmetros aqui citados, que são variáveis de acordo com a espécie ou grupo alvo.  
 
 As áreas de expressiva agregação validadas foram sobrepostas à mesma grade de células utilizada pelo método anterior, de modo a padronizar os dois métodos e delimitar com precisão a localização geográfica das Áreas de Concentração para Aves Migratórias no Brasil. Todas as células que continham as áreas de agregação foram marcadas como solução deste método. Devido ao fato de a grade ser a mesma, muitas células selecionadas na solução da priorização pelo Zonation podem ser coincidentes com aquelas indicadas na solução pelo critério de agregação.  
-
-\newpage
 
 
 ## Resultados
@@ -210,7 +214,7 @@ A seguir são apresentadas as áreas de agregação de indivíduos de aves migra
 
 <br>
 
-```{r 22, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Revoada de aves migratórias na Reserva Extrativista Cururupu. Foto: Danielle Paludo'}
+```{r 22, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Revoada de aves migratórias na Reserva Extrativista Cururupu. Foto: Danielle Paludo'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.2.jpg")
 
@@ -241,7 +245,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.2.jpg")
 
 <br>
 
-```{r 23, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Aves migratórias em Macau. Foto: João Damasceno'}
+```{r 23, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Aves migratórias em Macau. Foto: João Damasceno'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.3.jpg")
 
@@ -272,7 +276,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.3.jpg")
 
 <br>
 
-```{r 24, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Calidris pusilla no Parna de Cabo Orange. Foto: Arquivo CEMAVE'}
+```{r 24, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Calidris pusilla no Parna de Cabo Orange. Foto: Arquivo CEMAVE'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.4.jpg")
 
@@ -306,7 +310,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.4.jpg")
 
 <br>
 
-```{r 25, echo = FALSE, out.width = '40%', fig.align="center", fig.cap = 'Colônia reprodutiva de Thalasseus acuflavidus na Ilha Escalvada, ES. Foto César Musso'}
+```{r 25, echo = FALSE, out.width = '40%', fig.pos = 'H', fig.align="center", fig.cap = 'Colônia reprodutiva de Thalasseus acuflavidus na Ilha Escalvada, ES. Foto César Musso'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.5.jpg")
 
@@ -337,7 +341,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.5.jpg")
 
 <br>
 
-```{r 26, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Concentração de Rostrhamus sociabilis (gavião-caramujeiro) na Chapada dos Guimarães. Foto: Mauricio Santos'}
+```{r 26, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Concentração de Rostrhamus sociabilis (gavião-caramujeiro) na Chapada dos Guimarães. Foto: Mauricio Santos'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.6.jpg")
 
@@ -383,7 +387,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.6.jpg")
 
 <br>
 
-```{r 27, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Bando do migratório neártico maçarico-de-papo-vermelho (Calidris canutus) na margem oeste da lagoa Mirim. Foto: Aurélea Mader'}
+```{r 27, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Bando do migratório neártico maçarico-de-papo-vermelho (Calidris canutus) na margem oeste da lagoa Mirim. Foto: Aurélea Mader'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.7.jpg")
 
@@ -406,7 +410,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.7.jpg")
 **57 - Praias entre a foz do rio Urussanga e a foz do rio Araranguá**: trecho entre os municípios de Balneário Rincão (Figura \@ref(fig:28)) e Araranguá. A importância dessa região litorânea para a avifauna migratória e limícola já é mencionada há pelo menos três décadas (Rosário-Bege & Marterer 1991). Recentes estudos confirmam tal indicação (Branco et al. 2004, Romagna 2015, Gava-Just et al. 2018). Por exemplo, das 28 espécies listadas no “Plano de Ação Nacional para Conservação das Aves Limícolas Migratórias”, 18 possuem ocorrência confirmada nas praias entre as fozes do rio Urussanga e Araranguá (Gava-Just et al. 2018, WikiAves 2021). A região serve como área de alimentação, descanso e abrigo para Scolopacidae e Sterninae, incluindo espécies ameaçadas de extinção como *Calidris canutus* (bandos de até 160 indivíduos, em abril de 2014) e *Sterna hirundinacea* (bandos de até 650 indivíduos, em julho de 2014). Destaque ainda para grandes concentrações de *Calidris alba*, com contagem máxima de 2500 indivíduos no outono de 2018. Outros migrantes neárticos, como *Charadrius semipalmatus*, *Calidris fuscicollis*, *Tringa flavipes*, *Sterna hirundo* e *Pluvialis dominica* ocorrem em bandos de dezenas de indivíduos. Além dos migrantes neárticos, pequenos bandos de migrantes austrais como *Charadrius falklandicus*, *Charadrius modestus* e *Larus atlanticus* ocorrem regularmente na região (J. Gava-Just, com. pess. 2021)  
 <br>
 
-```{r 28, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Bando de maçarico-de-papo-vermelho (Calidris canutus) no Balneário Rincão, SC. Foto: Rafael Romagna'}
+```{r 28, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Bando de maçarico-de-papo-vermelho (Calidris canutus) no Balneário Rincão, SC. Foto: Rafael Romagna'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.8.jpg")
 
@@ -421,7 +425,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.8.jpg")
 
 <br>
 
-```{r 29, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Colônia de Onychoprion fuscatus. Foto: Patrícia Serafini'}
+```{r 29, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Colônia de Onychoprion fuscatus. Foto: Patrícia Serafini'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.9.jpg")
 
@@ -437,7 +441,7 @@ Considerando conjuntamente as áreas priorizadas com base na riqueza e sensibili
 
 <br>
 
-```{r 30, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no Brasil.'}
+```{r 30, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no Brasil.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.10.png")
 
@@ -454,7 +458,7 @@ Sendo assim, a priorização precisa ser constantemente revisada para que novos 
 
 
 
-```{r 31, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Alagoas.'}
+```{r 31, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Alagoas.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.11_AL.png")
 
@@ -463,7 +467,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.11_AL.png")
 <br>
 
 
-```{r 32, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado da Bahia.'}
+```{r 32, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado da Bahia.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.12_BA.png")
 
@@ -471,7 +475,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.12_BA.png")
 
 <br>
 
-```{r 33, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Ceará.'}
+```{r 33, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Ceará.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.13_CE.png")
 
@@ -480,7 +484,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.13_CE.png")
 
 <br>
 
-```{r 34, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Maranhão.'}
+```{r 34, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Maranhão.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.14_MA.png")
 
@@ -489,7 +493,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.14_MA.png")
 
 <br>
 
-```{r 35, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado da Paraíba.'}
+```{r 35, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado da Paraíba.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.15_PB.png")
 
@@ -498,14 +502,14 @@ knitr::include_graphics("imagens/cap07/Figura_7.15_PB.png")
 
 <br>
 
-```{r 36, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Pernambuco.'}
+```{r 36, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Pernambuco.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.16_PE.png")
 ```
 
 <br>
 
-```{r 37, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Piauí.'}
+```{r 37, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Piauí.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.17_PI.png")
 
@@ -513,7 +517,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.17_PI.png")
 
 <br>
 
-```{r 38, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Rio Grande do Norte.'}
+```{r 38, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Rio Grande do Norte.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.18_RN.png")
 
@@ -522,7 +526,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.18_RN.png")
 
 <br>
 
-```{r 39, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Sergipe.'}
+```{r 39, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Sergipe.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.19_SE.png")
 
@@ -531,7 +535,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.19_SE.png")
 
 <br>
 
-```{r 40, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Acre.'}
+```{r 40, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Acre.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.20_AC.png")
 
@@ -540,7 +544,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.20_AC.png")
 
 <br>
 
-```{r 41, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Amapá.'}
+```{r 41, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Amapá.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.21_AP.png")
 
@@ -548,7 +552,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.21_AP.png")
 
 <br>
 
-```{r 42, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Amazonas.'}
+```{r 42, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Amazonas.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.22_AM.png")
 
@@ -556,7 +560,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.22_AM.png")
 
 <br>
 
-```{r 43, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Pará.'}
+```{r 43, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Pará.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.23_PA.png")
 
@@ -565,7 +569,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.23_PA.png")
 
 <br>
 
-```{r 44, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Rondônia.'}
+```{r 44, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Rondônia.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.24_RO.png")
 
@@ -573,7 +577,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.24_RO.png")
 
 <br>
 
-```{r 45, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Roraima.'}
+```{r 45, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Roraima.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.25_RR.png")
 
@@ -582,7 +586,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.25_RR.png")
 
 <br>
 
-```{r 46, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Tocantins.'}
+```{r 46, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Tocantins.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.26_TO.png")
 
@@ -591,7 +595,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.26_TO.png")
 
 <br>
 
-```{r 47, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Espírito Santo.'}
+```{r 47, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Espírito Santo.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.27_ES.png")
 
@@ -600,7 +604,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.27_ES.png")
 
 <br>
 
-```{r 48, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Minas Gerais.'}
+```{r 48, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Minas Gerais.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.28_MG.png")
 
@@ -609,7 +613,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.28_MG.png")
 
 <br>
 
-```{r 49, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Rio de Janeiro.'}
+```{r 49, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Rio de Janeiro.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.29_RJ.png")
 
@@ -618,7 +622,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.29_RJ.png")
 
 <br>
 
-```{r 50, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de São Paulo.'}
+```{r 50, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de São Paulo.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.30_SP.png")
 
@@ -626,7 +630,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.30_SP.png")
 
 <br>
 
-```{r 51, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no Distrito Federal.'}
+```{r 51, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no Distrito Federal.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.31_DF.png")
 
@@ -635,7 +639,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.31_DF.png")
 
 <br>
 
-```{r 52, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Goiás.'}
+```{r 52, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Goiás.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.32_GO.png")
 
@@ -644,7 +648,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.32_GO.png")
 
 <br>
 
-```{r 53, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Mato Grosso.'}
+```{r 53, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Mato Grosso.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.33_MT.png")
 
@@ -653,7 +657,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.33_MT.png")
 
 <br>
 
-```{r 54, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Mato Grosso do Sul.'}
+```{r 54, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Mato Grosso do Sul.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.34_MS.png")
 
@@ -662,7 +666,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.34_MS.png")
 
 <br>
 
-```{r 55, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Paraná.'}
+```{r 55, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Paraná.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.35_PR.png")
 
@@ -671,7 +675,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.35_PR.png")
 
 <br>
 
-```{r 56, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Rio Grande do Sul.' }
+```{r 56, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado do Rio Grande do Sul.' }
 
 knitr::include_graphics("imagens/cap07/Figura_7.36_RS.png")
 
@@ -680,14 +684,14 @@ knitr::include_graphics("imagens/cap07/Figura_7.36_RS.png")
 
 <br>
 
-```{r 57, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Santa Catarina.'}
+```{r 57, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no estado de Santa Catarina.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.37_SC.png")
 
 ```
 
 <br>
-```{r 58, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no arquipélago de Abrolhos.'}
+```{r 58, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no arquipélago de Abrolhos.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.38_Abrolhos.png")
 
@@ -696,7 +700,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.38_Abrolhos.png")
 
 <br>
 
-```{r 59, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no atol das Rocas e no arquipélago de Fernando de Noronha.'}
+```{r 59, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no atol das Rocas e no arquipélago de Fernando de Noronha.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.39_Rocas_Noronha.png")
 
@@ -704,7 +708,7 @@ knitr::include_graphics("imagens/cap07/Figura_7.39_Rocas_Noronha.png")
 
 <br>
 
-```{r 60, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no arquipélago de Trindade e Martim-Vaz.'}
+```{r 60, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas de Concentração para Aves Migratórias no arquipélago de Trindade e Martim-Vaz.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.40_Trindade_M_Vaz.png")
 
@@ -723,22 +727,7 @@ A geração de energia a partir dos ventos é ambientalmente interessante e pare
 
 O Capítulo 4 deste relatório traz os principais impactos, diretos e indiretos, relativos à instalação e operação de parques eólicos. Mesmo considerando as boas práticas na construção e gestão desses empreendimentos, que visam mitigar esses efeitos negativos, busca-se aqui ampliar a ótica de análise de um dos impactos diretos então citados: o efeito de barreira. Trata-se de uma breve análise relacionada à distribuição espacial das estruturas das torres eólicas e a área acumulada de varredura das suas pás e seu efeito de potencial obstáculo à fauna voadora.  
 
-Informações obtidas no [sítio eletrônico da ANEEL](https://sigel.aneel.gov.br/Down) revelam a existência de 18.129 aerogeradores instalados na área continental do Brasil (*download* do *shapefile* “Aerogeradores” em 26 janeiro de 2022). Esses aerogeradores estão localizados em 13 estados brasileiros em quantidades muito variadas (Tabela \@ref(tab:tab06)), mas com sua distribuição espacial bastante concentrada em algumas áreas (Figura \@ref(fig:61a), sendo a Bahia e o Rio Grande no Norte os estados com o maior número.
-
-::::
-
-<br>
-
-
-```{r 61a, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = '. Distribuição dos aerogeradores nos estados da Bahia, Ceará, Maranhão, Paraíba, Pernambuco, Piauí, Rio Grande do Norte e Sergipe.'}
-
-knitr::include_graphics("imagens/cap07/Figura_7.41.png")
-
-```
-
-<br>
-
-:::: {.blackbox data-latex=""}
+Informações obtidas no [sítio eletrônico da ANEEL](https://sigel.aneel.gov.br/Down) revelam a existência de 18.129 aerogeradores instalados na área continental do Brasil (*download* do *shapefile* “Aerogeradores” em 26 janeiro de 2022). Esses aerogeradores estão localizados em 13 estados brasileiros em quantidades muito variadas (Tabela \@ref(tab:tab06)), mas com sua distribuição espacial bastante concentrada em algumas áreas (Figura \@ref(fig:61a), sendo a Bahia e o Rio Grande no Norte os estados com o maior número.  
 
 A grande concentração de aerogeradores em determinados locais pode representar obstáculos para animais que voam nas faixas de altura dos seus rotores. Isto aconteceria devido à disposição espacial das grandes estruturas construídas em linhas, frequentemente paralelas, que muitas vezes se distribuem numa sequência (Figura \@ref(fig:61b), além, principalmente, do tamanho de suas pás, que podem ultrapassar os 150 metros de diâmetro de rotor.  
 
@@ -749,7 +738,15 @@ Assim, a área de varredura das pás em movimento é um fator determinante na co
 <br>
 
 
-```{r 61b, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Representação em detalhe da distribuição espacial de aerogeradores em uma célula da grade de análise no Rio Grande do Norte. A localização geográfica de cada aerogerador é real, mas os símbolos que os representam foram superdimensionados para dar visibilidade ao efeito da sua distribuição. Para esta análise foi criada uma grade virtual com células quadradas de aproximadamente 18 km de lado, sobreposta ao território brasileiro. Os aerogeradores foram situados conforme suas coordenadas geográficas. Para maiores informações sobre a grade ver item “Abordagem 1: Priorização das áreas mais ricas em aves migratórias”, no Capítulo 7.'}
+```{r 61a, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = '. Distribuição dos aerogeradores nos estados da Bahia, Ceará, Maranhão, Paraíba, Pernambuco, Piauí, Rio Grande do Norte e Sergipe.'}
+
+knitr::include_graphics("imagens/cap07/Figura_7.41.png")
+
+```
+
+<br>
+
+```{r 61b, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Representação em detalhe da distribuição espacial de aerogeradores em uma célula da grade de análise no Rio Grande do Norte. A localização geográfica de cada aerogerador é real, mas os símbolos que os representam foram superdimensionados para dar visibilidade ao efeito da sua distribuição. Para esta análise foi criada uma grade virtual com células quadradas de aproximadamente 18 km de lado, sobreposta ao território brasileiro. Os aerogeradores foram situados conforme suas coordenadas geográficas. Para maiores informações sobre a grade ver item “Abordagem 1: Priorização das áreas mais ricas em aves migratórias”, no Capítulo 7.'}
 
 knitr::include_graphics("imagens/cap07/Figura_7.42.png")
 
@@ -761,11 +758,19 @@ knitr::include_graphics("imagens/cap07/Figura_7.42.png")
 
 A fim de avaliar a distribuição e a magnitude potencial de geração do “efeito de barreira” sobre a fauna alada, a partir dos dados da ANEEL, na tabela \@ref(tab:tab06) são apresentadas informações relativas ao número de aerogeradores por estado, a soma das áreas de varredura das pás dos rotores* e uma estimativa do que isso representaria em quilômetros de extensão se essas áreas somadas fossem projetadas verticalmente, com 100 m de altura, para fins comparativos.  
 
+Assim, considerando os valores da última coluna da tabela, a soma das áreas de varredura das pás em projeção vertical, assumindo uma altura de 100 m, produziria uma barreira à fauna voadora de extensão considerável em algumas células. A célula da grade com maior extensão somada de áreas de varredura das pás (4.677.737,48 m^2^), se projetadas verticalmente, apresentaria uma barreira vertical de cerca de 47 km de comprimento. O estado da Bahia, por exemplo, que detém o maior número de aerogeradores, teria em seu território uma barreira de 923 km de comprimento, seguido pelo estado do Rio Grande do Norte, que teria um muro virtual com 610 km de extensão.  
+
+Tendo em vista os valores observados, com as áreas de varredura das pás somadas ultrapassando milhões de metros quadrados, pode-se deduzir que, para algumas áreas, especialmente as mais adensadas de torres eólicas, as hélices em movimento de giro podem constituir obstáculos relevantes para espécies voadoras.  
+
+Isto reforça ainda mais a importância da realização de estudos ambientais robustos, no contexto dos processos de licenciamento ambiental, que possam subsidiar, com informações qualificadas, a proposição de medidas para evitar ou minimizar os impactos cumulativos sobre a fauna voadora relacionados à geração eólica de energia.  
+
 ::::
 
+\newpage
+
+
 <br>
-
-
+<br>
 
 ```{r tab06, echo=FALSE, message=FALSE, warning=FALSE, encoding="UTF-8", paged.print=TRUE}
 
@@ -780,30 +785,18 @@ kbl(tabela_7.6,
              caption = 'Número de aerogeradores por estado, áreas de varredura dos rotores e comparativo em projeção vertical.',
              col.names = c("Estado", "Nº de aerogeradores", "Soma da área de varredura das pás (m2)", "Dimensão em projeção vertical, com 100 m de altura, da soma da área de varredura das pás (km)")) %>%
              column_spec(1, italic = FALSE) %>% 
-kable_styling(full_width = F, bootstrap_options = c("striped", "hover", "condensed", "responsive"), latex_options = c("striped")) %>% 
+kable_styling(full_width = F, bootstrap_options = c("striped", "hover", "condensed", "responsive"), repeat_header_text = "\\textit{(continuação)}") %>% 
      column_spec(3, width = "4cm") %>%
      column_spec(4, width = "4cm") %>%
-    footnote(number = c("Os diâmetros das pás dos rotores dos aerogeradores são disponibilizados no sítio eletrônico da ANEEL. A partir desses valores foi calculada a área de varredura de cada aerogerador (Área=πr2). As áreas de varredura de todos os aerogeradores listados para cada estado foram somadas e apresentadas na tabela acima. Para fins de comparação, na última coluna a soma das áreas de varredura das pás é apresentada em projeção vertical, com 100 m de altura, simulando os círculos do giro das hélices, alinhados, justapostos, lado a lado, com seu comprimento total expresso em quilômetros."))
+    footnote(number = c("Os diâmetros das pás dos rotores dos aerogeradores são disponibilizados no sítio eletrônico da ANEEL. A partir desses valores foi calculada a área de varredura de cada aerogerador (Área=πr2). As áreas de varredura de todos os aerogeradores listados para cada estado foram somadas e apresentadas na tabela acima. Para fins de comparação, na última coluna a soma das áreas de varredura das pás é apresentada em projeção vertical, com 100 m de altura, simulando os círculos do giro das hélices, alinhados, justapostos, lado a lado, com seu comprimento total expresso em quilômetros."), threeparttable=T)
 
 
 ``` 
 
 <br>
-
-:::: {.blackbox data-latex=""}
-
-Assim, considerando os valores da última coluna da tabela, a soma das áreas de varredura das pás em projeção vertical, assumindo uma altura de 100 m, produziria uma barreira à fauna voadora de extensão considerável em algumas células. A célula da grade com maior extensão somada de áreas de varredura das pás (4.677.737,48 m^2^), se projetadas verticalmente, apresentaria uma barreira vertical de cerca de 47 km de comprimento. O estado da Bahia, por exemplo, que detém o maior número de aerogeradores, teria em seu território uma barreira de 923 km de comprimento, seguido pelo estado do Rio Grande do Norte, que teria um muro virtual com 610 km de extensão.  
-
-Tendo em vista os valores observados, com as áreas de varredura das pás somadas ultrapassando milhões de metros quadrados, pode-se deduzir que, para algumas áreas, especialmente as mais adensadas de torres eólicas, as hélices em movimento de giro podem constituir obstáculos relevantes para espécies voadoras.  
-
-Isto reforça ainda mais a importância da realização de estudos ambientais robustos, no contexto dos processos de licenciamento ambiental, que possam subsidiar, com informações qualificadas, a proposição de medidas para evitar ou minimizar os impactos cumulativos sobre a fauna voadora relacionados à geração eólica de energia.  
-
-::::
-
 <br>
 <br>
-
-
+<br>
 
 ***Agradecimentos*** - À Sociedade Brasileira de Ornitologia e aos seguintes ornitólogos/profissionais pela contribuição para a elaboração deste capítulo:
 Alberto Urben-Filho, 

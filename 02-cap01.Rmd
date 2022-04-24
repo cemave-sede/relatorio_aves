@@ -4,7 +4,7 @@
 </style>
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, fig.pos = 'H')
 ```
 
 ```{r library, echo=FALSE, message=FALSE, warning=FALSE}
@@ -75,7 +75,7 @@ Neste cenário, entre os desafios para a expansão da transmissão incluem-se a 
 
 A capacidade instalada de geração de energia elétrica do Brasil em 2021 foi estimada em 186 GW, com a energia eólica representando 9% desse valor (Figura \@ref(fig:01)).
 
-```{r 01, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.align="center", out.width = '55%', fig.cap = 'Composição da matriz elétrica do Brasil em 2020. Fonte: MME (2020a).'}
+```{r 01, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.pos = 'H', fig.align="center", out.width = '60%', fig.cap = 'Composição da matriz elétrica do Brasil em 2020. Fonte: MME (2020a).'}
 
 knitr::include_graphics("imagens/cap01/Figura_1.1.jpg")
 
@@ -124,7 +124,7 @@ Os estudos de potencial eólico são fundamentais para o planejamento da implant
 
 
 
-```{r 02, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.align="center", out.width = '55%', fig.cap = 'Distribuição do potencial eólico das regiões do país. Fonte: Amarante et al. (2001).'}
+```{r 02, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.pos = 'H', fig.align="center", out.width = '55%', fig.cap = 'Distribuição do potencial eólico das regiões do país. Fonte: Amarante et al. (2001).'}
 
 knitr::include_graphics("imagens/cap01/Figura_1.2.jpg")
 
@@ -216,7 +216,7 @@ A participação da energia eólica na matriz elétrica brasileira saltou de 0,2
 A Figura \@ref(fig:03) apresenta a evolução da geração de energia eólica no Brasil de 2005 a 2020, em termos de potências instalada e acumulada por ano.
 
 
-```{r 03, cache=TRUE, echo=FALSE, fig.align="center", fig.cap='Evolução da geração de energia eólica no Brasil de 2005 a 2020. Fonte: ABEEólica (2020)', message=FALSE, warning=FALSE, out.width='70%'}
+```{r 03, cache=TRUE, echo=FALSE, fig.pos = 'H', fig.align="center", fig.cap='Evolução da geração de energia eólica no Brasil de 2005 a 2020. Fonte: ABEEólica (2020)', message=FALSE, warning=FALSE, out.width='70%'}
 
 knitr::include_graphics("imagens/cap01/Figura_1.3.jpg")
 
@@ -268,7 +268,7 @@ Uma vez que as condições de vento e, consequentemente, o potencial eólico var
 </br>
 
 
-```{r 04, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.align="center", out.width = '55%', fig.cap = 'Distribuição de parques eólicos (círculos laranjas) em atividade e planejados no território brasileiro. Notar o adensamento de empreendimentos nas regiões Nordeste e Sul, nos biomas Caatinga, Pampa e Mata Atlântica. Fonte: https://sigel.aneel.gov.br/' }
+```{r 04, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.pos = 'H', fig.align="center", out.width = '55%', fig.cap = 'Distribuição de parques eólicos (círculos laranjas) em atividade e planejados no território brasileiro. Notar o adensamento de empreendimentos nas regiões Nordeste e Sul, nos biomas Caatinga, Pampa e Mata Atlântica. Fonte: https://sigel.aneel.gov.br/' }
 
 
 knitr::include_graphics("imagens/cap01/Figura_1.4.jpg")
@@ -332,7 +332,7 @@ Atualmente, dentre os diversos estados que contam com empreendimentos eólicos, 
 
 </br>
 
-```{r 05, cache=TRUE, echo=FALSE, fig.align="center", out.width = '65%', fig.cap = 'Distribuição da potência instalada de geração de energia eólica por estado. Rio Grande do Norte e Bahia se destacam, com potência instalada na faixa dos 5000 MW. Fonte: ABEEólica (2020)'}
+```{r 05, cache=TRUE, echo=FALSE, fig.pos = 'H', fig.align="center", out.width = '65%', fig.cap = 'Distribuição da potência instalada de geração de energia eólica por estado. Rio Grande do Norte e Bahia se destacam, com potência instalada na faixa dos 5000 MW. Fonte: ABEEólica (2020)'}
 
 knitr::include_graphics("imagens/cap01/Figura_1.5.jpg")
 
@@ -371,7 +371,7 @@ O *ranking* também se altera no segundo bloco, com Ceará superando o Rio Grand
 </br>
 
 
-```{r 06, cache=TRUE, echo=FALSE, fig.align="center", out.width = '65%', fig.cap = 'Número de parques eólicos instalados por estado. Bahia e Rio Grande do Norte se destacam, com valores superiores a 150 parques. Fonte: ABEEólica (2020)'}
+```{r 06, cache=TRUE, echo=FALSE, fig.pos = 'H', fig.align="center", out.width = '65%', fig.cap = 'Número de parques eólicos instalados por estado. Bahia e Rio Grande do Norte se destacam, com valores superiores a 150 parques. Fonte: ABEEólica (2020)'}
 
 knitr::include_graphics("imagens/cap01/Figura_1.6.jpg")
 
@@ -425,7 +425,7 @@ O Brasil tem um grande potencial de exploração e, em pouco mais de duas décad
 
 </br>
 
-```{r 07, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, out.width = '60%', fig.align="center", fig.cap = 'Em 2019 o Brasil assumiu a 7ª posição no ranking dos países com maior capacidade de geração de energia eólica. Os valores indicam o potencial instalado em MW. Fonte: GWEC (2021).'}
+```{r 07, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, out.width = '60%', fig.pos = 'H', fig.align="center", fig.cap = 'Em 2019 o Brasil assumiu a 7ª posição no ranking dos países com maior capacidade de geração de energia eólica. Os valores indicam o potencial instalado em MW. Fonte: GWEC (2021).'}
 
 knitr::include_graphics("imagens/cap01/Figura_1.7.jpg")
 
@@ -474,7 +474,7 @@ Considerando os mapeamentos do potencial eólico do país, tanto em larga escala
 A ABEEólica prevê que a capacidade instalada alcance 28 GW até 2024 (Canal Energia 2021). Estima-se que em 2030 a energia hidrelétrica responderá por 49% da matriz elétrica, ao tempo que a energia eólica responderá por 14% (33 GW) dos 236 GW previstos para a matriz (MME 2020a - Figura \@ref(fig:08)).
  
 
-```{r 08, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, out.width = '55%', fig.align="center", fig.cap = 'Previsão da composição da matriz elétrica do Brasil em 2030. Fonte: MME (2020a)'}
+```{r 08, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, out.width = '55%', fig.pos = 'H', fig.align="center", fig.cap = 'Previsão da composição da matriz elétrica do Brasil em 2030. Fonte: MME (2020a)'}
 
 knitr::include_graphics("imagens/cap01/Figura_1.8.jpg")
 
@@ -547,8 +547,6 @@ O setor precisará avançar na elaboração e execução de protocolos voltados 
 Ressaltamos que, nos empreendimentos futuros, dois aspectos devem merecer especial atenção: a) o uso de estudos qualificados e participação de diferentes atores nas etapas de planejamento para definição da localização dos parques, buscando-se evitar ou reduzir sua sobreposição com áreas socioambientalmente sensíveis e b) a implementação de programas de monitoramento de médio ou longo prazos, que considerem os períodos pré e pós-instalação dos parques. Alguns estudos de impactos de curta duração têm mostrado respostas conflitantes, espécie-específicas ou bastante dependentes das particularidades locais, dificultando o estabelecimento de generalizações capazes de orientar adequadamente a tomada de decisão pelas instâncias pertinentes (Shöll & Nopp-Mayr 2021).  
 
 Por fim, entendemos que parte da sociedade já reconhece a importância e necessidade de conciliarmos a expansão do uso da energia eólica e consequente redução da emissão de gases do efeito estufa com a proteção da biodiversidade e seus serviços ambientais (ver Neri et al. 2019, Marinho et al. 2021). Assegurar a transparência e a participação qualificada de  diferentes segmentos nos processos de planejamento e tomada de decisão sobre o tema, considerando de forma equilibrada aspectos econômicos, políticos, ambientais e sociais, poderá transformar conflitos reais ou potenciais em oportunidades. A participação da energia eólica na matriz elétrica brasileira é crescente e bem-vinda, mas seu crescimento no país deve estar baseado num planejamento adequado que otimize seus benefícios a partir da ponderação dos diferentes interesses da sociedade brasileira.
-
-\newpage
 
 
 ## Referências bibliográficas

@@ -68,7 +68,7 @@ Das 176 espécies migratórias apresentadas neste relatório, quatro foram class
 
 <br>
 
-```{r 09, cache=TRUE, echo=FALSE, fig.align="center", out.width = '70%', fig.cap='Número total de espécies ou subespécies de aves ameaçadas (cor clara) e de espécies ou subspécies migratórias ameaçadas (cor escura), por categoria: Criticamente em Perigo (CR), Em Perigo (EN) e Vulnerável (VU), de acordo com a Portaria nº 444/2014 (MMA 2014) e Quase Ameaçada (NT) e com Dados Insuficientes (DD), de acordo com o Livro Vermelho (ICMBio 2018).', message=FALSE, warning=FALSE}
+```{r 09, cache=TRUE, echo=FALSE, fig.pos = 'H', fig.align="center", out.width = '70%', fig.cap='Número total de espécies ou subespécies de aves ameaçadas (cor clara) e de espécies ou subspécies migratórias ameaçadas (cor escura), por categoria: Criticamente em Perigo (CR), Em Perigo (EN) e Vulnerável (VU), de acordo com a Portaria nº 444/2014 (MMA 2014) e Quase Ameaçada (NT) e com Dados Insuficientes (DD), de acordo com o Livro Vermelho (ICMBio 2018).', message=FALSE, warning=FALSE}
 
 ameacadas2 <- read.csv2("dados/spp_mig_spp_ame2.csv", h=T, sep=";")
 #view(ameacadas2)
@@ -111,7 +111,7 @@ Das 16 espécies de aves consideradas migratórias e categorizadas em algum grau
 
 
 
-```{r 10, cache=TRUE, echo=FALSE, fig.align="center", fig.cap='Principais vetores de ameaças às espécies migratórias ameaçadas no Brasil.', out.width = '65%', message=FALSE, warning=FALSE}
+```{r 10, cache=TRUE, echo=FALSE, fig.pos = 'H', fig.align="center", fig.cap='Principais vetores de ameaças às espécies migratórias ameaçadas no Brasil.', out.width = '65%', message=FALSE, warning=FALSE}
 
 ameacas_spp_mig <- read.csv2("dados/ameacas_spp_mig.csv", h=T, sep=";")
 
@@ -138,8 +138,6 @@ G10
 
 <br>
 
-\newpage
-
 
 ## Mapa de registros de aves ameaçadas de extinção
  
@@ -154,7 +152,7 @@ Os dados utilizados foram obtidos no [Atlas de Registros de Aves Brasileiras - A
 
 <br>
 
-```{r 11, cache=TRUE, echo = FALSE, out.width = '50%', fig.align="center", fig.cap = 'Áreas com registros de aves ameaçadas conforme Portaria MMA 444/14.'}
+```{r 11, cache=TRUE, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Áreas com registros de aves ameaçadas conforme Portaria MMA 444/14.'}
 
 knitr::include_graphics("imagens/cap03/Figura_3.3.png")
 
@@ -163,7 +161,6 @@ knitr::include_graphics("imagens/cap03/Figura_3.3.png")
 
 <br> 
 
-\newpage
 
 ## Referências bibliográficas
  

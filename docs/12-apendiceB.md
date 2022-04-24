@@ -1,4 +1,4 @@
-# Apêndice B {- #apendiceB}
+# (APPENDIX) Apêndice B {- #apendiceB}
 
 
 B1. Algumas normas, diretrizes e orientações relacionadas ao planejamento, implantação e operação de empreendimentos eólicos.  

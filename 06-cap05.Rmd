@@ -83,7 +83,7 @@ Como mencionado no capítulo anterior, os impactos da instalação de parques e�
 
 <br>
 
-```{r 16, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Principais impactos, diretos e indiretos, observados nas diferentes fases de um empreendimento eólico (adaptado de Gode 2020). Os códigos formados por letras e números correspondem aos códigos utilizados na descrição dos  impactos  no capítulo anterior.'}
+```{r 16, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Principais impactos, diretos e indiretos, observados nas diferentes fases de um empreendimento eólico (adaptado de Gode 2020). Os códigos formados por letras e números correspondem aos códigos utilizados na descrição dos  impactos  no capítulo anterior.'}
 
 knitr::include_graphics("imagens/cap05/Figura_5.1.jpg")
 
@@ -136,13 +136,14 @@ Um exemplo disso é a configuração triangular (Figura \@ref(fig:17)), com dist
 
 * Afugentar as aves. Embora as estratégias de afugentamento ainda precisem ser aprimoradas, um recurso que parece ter grande potencial é aquele baseado em sons “desagradáveis” para as aves, disparados por sensores de aproximação (Marques et al. 2014).  
 
-Por fim, apenas em posse de fartas e precisas informações será possível que o Brasil galgue patamares de excelência em geração de energia e proteção da biodiversidade. Considerando a expressiva quantidade de dados sobre aves que têm sido gerada nos parques eólicos brasileiros, a sua sistematização e compartilhamento em uma plataforma de fácil e livre acesso é de grande interesse para os órgãos gestores, para o mundo acadêmico e para o setor produtor de energia.  
-
-```{r 17, echo = FALSE, out.width = '75%', fig.align="center", fig.cap = 'Padrões de cruzetas normalmente utilizados em linhas de transmissão de energia elétrica. Exemplo de modificação de estrutura de fixação a partir da figura A para a B com aumento da distância dos fios e inversão de pontos de fixação dos condutores.'}
+```{r 17, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Padrões de cruzetas normalmente utilizados em linhas de transmissão de energia elétrica. Exemplo de modificação de estrutura de fixação a partir da figura A para a B com aumento da distância dos fios e inversão de pontos de fixação dos condutores.'}
 
 knitr::include_graphics("imagens/cap05/Figura_5.2.jpg")
 
 ```
+  
+  
+Por fim, apenas em posse de fartas e precisas informações será possível que o Brasil galgue patamares de excelência em geração de energia e proteção da biodiversidade. Considerando a expressiva quantidade de dados sobre aves que têm sido gerada nos parques eólicos brasileiros, a sua sistematização e compartilhamento em uma plataforma de fácil e livre acesso é de grande interesse para os órgãos gestores, para o mundo acadêmico e para o setor produtor de energia.  
 
 
 ## Medidas de mitigação dos principais impactos indiretos
