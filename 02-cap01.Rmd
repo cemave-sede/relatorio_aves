@@ -4,7 +4,7 @@
 </style>
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, fig.pos = 'H')
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r library, echo=FALSE, message=FALSE, warning=FALSE}
@@ -52,30 +52,30 @@ library(ggplot2)
 
 </br>
 
-O Brasil possui atualmente cerca de 213 milhões de habitantes (IBGE, 2021), distribuídos de forma irregular num território de dimensões continentais, com marcantes diferenças geográficas e de desenvolvimento socioeconômico. As atividades cotidianas desse contigente populacional resultam numa enorme demanda de geração, transmissão e distribuição de energia elétrica (MME, 2019).  
+O Brasil possui atualmente cerca de 213 milhões de habitantes (IBGE 2021), distribuídos de forma irregular num território de dimensões continentais, com marcantes diferenças geográficas e de desenvolvimento socioeconômico. As atividades cotidianas desse contigente populacional resultam numa enorme demanda de geração, transmissão e distribuição de energia elétrica (MME 2019).  
 
-O setor elétrico nacional é responsável não apenas por atender essa demanda, mas também por estimar e planejar o atendimento da demanda futura, decorrente do crescimento populacional e do consequente incremento nas atividades sociais e econômicas voltadas ao bem-estar da população. É composto por instâncias políticas, agentes institucionais, órgãos de regulação e fiscalização e agentes do mercado (ANACE, 2021), reponsáveis por diferentes aspectos da geração, transmissão e distribuição da energia elétrica no país. Dentre os principais entes que integram o setor, destacam-se:
+O setor elétrico nacional é responsável não apenas por atender essa demanda, mas também por estimar e planejar o atendimento da demanda futura, decorrente do crescimento populacional e do consequente incremento nas atividades sociais e econômicas voltadas ao bem-estar da população. É composto por instâncias políticas, agentes institucionais, órgãos de regulação e fiscalização e agentes do mercado (ANACE 2021), reponsáveis por diferentes aspectos da geração, transmissão e distribuição da energia elétrica no país. Dentre os principais entes que integram o setor, destacam-se:
 
 * ONS - Operador Nacional do Sistema – controla e coordena a operação das instalações de geração e transmissão de energia elétrica, com foco na continuidade, segurança e despacho econômico na operação das instalaçãoes. Opera o Sistema Interligado Nacional (SIN), composto por mais de 100.000 km de linhas e centenas de usinas;
 * ANEEL – Agência Nacional de Energia Elética – regulamenta e fiscaliza as atividades de geração, transmissão, distribuição e comercialiação de energia elética; 
 * CCEE – Câmara de Comercialização de Energia Elétrica – gerencia os processos de compra e venda de energia elétrica entre os agentes do setor elétrico nos ambientes de contração livre (ACL) e regulado (ACR). Todos os contratos de compra e venda são registrados na CCEE.
 * EPE - Empresa de Pesquisa Energética - realiza estudos e pesquisas destinados a subsidiar o planemento do setor energético.
 
-As novas tecnologias têm trazido mudanças no padrão e no perfil de consumo, com fortes impactos no planejamento do setor. A visão prevalente atual é de que cabe ao mercado escolher e desenvolver os melhores empreendimentos para atender as demandas da sociedade, enquanto o governo deve indicar as principais características que o sistema requer para o futuro. A partir da Portaria MME nº 187, publicada em abril de 2019, foi elaborado um Plano de Ação voltado à Modernização do Setor Elétrico,  apontando medidas a serem implementadas em curto, médio e longo prazos no país (MME, 2021a).
+As novas tecnologias têm trazido mudanças no padrão e no perfil de consumo, com fortes impactos no planejamento do setor. A visão prevalente atual é de que cabe ao mercado escolher e desenvolver os melhores empreendimentos para atender as demandas da sociedade, enquanto o governo deve indicar as principais características que o sistema requer para o futuro. A partir da Portaria MME nº 187, publicada em abril de 2019, foi elaborado um Plano de Ação voltado à Modernização do Setor Elétrico,  apontando medidas a serem implementadas em curto, médio e longo prazos no país (MME 2021a).
 
 ## A matriz elétrica brasileira
 
 O planejamento da matriz elétrica se dá num ambiente instável e dinâmico, de muitas oscilações e incertezas. Crises econômicas, sanitárias (como a COVID-19) ou outros tipos de instabilidade social podem afetar a demanda por energia e a matriz precisa ser planejada e gerenciada para lidar com tais situações.  
 
-O desenvolvimento econômico do país depende da expansão da oferta de energia em níveis que podem variar no tempo e espaço, em função de fatores diversos em escala regional, nacional e até mesmo global. O conhecimento detalhado do padrão temporal e espacial de consumo é central para um bom planejamento do setor, tendo em vista a ocorrência de variações consideráveis no consumo de energia elétrica entre a estação seca *vs*. chuvosa, entre diferentes períodos do dia ou entre finais de semana e feriados *vs*. dias úteis, assim como diferenças regionais ou entre ambientes urbanos *vs.* rurais. Nesse contexto, um sistema diversificado, com diferentes alternativas de geração de energia elétrica torna-se mais robusto, mais flexível e eficiente.  
+O desenvolvimento econômico do país depende da expansão da oferta de energia em níveis que podem variar no tempo e espaço, em função de fatores diversos em escala regional, nacional e até mesmo global. O conhecimento detalhado do padrão temporal e espacial de consumo é central para um bom planejamento do setor, tendo em vista a ocorrência de variações consideráveis no consumo de energia elétrica entre a estação seca *versus* chuvosa, entre diferentes períodos do dia ou entre finais de semana e feriados *versus* dias úteis, assim como diferenças regionais ou entre ambientes urbanos *versus* rurais. Nesse contexto, um sistema diversificado, com diferentes alternativas de geração de energia elétrica torna-se mais robusto, mais flexível e eficiente.  
 
-A história da geração de energia elétrica em nosso país é marcada pelo uso de hidrelétricas e essa ainda é nossa fonte predominante (Figura 1.1). Nos últimos anos o Brasil tem avançado na diversificação de sua matriz, com a introdução e/ou ampliação de novas fontes de produção, principalmente daquelas mais limpas e sustentáveis, como a eólica, a solar e a proveniente de usinas híbridas (Pinto & Santos 2019, Agra Neto 2020, MME 2020b). Entretanto, a ampliação da matriz traz consigo grandes desafios para a transmissão e distribuição. Com uma maior quantidade e diversidade de fontes de geração, com diferentes características, espacialmente mais distribuídas e descentralizadas, aumenta-se substancialmente a complexidade para o dimensionamento, planejamento, implantação da infraestrutura e eficaz gerenciamento da distribuição da energia gerada (MME 2020a).  
+A história da geração de energia elétrica em nosso país é marcada pelo uso de hidrelétricas e essa ainda é nossa fonte predominante (Figura 1.1). Nos últimos anos o Brasil tem avançado na diversificação de sua matriz, com a introdução e/ou ampliação de novas fontes de produção, principalmente daquelas mais limpas e sustentáveis, como a eólica, a solar e a proveniente de usinas híbridas (Pinto & Santos 2019, Agra Neto et al. 2020, MME 2020b). Entretanto, a ampliação da matriz traz consigo grandes desafios para a transmissão e distribuição. Com uma maior quantidade e diversidade de fontes de geração, com diferentes características, espacialmente mais distribuídas e descentralizadas, aumenta-se substancialmente a complexidade para o dimensionamento, planejamento, implantação da infraestrutura e eficaz gerenciamento da distribuição da energia gerada (MME 2020a).  
 
 Neste cenário, entre os desafios para a expansão da transmissão incluem-se a complexidade socioambiental e fundiária para ampliação da rede; dificuldades para assegurar a flexibilidade e controlabilidade do sistema; a implementação de um planejamento proativo da transmissão, que evite a ociosidade e seja capaz de escoar energia de diferentes fontes; e a coordenação da expansão dos sistemas de geração e transmissão (MME 2020b).  
 
 A capacidade instalada de geração de energia elétrica do Brasil em 2021 foi estimada em 186 GW, com a energia eólica representando 9% desse valor (Figura \@ref(fig:01)).
 
-```{r 01, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.pos = 'H', fig.align="center", out.width = '60%', fig.cap = 'Composição da matriz elétrica do Brasil em 2020. Fonte: MME (2020a).'}
+```{r 01, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.pos = 'H', fig.align="center", out.width = '60%', fig.cap = 'Composição da matriz elétrica do Brasil em 2020. Fonte: MME (2020a)'}
 
 knitr::include_graphics("imagens/cap01/Figura_1.1.jpg")
 
@@ -106,7 +106,7 @@ knitr::include_graphics("imagens/cap01/Figura_1.1.jpg")
 
 ## O planejamento do setor elétrico
 
-Reflexões, diretrizes e recomendações voltadas à expansão do setor elétrico podem ser encontradas em algumas análises produzidas no ambiente acadêmico (Gorayeb et al. 2019, Neri et al. 2019, Pinto & Santos 2019, Agra Neto 2020), no setor produtivo (Oliveira et al. 2020) e em diversos documentos elaborados por agências governamentais, a exemplo do Planejamento Integrado de Recursos Energéticos - PIR, dos Planos Nacionais de Energia - PNE e os Planos Decenais de Expansão - PDE (MME 2020a, c).  
+Reflexões, diretrizes e recomendações voltadas à expansão do setor elétrico podem ser encontradas em algumas análises produzidas no ambiente acadêmico (Gorayeb et al. 2019, Neri et al. 2019, Pinto & Santos 2019, Agra Neto et al. 2020), no setor produtivo (Oliveira et al. 2020) e em diversos documentos elaborados por agências governamentais, a exemplo do Planejamento Integrado de Recursos Energéticos - PIR, dos Planos Nacionais de Energia - PNE e Planos Decenais de Expansão - PDE (MME 2020a, c).  
  	
 O PIR é um estudo elaborado a partir de análises feitas no lado da carga e da geração, combinando as soluções encontradas que geram menores custos econômicos, sociais e ambientais para o país (Morales Udaeta 1997). O PNE avalia tendências na produção e no uso da energia e baliza as estratégias alternativas para expansão da oferta de energia nas próximas décadas. O PDE, elaborado anualmente pela Empresa de Pesquisa Energética (EPE), tem como objetivo indicar as perspectivas, sob a ótica do governo, da expansão do setor de energia no horizonte de 10 anos, numa visão integrada para os diversos recursos energéticos, visando ampliar a confiabilidade, reduzir os custos de produção e mitigar os impactos ambientais (MME 2020c).  
 
@@ -119,12 +119,12 @@ A exploração econômica da energia eólica depende da existência e disponibil
 
 Os principais aspectos relativos ao comportamento do vento considerados na avaliação do potencial eólico de uma dada região são sua intensidade, regularidade, sazonalidade e direção. Para a implantação de um empreendimento eólico, além de padrões gerais em nível regional e nacional, é necessário também analisar os fatores que influenciam o regime dos ventos em nível local, tais como relevo, rugosidade do solo e outros obstáculos (MME 2020a).  
 
-Os estudos de potencial eólico são fundamentais para o planejamento da implantação de empreendimentos eólicos no país. Um dos primeiros atlas do potencial eólico elaborados em escala nacional (Atlas do Potencial Eólico Brasileiro – Amarante et al. 2001) estimou um potencial eólico para o país da ordem de 143,5 GW (Figura \@ref(fig:02)), com as regiões Nordeste (75 GW - 52,3%), Sudeste (29,7 GW - 20,7%) e Sul (22,8 GW - 15,8%) respondendo por 88,8% desse total. O potencial estimado para as regiões Norte e Centro-Oeste foi de 12,8 GW (8.9%) e 3.1 GW (2,1%), respectivamente.
+Os estudos de potencial eólico são fundamentais para o planejamento da implantação de empreendimentos eólicos no país. Um dos primeiros atlas do potencial eólico elaborados em escala nacional (Atlas do Potencial Eólico Brasileiro – Amarante et al. 2001) estimou um potencial eólico para o país da ordem de 143,5 GW (Figura \@ref(fig:02)), com as regiões Nordeste (75 GW - 52,3%), Sudeste (29,7 GW - 20,7%) e Sul (22,8 GW - 15,9%) respondendo por 88,8% desse total. O potencial estimado para as regiões Norte e Centro-Oeste foi de 12,8 GW (8,9%) e 3,1 GW (2,2%), respectivamente.
 
 
 
 
-```{r 02, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.pos = 'H', fig.align="center", out.width = '55%', fig.cap = 'Distribuição do potencial eólico das regiões do país. Fonte: Amarante et al. (2001).'}
+```{r 02, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.pos = 'H', fig.align="center", out.width = '70%', fig.cap = 'Distribuição do potencial eólico das regiões do país. Fonte: Amarante et al. (2001)'}
 
 knitr::include_graphics("imagens/cap01/Figura_1.2.jpg")
 
@@ -187,36 +187,34 @@ Uma versão mais recente de atlas de potencial eólico em escala nacional, com i
 
 ## Cenário da energia eólica no país 
 
-A energia elétrica de origem eólica é gerada por meio de aerogeradores ou turbinas eólicas. Esses equipamentos devem estar distribuidos em locais com abundância de ventos em condições favoráveis, devendo ainda estar ligados a estruturas associadas como subestações e linhas de transmissão, para escoamento da energia produzida.  
+A energia elétrica de origem eólica é gerada por meio de aerogeradores ou turbinas eólicas. Esses equipamentos devem estar distribuídos em locais com abundância de ventos em condições favoráveis, devendo ainda estar ligados a estruturas associadas como subestações e linhas de transmissão, para escoamento da energia produzida.  
 
 Em geral, os aerogeradores são formados pelas serguintes partes:
 
-* Pás: impusionadas pela força dos ventos, geralmente em conjunto de três que formam ângulo de 120º, com formato aerodinâmico propício para o giro dentro do intervalo de mínimo e máximo de velocidade para a qual foi designada. Podem ser constituídas de plástico (PVC, PU ou PET), madeira balsa ou fibra de vidro.  
+* Pás: impulsionadas pela força dos ventos, geralmente em conjunto de três que formam ângulo de 120º, com formato aerodinâmico propício para o giro dentro do intervalo de mínimo e máximo de velocidade para a qual foi designada. Podem ser constituídas de plástico (PVC, PU ou PET), madeira balsa ou fibra de vidro.  
 
 * Nacele (ou nave): abriga os componentes eletromecânicos (gerador, transformador, rotor, conversor, refrigerador, dentre outros). Situa-se junto ao eixo da hélice formada pelas pás, no qual a energia mecânica da rotação das pás é convertida em energia elétrica.  
 
 * Torre: sustenta as pás e a nacele a uma altura variável, propícia para o recebimento dos ventos no local. Em geral, são feitas de aço e/ou concreto.
 
 
-Um parque eólico consiste em um grupo de aerogeradores, distribuídos numa porção de espaço terrestre ou marítimo, gerenciados conjuntamente de forma a otimizar a geração de energia a partir da força dos ventos (transformação da energia cinética do vento em energia elétrica). Vários parques eólicos próximos ou contíguos podem formar um complexo eólico.  
-
-[Veja aqui](https://www.iberdrola.com/meio-ambiente/como-funcionam-parques-eolicos-onshore) um esquema do funcionamento de um aerogerador no interior de um parque eólico.
+Um parque eólico consiste em um grupo de aerogeradores, distribuídos numa porção de espaço terrestre ou marítimo, gerenciados conjuntamente de forma a otimizar a geração de energia a partir da força dos ventos (transformação da energia cinética do vento em energia elétrica). Vários parques eólicos próximos ou contíguos podem formar um complexo eólico. [Veja aqui](https://www.iberdrola.com/meio-ambiente/como-funcionam-parques-eolicos-onshore) um esquema do funcionamento de um aerogerador no interior de um parque eólico.
 
 
 ### Parques eólicos *onshore*
 
-O primeiro aerogerador do Brasil foi instalado em 1992, em Fernando de Noronha, apenas para fins de pesquisa e, já no final dos anos 90, os primeiros parques eólicos comerciais *onshore* (localizados no continente, em contraposição aos parques *offshore*, situados em ambiente marinho) entraram em funcionamento no país (ANEEL, 2003). Os aerogeradores da época eram bem menores que os atuais, com potência inferior a 1 MW (MME, 2021). Na primeira metadade dos anos 2000, com apoio do Programa de Incentivo às Fontes Alternativas de Energia Elétrica - PROINFA, novos parques foram implantados. A partir de junho de 2006, a energia eólica gerada por esses parques (cerca de 3.500 GWh) passou a ser contabilizada no Sistema Interligado Nacional - SIN.  
+O primeiro aerogerador do Brasil foi instalado em 1992, em Fernando de Noronha, apenas para fins de pesquisa e, já no final dos anos 90, os primeiros parques eólicos comerciais *onshore* (localizados no continente, em contraposição aos parques *offshore*, situados em ambiente marinho) entraram em funcionamento no país (ANEEL 2003). Os aerogeradores da época eram bem menores que os atuais, com potência inferior a 1 MW (MME 2021b). Na primeira metadade dos anos 2000, com apoio do Programa de Incentivo às Fontes Alternativas de Energia Elétrica - PROINFA, novos parques foram implantados. A partir de junho de 2006, a energia eólica gerada por esses parques (cerca de 3.500 GWh) passou a ser contabilizada no Sistema Interligado Nacional - SIN.  
 
 Nos anos seguintes, por meio de leilões e projetos do ACL, outros parques foram construídos e entraram em operação, e mais de 14 GW de potência passaram a abastecer o sistema elétrico brasileiro. Ao longo desse período, o avanço tecnológico possibilitou a produção e o uso de aerogeradores maiores, com torres mais altas e maior diâmetro dos rotores, com uma maior potência unitária e consequente aumento da produtividade.  
 
-Em fevereiro de 2021 o Brasil atingiu a marca de 695 parques eólicos e cerca de 8300 aerogeradores distribuídos em seu território, totalizando aproximadamete 18 GW de capacidade instalada, considerando as usinas em pleno funcionamento e aquelas operando em testes autorizados pela ANEEL (CicloVivo, 2021).  
+Em fevereiro de 2021 o Brasil atingiu a marca de 695 parques eólicos e cerca de 8.300 aerogeradores distribuídos em seu território, totalizando aproximadamete 18 GW de capacidade instalada, considerando as usinas em pleno funcionamento e aquelas operando em testes autorizados pela ANEEL (CicloVivo 2021).  
 
-A participação da energia eólica na matriz elétrica brasileira saltou de 0,2% em 2002 para 9% em 2019, passando a ser a terceira fonte em capacidade instalada e a segunda dentre as renováveis. Estima-se que até 2029 esse número chegue a 17%, atingindo cerca de 40 GW instalados (MME, 2020b, 2021).  
+A participação da energia eólica na matriz elétrica brasileira saltou de 0,2% em 2002 para 9% em 2019, passando a ser a terceira fonte em capacidade instalada e a segunda dentre as renováveis. Estima-se que até 2029 esse número chegue a 17%, atingindo cerca de 40 GW instalados (MME 2020b, 2021a).  
 
 A Figura \@ref(fig:03) apresenta a evolução da geração de energia eólica no Brasil de 2005 a 2020, em termos de potências instalada e acumulada por ano.
 
 
-```{r 03, cache=TRUE, echo=FALSE, fig.pos = 'H', fig.align="center", fig.cap='Evolução da geração de energia eólica no Brasil de 2005 a 2020. Fonte: ABEEólica (2020)', message=FALSE, warning=FALSE, out.width='70%'}
+```{r 03, cache=TRUE, echo=FALSE, fig.align="center", fig.pos = 'H', fig.cap='Evolução da geração de energia eólica no Brasil de 2005 a 2020. Fonte: ABEEólica (2021)', message=FALSE, warning=FALSE, out.width='80%'}
 
 knitr::include_graphics("imagens/cap01/Figura_1.3.jpg")
 
@@ -268,7 +266,7 @@ Uma vez que as condições de vento e, consequentemente, o potencial eólico var
 </br>
 
 
-```{r 04, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.pos = 'H', fig.align="center", out.width = '55%', fig.cap = 'Distribuição de parques eólicos (círculos laranjas) em atividade e planejados no território brasileiro. Notar o adensamento de empreendimentos nas regiões Nordeste e Sul, nos biomas Caatinga, Pampa e Mata Atlântica. Fonte: https://sigel.aneel.gov.br/' }
+```{r 04, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.pos = 'H', fig.align="center", out.width = '70%', fig.cap = 'Distribuição de parques eólicos (círculos laranjas) em atividade e planejados no território brasileiro. Notar o adensamento de empreendimentos nas regiões Nordeste e Sul, nos biomas Caatinga, Pampa e Mata Atlântica. Fonte: https://sigel.aneel.gov.br/' }
 
 
 knitr::include_graphics("imagens/cap01/Figura_1.4.jpg")
@@ -326,13 +324,13 @@ knitr::include_graphics("imagens/cap01/Figura_1.4.jpg")
 
 </br>
 
-Além do mapeamento do potencial eólico, nos últimos anos [Mapas de Sensibilidade](https://migratorysoaringbirds.birdlife.org/en/sensitivity-map#gsc.tab=0) (Bright et al. 2008, McGuines et al. 2015, Morkūnė et al. 2020) ou análises análogas (Neria et al. 2019) passaram a ser também empregadas para subsidiar as tomadas de decisão acerca da localização e viabiliade de implantação desse tipo de empreendimento. O uso de tais ferramentas e abordagens possibilita que diferentes interesses da sociedade sejam considerados no momento de planejamento, favorecendo a identificação prévia de conflitos e a busca da adoção de medidas voltadas a compatibilizar diferentes visões sobre os usos a serem dados a uma determinada porção do território.  
+Além do mapeamento do potencial eólico, nos últimos anos [Mapas de Sensibilidade](https://migratorysoaringbirds.birdlife.org/en/sensitivity-map#gsc.tab=0) (Bright et al. 2008, McGuines et al. 2015, Morkūnė et al. 2020) ou ferramentas análogas (Neri et al. 2019) passaram a ser também empregados para subsidiar as tomadas de decisão acerca da localização e viabiliade de implantação desse tipo de empreendimento. O uso de tais ferramentas e abordagens possibilita que diferentes interesses da sociedade sejam considerados no momento de planejamento, favorecendo a identificação prévia de conflitos e a busca da adoção de medidas voltadas a compatibilizar diferentes visões sobre os usos a serem dados a uma determinada porção do território.  
 
-Atualmente, dentre os diversos estados que contam com empreendimentos eólicos, destacam-se o Rio Grande do Norte e a Bahia, com potência instalada na faixa do 5000 MW (Figura \@ref(fig:05)). Um segundo bloco importante é composto por estados com potência instalada de cerca de 2000-2500 MW (Piauí, Ceará e Rio Grande do Sul). Por fim, temos os estados com potência instalada na faixa de 1000 MW ou menos (Pernambuco, Maranhão, Santa Catarina, Paraíba, Sergipe, Rio de Janeio e Paraná).  
+Atualmente, dentre os diversos estados que contam com empreendimentos eólicos, destacam-se o Rio Grande do Norte e a Bahia, com potência instalada na faixa do 5.000 MW (Figura \@ref(fig:05)). Um segundo bloco importante é composto por estados com potência instalada de cerca de 2.000-2.500 MW (Piauí, Ceará e Rio Grande do Sul). Por fim, temos os estados com potência instalada de até 1000 MW (Pernambuco, Maranhão, Santa Catarina, Paraíba, Sergipe, Rio de Janeiro e Paraná).  
 
 </br>
 
-```{r 05, cache=TRUE, echo=FALSE, fig.pos = 'H', fig.align="center", out.width = '65%', fig.cap = 'Distribuição da potência instalada de geração de energia eólica por estado. Rio Grande do Norte e Bahia se destacam, com potência instalada na faixa dos 5000 MW. Fonte: ABEEólica (2020)'}
+```{r 05, cache=TRUE, echo=FALSE, fig.align="center", fig.pos = 'H', out.width = '80%', fig.cap = 'Distribuição da potência instalada de geração de energia eólica por estado. Rio Grande do Norte e Bahia se destacam, com potência instalada na faixa dos 5000 MW. Fonte: ABEEólica (2021)'}
 
 knitr::include_graphics("imagens/cap01/Figura_1.5.jpg")
 
@@ -371,14 +369,15 @@ O *ranking* também se altera no segundo bloco, com Ceará superando o Rio Grand
 </br>
 
 
-```{r 06, cache=TRUE, echo=FALSE, fig.pos = 'H', fig.align="center", out.width = '65%', fig.cap = 'Número de parques eólicos instalados por estado. Bahia e Rio Grande do Norte se destacam, com valores superiores a 150 parques. Fonte: ABEEólica (2020)'}
+```{r 06, cache=TRUE, echo=FALSE, fig.align="center", fig.pos = 'H', out.width = '80%', fig.cap = 'Número de parques eólicos instalados por estado. Rio Grande do Norte e Bahia se destacam, com valores superiores a 150 parques. Fonte: ABEEólica (2021)'}
 
-knitr::include_graphics("imagens/cap01/Figura_1.6.jpg")
+knitr::include_graphics("imagens/cap01/Figura_1.6_1.jpg")
 
-# P3 <-  ggplot(data = cres_estados, aes(x= fct_reorder(UF, parques, .desc = T), y = parques)) +
+# P3 <-  ggplot(data = cres_estados, aes(x= fct_reorder(UF, parques, .desc = T), y = parques, label = parques)) +
 #  geom_bar(stat = "identity", fill="#1F95C5") +
 #  #coord_flip() +
-#  theme(
+#     geom_text(aes(label = parques), vjust = -0.5) +
+#     theme(
 #     panel.background = element_blank(),
 #     panel.grid.minor.y = element_blank(),
 #     panel.grid.major.y = element_blank(),
@@ -399,9 +398,9 @@ knitr::include_graphics("imagens/cap01/Figura_1.6.jpg")
 
 ### Parques eólicos *offshore*
 
- Até o momento (agosto de 2021) o Brasil ainda não possui empreendimentos eólicos *offshore* em funcionamento. O primeiro [Termo de Referência (TR) padrão para Estudos de Impacto Ambiental e Relatório de Impacto Ambiental (EIA/RIMA) de empreendimentos eólicos em ambiente marinho](https://www.ibama.gov.br/phocadownload/licenciamento/publicacoes/2020-11-TR_CEM.pdf) foi lançado pelo Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais (Ibama) em novembro de 2020. Este órgão licenciador federal conta, atualmente, com 45 processos referentes a projetos de empreendimentos eólicos *offshore* em diferentes fases de licenciamento na costa das regiões Nordeste (20), Sudeste (13) e Sul (12), contemplando a instalação de  7.284 novos aerogeradores e um potencial de geração de 106,4 GW (M. Lauxen, com. pess. 2022).  
+Até o momento (agosto de 2022) o Brasil ainda não possui empreendimentos eólicos *offshore* em funcionamento. O primeiro [Termo de Referência (TR) padrão para Estudo de Impacto Ambiental e Relatório de Impacto Ambiental (EIA/RIMA) de Complexos Eólicos Marítimos (*Offshore*)](https://www.ibama.gov.br/phocadownload/licenciamento/publicacoes/2020-11-TR_CEM.pdf) foi lançado pelo Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais (Ibama) em novembro de 2020. Este órgão licenciador federal conta, atualmente, com 66 processos referentes a projetos de empreendimentos eólicos *offshore* em diferentes fases de licenciamento na costa das regiões Nordeste (31), Sudeste (13) e Sul (22), contemplando a instalação de  11.571 novos aerogeradores e um potencial de geração de 169,4 GW (M. Lauxen, com. pess. 2022).  
  	
-O mapeamento preliminar do potencial eólico *offshore* para as águas jurisdicionais brasileiras identificou áreas com ventos superiores a 7 m/s, abrindo novas perspectivas para a possível exploração desse recurso energético (MME 2020b). O potencial do país para a geração de energia eólica *offshore* é muito grande, da ordem 700 GW em locais com profundidade de até 50 m (MME 2020d). Azevedo et al. (2020) estimaram um potencial eólico *offshore* ainda maior para a costa brasileira, de cerca de 3 TW e aproximadamente 15000 TWh de produção média anual de eletricidade. Segundo esses autores, tais valores equivalem a cerca de 20 vezes a capacidade elétrica atualmente instalada no Brasil.  
+O mapeamento preliminar do potencial eólico *offshore* para as águas jurisdicionais brasileiras identificou áreas com ventos superiores a 7 m/s, abrindo novas perspectivas para a possível exploração desse recurso energético (MME 2020b). O potencial do país para a geração de energia eólica *offshore* é muito grande, da ordem 700 GW em locais com profundidade de até 50 m (MME 2020d). Azevedo et al. (2020) estimaram um potencial eólico *offshore* ainda maior para a costa brasileira, de cerca de 3 TW e aproximadamente 15.000 TWh de produção média anual de eletricidade. Segundo esses autores, tais valores equivalem a cerca de 20 vezes a capacidade elétrica atualmente instalada no Brasil.  
 
 Algumas vantagens usualmente associadas à exploração da energia eólica *offshore* incluem: as boas condições de vento, que no ambiente marinho costumam resultar em fatores de capacidade (eficiência) mais elevados; a maior proximidade dos centros de carga (consumo), uma vez que cerca de 80% da população do país encontra-se nos grandes centros urbanos, localizados na região costeira; um menor impacto paisagístico, visto que os aerogeradores costumam ser localizados a uma certa distância da costa; um menor número de restrições e conflitos (quando se compara à modalidade *onshore*) (MME 2020d).  
 
@@ -414,18 +413,18 @@ Destacamos a importância de que os diferentes aspectos envolvidos na exploraç�
 
 ## O Brasil no cenário mundial
 
-A Dinamarca foi pioneira no uso comercial da energia eólica, ainda na década de 70 (ANEEL, 2003), sendo rapidamente seguida por outros países europeus como Holanda, Bélgica, Suécia, Reino Unido e Alemanha. Posteriormente, inpulsionados pelo aumento da demanda por energia em razão do crescimento econômico e por crises na oferta de petróleo países como Estados Unidos, Espanha, Portugal e China também passaram a investir de forma significativa na exploração desse tipo de energia (Oliveira et al.*, 2020).
+A Dinamarca foi pioneira no uso comercial da energia eólica, ainda na década de 70 (ANEEL 2003), sendo rapidamente seguida por outros países europeus como Holanda, Bélgica, Suécia, Reino Unido e Alemanha. Posteriormente, impulsionados pelo aumento da demanda por energia em razão do crescimento econômico e por crises na oferta de petróleo, países como Estados Unidos, Espanha, Portugal e China também passaram a investir de forma significativa na exploração desse tipo de energia (Oliveira et al. 2020).
 
-O ano de 2020 foi o melhor ano da história para a indústria eólica em termos globais, com um total de 93 GW de nova capacidade instalada (GWEC, 2021). O recorde de 2020 deu-se devido ao crescimento acentuado na China e nos Estados Unidos, os dois maiores mercados mundiais de energia eólica que, juntos, foram responsáveis por cerca de 75% da quantidade instalada em 2020, passando a responder por mais da metade da capacidade instalada mundial. Atualmente, a capacidade instalada mundial soma 743 GW (707 GW - 95% *onshore* e 36 GW - 5% *offshore*), ajudando a evitar a emissão de mais de 1,1 bilhão de toneladas de CO~2~ para a atmosfera (GWEC 2021).  
+O ano de 2020 foi o melhor ano da história para a indústria eólica em termos globais, com um total de 93 GW de nova capacidade instalada (GWEC 2021). O recorde de 2020 deu-se devido ao crescimento acentuado na China e nos Estados Unidos, os dois maiores mercados mundiais de energia eólica que, juntos, foram responsáveis por cerca de 75% da quantidade instalada em 2020. Atualmente, a capacidade instalada mundial soma 743 GW (707 GW - 95% *onshore* e 36 GW - 5% *offshore*), ajudando a evitar a emissão de mais de 1,1 bilhão de toneladas de CO~2~ para a atmosfera (GWEC 2021).  
 
-A Dinamarca foi também o primeiro país a instalar um parque eólico *offshore*, ainda em 1991. Atualmente há cerca de uma centena de parques eólicos *offshore* distribuídos pelo mundo, todos eles no hemisfério Norte (GWEC 2021). Os cerca de 36 GW de capacidade total instalada estão distribuídos, em grande parte, no Reino Unido, Alemanha, China, Dinamarca e Bélgica, enquando uma parcela menor dessa geração é realizada por um grupo de países com pequena produção.  
+A Dinamarca foi também o primeiro país a instalar um parque eólico *offshore*, ainda em 1991. Atualmente há cerca de uma centena de parques eólicos *offshore* distribuídos pelo mundo, todos eles no hemisfério Norte (GWEC 2021). Os cerca de 36 GW de capacidade total instalada estão distribuídos, em grande parte, no Reino Unido, Alemanha, China, Dinamarca e Bélgica, enquanto uma parcela menor dessa geração é realizada por um grupo de países com pequena produção.  
 
 
-O Brasil tem um grande potencial de exploração e, em pouco mais de duas décadas, teve um avanço muito significativo na sua capacidade instalada. Em 2019 o país subiu uma posição no *ranking* e passou a ocupar a 7ª posição no mundo em termos de potência instalada de energia eólica (Figura \@ref(fig:07)). Apesar do bom desempenho, encontra-se ainda bem distante de países também continentais como Estados Unidos e China. Tais países têm uma alta demanda enérgica, seja pelo elevado padrão de consumo de sua população ou pela alta densidade populacional, além de um contínuo crescimento econômico que depende de sua capacidade de geração de energia.
+O Brasil tem um grande potencial de exploração e, em pouco mais de duas décadas, teve um avanço muito significativo na sua capacidade instalada. Em 2019, o país subiu uma posição no *ranking* e passou a ocupar a 7ª posição no mundo em termos de potência instalada de energia eólica (Figura \@ref(fig:07)). Apesar do bom desempenho, encontra-se ainda bem distante de países também continentais como Estados Unidos e China. Tais países têm uma alta demanda energética, seja pelo elevado padrão de consumo de sua população ou pela alta densidade populacional, além de um contínuo crescimento econômico que depende de sua capacidade de geração de energia.
 
 </br>
 
-```{r 07, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, out.width = '60%', fig.pos = 'H', fig.align="center", fig.cap = 'Em 2019 o Brasil assumiu a 7ª posição no ranking dos países com maior capacidade de geração de energia eólica. Os valores indicam o potencial instalado em MW. Fonte: GWEC (2021).'}
+```{r 07, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.pos = 'H', out.width = '70%', fig.align="center", fig.cap = 'Países com maior capacidade de geração de energia eólica. Os valores indicam o potencial instalado em MW. Fonte: GWEC (2021)'}
 
 knitr::include_graphics("imagens/cap01/Figura_1.7.jpg")
 
@@ -469,12 +468,12 @@ Análises de cenários futuros indicam o crescimento de todas as fontes da matri
 
 A energia elétrica de origem eólica é a que tem maior potencial de crescimento nos próximos anos, com vantagens econômicas e ambientais, mas com maiores desafios operacionais por ser uma fonte variável e não controlável.  
 
-Considerando os mapeamentos do potencial eólico do país, tanto em larga escala quanto nos estudos estaduais, há ainda uma ampla capacidade de expansão do setor em médio e longo prazos, ambos *onshore* e *offshore*. O aprimoramento tecnológico e o uso de aerogeradores mais altos e de maior potência, com aumento da produtividade por unidade, deverá favorecer esse crescimento e a exploração desse potencial (Além da Energia 2021). Esse avanço também deverá ser favorecido pela pressão internacional pelo uso de energias mais limpas para redução da emissão de carbono.  
+Considerando os mapeamentos do potencial eólico do país, tanto em larga escala quanto nos estudos estaduais, há ainda uma ampla capacidade de expansão do setor em médio e longo prazos, ambos *onshore* e *offshore*. O aprimoramento tecnológico e o uso de aerogeradores mais altos e de maior potência, com aumento da produtividade por unidade, deverá favorecer esse crescimento e a exploração desse potencial. Esse avanço também deverá ser favorecido pela pressão internacional pelo uso de energias mais limpas para redução da emissão de carbono.  
 
 A ABEEólica prevê que a capacidade instalada alcance 28 GW até 2024 (Canal Energia 2021). Estima-se que em 2030 a energia hidrelétrica responderá por 49% da matriz elétrica, ao tempo que a energia eólica responderá por 14% (33 GW) dos 236 GW previstos para a matriz (MME 2020a - Figura \@ref(fig:08)).
  
 
-```{r 08, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, out.width = '55%', fig.pos = 'H', fig.align="center", fig.cap = 'Previsão da composição da matriz elétrica do Brasil em 2030. Fonte: MME (2020a)'}
+```{r 08, cache=TRUE, echo=FALSE, message=FALSE, warning=FALSE, fig.pos = 'H', out.width = '60%', fig.align="center", fig.cap = 'Previsão da composição da matriz elétrica do Brasil em 2030. Fonte: MME (2020a)'}
 
 knitr::include_graphics("imagens/cap01/Figura_1.8.jpg")
 
@@ -505,9 +504,9 @@ knitr::include_graphics("imagens/cap01/Figura_1.8.jpg")
 
 </br>
 
-Mesmo com sua redução em termos relativos, a energia de origem hidráulica continuará cumprindo um importante papel em assegurar a estabilidade do sistema, visto haver uma complementariedade sazonal entre essas fontes. Deverá se contar ainda, nesse papel, com a participação das termelétricas, prevendo-se também a modernização de parte dessas usinas para ganho de eficiência. O sistema tenderá a manter uma matriz com fontes predominantemente renováveis, não emissoras de gases de efeito estufa, principalmente devido à ampliação das fontes de energia eólica e solar (MME, 2020b).
+Mesmo com sua redução em termos relativos, a energia de origem hidráulica continuará cumprindo um importante papel em assegurar a estabilidade do sistema, visto haver uma complementariedade sazonal entre essas fontes. A participação das termelétricas também cumpre esse papel, prevendo-se a modernização de parte dessas usinas para ganho de eficiência. O sistema tenderá a manter uma matriz com fontes predominantemente renováveis, não emissoras de gases de efeito estufa, principalmente devido à ampliação das fontes de energia eólica e solar (MME 2020b).
 
-Há previsão de investimentos da ordem de 104 bilhões para expansão das linhas de transmissão e subestações no sistema para dar suporte ao escoamento da energia gerada por diversas fontes nas diferentes regiões do país, com ênfase nas áreas norte, leste e sul da região Nordeste, além de obras de expansão na região Sul (MME 2020c). Está prevista uma ampliação de cerca de 30% nas linhas de transmissão num período de 10 anos, passando de 154 mil km em 2019 para 203 mil km em 2029 (implantação de 49 mil km de linhas). Esse crescimento deverá ser acompanhado por uma ampliação de cerca de 45% nas subestações, passando de 385 mil MVA em 2019 para 557 mil MVA em 2029 (crescimento de 161 mil MVA) (MME, 2020c).
+Há previsão de investimentos para expansão das linhas de transmissão e subestações no sistema para dar suporte ao escoamento da energia gerada por diversas fontes nas diferentes regiões do país, com ênfase nas áreas norte, leste e sul da região Nordeste, além de obras de expansão na região Sul (MME 2020c). Está também prevista uma ampliação de cerca de 30% nas linhas de transmissão num período de 10 anos, passando de 154 mil km em 2019 para 203 mil km em 2029 (implantação de 49 mil km de linhas - MME 2020c).
 
 Em termos regionais/estaduais, há perspectivas de que o estado da Bahia poderá assumir a liderança na produção e comercialização em razão de vantagens competitivas devido a aspectos geográficos, logísticos, maior avanço no dimensionamento da capacidade de fornecimento (produção de Atlas Eólico para o estado), disponibilidade de linhas de transmissão e gestão ágil dos projetos (Agra Neto et al. 2020).
 
@@ -517,9 +516,9 @@ Cabe ressaltar que a expansão observada no Brasil nos últimos anos refere-se a
 ### Avanços tecnológicos
 
 
-Os custos relativos à implantação dos projetos eólicos tendem a se reduzir ao longo do tempo, resultado dos avanços tecnológicos como o aumento da altura das torres, a evolução do material de composição das pás, a ampliação de sua área de varredura e o aumento da potência nominal dos aerogeradores. A altura das torres dos parques eólicos *onshore* tem aumentado progressivamente, atingindo maior média em 2019 com 112 metros (MME 2020b). Em relação às pás, novos materiais como fibras de carbono ou fibras híbridas de vidro e carbono poderão vir a ser empregadas na confecção dessas estruturas para redução de peso (MME 2020b). A tendência de aumento do tamanho de torres e pás tende a ampliar o fator de capacidade sob determinadas condições de vento. Porém, aerogeradores maiores exigirão adequações e inovações para possibilitar a logística de armazenamento e transporte de suas estruturas (MME 2020b).  
+Os custos relativos à implantação dos projetos eólicos tendem a se reduzir ao longo do tempo, resultado dos avanços tecnológicos como o aumento da altura das torres, a evolução do material de composição das pás, a ampliação de sua área de varredura e o aumento da potência nominal dos aerogeradores. A altura das torres dos parques eólicos *onshore* tem aumentado progressivamente, atingindo a média de 112 m em 2019 (MME 2020b). Em relação às pás, novos materiais como fibras de carbono ou fibras híbridas de vidro e carbono poderão vir a ser empregadas na confecção dessas estruturas para redução de peso (MME 2020b). A tendência de aumento do tamanho de torres e pás tende a ampliar o fator de capacidade sob determinadas condições de vento. Porém, aerogeradores maiores exigirão adequações e inovações para possibilitar a logística de armazenamento e transporte de suas estruturas (MME 2020b).  
 
-Na modalidade *offshore*, inovações tecnológicas como o uso de fundações flutuantes estão sendo estudadas para permitir o suporte de aerogeradores e a exploração em áreas mais profundas, assim como o uso de aerogeradores maiores, com vistas à redução de custos (MME 2020c). O emprego de de grandes aerogeradores, com diâmetro do rotor médio de 150 m e potência nominal superior a 6 MW, é uma das principais características dos projetos eólicos *offshore* e alguns equipamentos mais modernos podem alcançar até 15 MW (MME 2020b, Além da Energia 2021, Lauxen 2021).  
+Na modalidade *offshore*, inovações tecnológicas como o uso de fundações flutuantes estão sendo estudadas para permitir o suporte de aerogeradores e a exploração em áreas mais profundas, assim como o uso de aerogeradores maiores, com vistas à redução de custos (MME 2020c). O emprego de de grandes aerogeradores, com diâmetro do rotor médio de 150 m e potência nominal superior a 6 MW, é uma das principais características dos projetos eólicos *offshore* e alguns equipamentos mais modernos podem alcançar até 15 MW (MME 2020b, Além da Energia 2021).  
 
 Os impactos das alterações estruturais ou operacionais decorrentes dos avanços tecnológicos dos parques eólicos sobre aves e morcegos também precisarão ser avaliados. O uso de aerogeradores mais altos e com pás maiores, por exemplo, pode ampliar o impacto sobre algumas espécies e implicar a necessidade de alterações nos protocolos de monitoramento (Choi et al. 2020). Por outro lado, a maior produtividade por unidade pode, em tese, também vir a diminuir o número de aerogeradores por planta, com efeitos na redução tanto do número de torres quanto na extensão do território ocupada, de forma que impactos positivos e negativos podem se contrabalançar. Questões desse tipo precisarão ser identificadas e investigadas.  
 
@@ -530,7 +529,7 @@ O crescimento e a diversificação da matriz elétrica no Brasil, com a signific
 
 Nas etapas de planejamento deve-se buscar incorporar nos estudos socioambientais prévios análises integradas que considerem o aumento da complexidade e os impactos cumulativos ou sinérgicos de diversos empreendimentos localizados próximos. Em que pesem as dificuldades metodológicas e de acesso e compartilhamento de dados e informações entre empreendimentos, a consideração desses potenciais efeitos nos estudos exigidos durante o licenciamento ambiental pode contribuir para a identificação de impactos ambientais relevantes e possibilitar a indicação de medidas integradas de controle ou mitigação para projetos implantados numa mesma região. Num país megadiverso como o Brasil, a publicação e o compartilhamento de dados de monitoramento e avaliação dos impactos dos empreendimentos sobre a biodiversidade, em especial sobre aves e morcegos, é de suma importância para aprimorar e assegurar maior qualidade técnica ao processo de ampliação do uso da energia eólica em nosso território.  
 
-A seleção adequada de locais para a instalação de empreendimentos é uma questão central, uma vez que a instalação de parques fora ou com pouca sobreposição com áreas sensíveis em termos socioambientais por si só, sejam elas áreas legalmente protegidas ou não, já reduz significativamente os riscos e os impactos negativos dos parques eólicos. Com base na constatação de que 70% dos parques eólicos instalados no país encontram-se em áreas com vegetação nativa ou dunas, Turkovska et al. (2021) argumentam pela instalação de empreendimentos em áreas já antropizadas, com condições de vento apropriadas. Marinho et al. 2021 apresentam uma reflexão ampla do potencial impacto dos parques eólicos sobre áreas prioritárias para conservação na Caatinga.  
+A seleção adequada de locais para a instalação de empreendimentos é uma questão central, uma vez que a instalação de parques fora ou com pouca sobreposição com áreas sensíveis em termos socioambientais por si só, sejam elas áreas legalmente protegidas ou não, já reduz significativamente os riscos e os impactos negativos dos parques eólicos. Com base na constatação de que 70% dos parques eólicos instalados no país encontram-se em áreas com vegetação nativa ou dunas, Turkovska et al. (2021) argumentam pela instalação de empreendimentos em áreas já antropizadas, com condições de vento apropriadas. Marinho et al. (2021) apresentam uma reflexão ampla do potencial impacto dos parques eólicos sobre áreas prioritárias para conservação na Caatinga.  
 
 Num cenário ideal, a expansão dessa atividade deveria basear-se no planejamento estratégico em larga escala, em nível de paisagem, empregando bases de dados espaciais com informações robustas de diferentes temas e considerando diferentes interesses e usos potenciais da região considerada. O uso de mapas de sensibilidade e ferramentas análogas é extremamente recomendável como um elemento complementar ou associado aos processos de licenciamento ambiental, e seus benefícios serão tanto maiores quanto antes ele ocorrer nas etapas de planejamento.  
 
@@ -542,82 +541,89 @@ Outro ponto importante consiste na necessidade de integração do planejamento e
 
 A elaboração ou adequação de normativas para dar suporte e segurança jurídica ao desenvolvimento do setor é também fundamental. Faz-se necessário um arcabouço legal e regulatório que contemple os diferentes aspectos do setor (ambiental, social, comercial etc.). No caso da exploração *offshore*, por exemplo, há lacunas na legislação marítima vigente, que não contempla ainda os efeitos desse tipo de intervenção no ambiente.  
 
-O setor precisará avançar na elaboração e execução de protocolos voltados à repotenciação e descomissionamento dos parques eólicos. Serão necessárias normas para descomissionamento e análise da viabilidade de repotenciação, além de avaliação dos impactos no sistema (atendimento da demanda e flexibilização). Segundo a EPE (MME 2021), até 2030, mais de 50 parques alcançarão a faixa dos 20 anos de operação (vida útil média dos equipamentos desses empreendimentos), representando mais de 600 aerogeradores e de 940 MW de potência. Assim, evidencia-se a importância de se discutir possíveis ações após esse período, sejam elas de manutenção, modernização ou descomissionamento dos parques eólicos instalados (MME 2021).  
+O setor precisará avançar na elaboração e execução de protocolos voltados à repotenciação e descomissionamento dos parques eólicos. Serão necessárias normas para descomissionamento e análise da viabilidade de repotenciação, além de avaliação dos impactos no sistema (atendimento da demanda e flexibilização). Segundo a EPE (MME 2021b), até 2030, mais de 50 parques alcançarão a faixa dos 20 anos de operação (vida útil média dos equipamentos desses empreendimentos), representando mais de 600 aerogeradores e de 940 MW de potência. Assim, evidencia-se a importância de se discutir possíveis ações após esse período, sejam elas de manutenção, modernização ou descomissionamento dos parques eólicos instalados (MME 2021b).  
 
 Ressaltamos que, nos empreendimentos futuros, dois aspectos devem merecer especial atenção: a) o uso de estudos qualificados e participação de diferentes atores nas etapas de planejamento para definição da localização dos parques, buscando-se evitar ou reduzir sua sobreposição com áreas socioambientalmente sensíveis e b) a implementação de programas de monitoramento de médio ou longo prazos, que considerem os períodos pré e pós-instalação dos parques. Alguns estudos de impactos de curta duração têm mostrado respostas conflitantes, espécie-específicas ou bastante dependentes das particularidades locais, dificultando o estabelecimento de generalizações capazes de orientar adequadamente a tomada de decisão pelas instâncias pertinentes (Shöll & Nopp-Mayr 2021).  
 
 Por fim, entendemos que parte da sociedade já reconhece a importância e necessidade de conciliarmos a expansão do uso da energia eólica e consequente redução da emissão de gases do efeito estufa com a proteção da biodiversidade e seus serviços ambientais (ver Neri et al. 2019, Marinho et al. 2021). Assegurar a transparência e a participação qualificada de  diferentes segmentos nos processos de planejamento e tomada de decisão sobre o tema, considerando de forma equilibrada aspectos econômicos, políticos, ambientais e sociais, poderá transformar conflitos reais ou potenciais em oportunidades. A participação da energia eólica na matriz elétrica brasileira é crescente e bem-vinda, mas seu crescimento no país deve estar baseado num planejamento adequado que otimize seus benefícios a partir da ponderação dos diferentes interesses da sociedade brasileira.
+
+\newpage
 
 
 ## Referências bibliográficas
 
 
 
-ABEEólica, 2020. Boletim Anual: Dados 2020. Associação Brasileira de Energia Eólica. 19p.
+ABEEólica (Associação Brasileira de Energia Eólica). 2021. Boletim Anual Dados 2020. Disponível em: http://abeeolica.org.br/wp-content/uploads/2021/06/PT_Boletim-Anual-de-Gera%C3%A7%C3%A3o_2020.pdf Acesso em: [14/09/2021].
 
-Agra Neto, J.; F. C. B. P. Queiroz; J. V. Queiroz; N. C. Lima & C. L. Silva. 2020. Evolução e perspectivas do setor eólico no Brasil: análise dos principais estados produtores. Revista em Agronegócio e Meio Ambiente. v. 13, nº 4, p. 1409-1432. DOI:10.17765/2176-9168.2020v13n4p1409-1432
+Agra Neto, J., Queiroz, F.C.B.P., Queiroz, J.V., Lima, N.C., Silva, C.L. 2020. Evolução e perspectivas do setor eólico no Brasil: análise dos principais estados produtores. Revista em Agronegócio e Meio Ambiente 13(4): 1409-1432. https://doi.org/10.17765/2176-9168.2020v13n4p1409-1432  
 
-ANACE, 2021. Associação Nacional dos Consumidores de Energia. Organização institucional do setor elétrico. Disponível em: <http://www.anacebrasil.org.br/energia/setor-eletrico/#1484923187411-e467cd37-ff31>. Acesso em: [07/05/2021]
-
-ANEEL, 2003. Atlas de energia elétrica do Brasil. Agência Nacional de Energia. Disponível em: <http://www2.Aneel.gov.br/aplicacoes/atlas/pdf/06-energia_eolica(3).pdf>. Acesso em: [07/05/2021]
-
-Amarante, O. A. C., Brower, M., Zack, J., & Sá, A. L. 2001. Atlas do potencial eólico brasileiro. Disponível em: <http://www.cresesb.cepel.br/publicacoes/download/atlas_eolico/Atlas%20do%20Potencial%20Eolico%20Brasileiro.pdf>. Acesso em: [07/05/2021].  
-
-Azevedo, S. S. P.; Pereira Junior, A. O.; Silva, N. F.; Araújo, R. S. B.; Carlos Júnior, A. A. 2020. Assessment of Offshore Wind Power Potential along the Brazilian Coast. Energies 13, 10: 2557. <https://doi.org/10.3390/en13102557>.  
-
-Bailey, H.; K. L. Brookes & P. M. Thompson. 2014. Assessing environmental impacts of offshore wind farms: lessons learned and recommendations for the future. Aquatic Biosystems 2014 10:8.  
-
-Bosch, J.; I.  Staffell; A. D. Hawkes. 2019. Global levelised cost of electricity from offshore wind. Enegies 189: 116357. DOI: 10.1016/j.energy.2019.116357   
-
-Bright, J., R. Langston; R. Bullman; R. Evans; S. Gardner & J. Pearcehiggins. 2008. Map of bird sensitivities to wind farms in Scotland: a tool to aid planning and conservation. Biological Conservation, 141: 2342–2356.
-
-CCEE. 2021. Custo final da energia eólica é o mais baixo entre as fontes renováveis. Câmara de Comercialização de Energia Elétrica. Disponível em: <https://www.ccee.org.br/portal/faces/pages_publico/noticias-opiniao/noticias/noticialeitura?contentid=CCEE_656850&_adf.ctrl-state=olewrvrsm_1&_afrLoop=23076559182296#!%40%40%3Fcontentid%3DCCEE_656850%26_afrLoop%3D23076559182296%26_adf.ctrl-state%3Dolewrvrsm_5>. Acesso em: [07/05/2021].  
+Além da Energia. 2021. Conheça os 20 projetos de energia eólica offshore em andamento no Brasil. Disponível em: https://www.alemdaenergia.com.br/conheca-as-fases-dos-20-projetos-de-energia-eolica-offshore-em-andamento-no-brasil/ Acesso em: [08/09/2021].  
 
 
-Choi, D. Y., T. W. Wittig, & B. M. Kluever. 2020. An evaluation of bird and bat mortality at wind turbines in the Northeastern United States. PLOS ONE 15:e0238034.
+Amarante, O.A.C., Brower, M., Zack, J., Sá, A.L. 2001. Atlas do potencial eólico brasileiro. Disponível em: http://www.cresesb.cepel.br/publicacoes/download/atlas_eolico/Atlas%20do%20Potencial%20Eolico%20Brasileiro.pdf Acesso em: [07/05/2021]. 
 
-  
-Ciclovivo. 2021. Energia eólica começa 2021 em alta no Brasil. Disponível em: <https://ciclovivo.com.br/planeta/energia/energia-eolica-comeca-2021-em-alta-no-brasil/#:~:text=2021%20apresenta%20expans%C3%A3o&text=Em%20fevereiro%20de%202021%2C%20o,de%20Energia%20El%C3%A9trica%20(Aneel)>. Acesso em: [07/05/2021].  
+ANACE (Associação Nacional dos Consumidores de Energia). 2021. Organização institucional do setor elétrico. Disponível em: http://www.anacebrasil.org.br/energia/setor-eletrico/#1484923187411-e467cd37-ff31 Acesso em: [07/05/2021].
 
-Dai, K., A. Bergot, C. Liang, W.-N. Xiang, & Z. Huang. 2015. Environmental issues associated with wind energy – a review. Renewable Energy 75:911–921.  
+ANEEL (Agência Nacional de Energia Elétrica). 2003. Atlas de energia elétrica do Brasil. Disponível em: http://www2.Aneel.gov.br/aplicacoes/atlas/pdf/06-energia_eolica(3).pdf Acesso em: [07/05/2021].
 
-MME. Ministério de Minas e Energia. 2007. Plano Nacional de Energia 2030. Empresa de Pesquisa Energética. Brasília: MME/EPE.
+Azevedo, S.S.P., Pereira Jr, A.O., Silva, N.F., Araújo, R.S.B., Carlos Jr, A.A. 2020. Assessment of Offshore Wind Power Potential along the Brazilian Coast. Energies 13(10): 2557. https://doi.org/10.3390/en13102557
 
-MME. Ministério de Minas e Energia. 2019. Consumo anual de energia elétrica por classe (nacional). Empresa de Pesquisa Energética. Disponível em <https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/consumo-de-energia-eletrica/consumo-anual-de-energia-eletrica-por-classe-(nacional)>. Acesso em: [07/05/2021].
+Bailey, H., Brookes, K.L., Thompson, P.M. 2014. Assessing environmental impacts of offshore wind farms: lessons learned and recommendations for the future. Aquatic Biosystems 10(8): 1-13. https://doi.org/10.1186/2046-9063-10-8
 
-Gorayeb, A. C. Brannstrom & A. J. de A. Meireles (org.) 2019. Impactos socioambientais da implantação dos parques de energia eólica no Brasil. Fortaleza. Edições UFC.  
+Bosch, J., Staffell, I., Hawkes, A.D. 2019. Global levelised cost of electricity from offshore wind. Energy 189: 116357. https://doi.org/10.1016/j.energy.2019.116357  
 
-GWEC. 2021. Global Wind Report 2021. Global Wind Energy Council. Disponível em: <https://gwec.net/global-wind-report-2021/>. Acesso em: [07/05/2021]
+Bright, J., Langston, R., Bullman, R., Evans, R., Gardner, S., Pearce-higgins, J. 2008. Map of bird sensitivities to wind farms in Scotland: a tool to aid planning and conservation. Biological Conservation 141(9): 2342–2356. https://doi.org/10.1016/j.biocon.2008.06.029  
 
-IBGE. Instituto Brasileiro de Geografia e Estatística. 2021. População do Brasil. Disponível em <https://www.ibge.gov.br/apps/populacao/projecao/box_popclock.php>. Acesso em: [07/05/2021].  
+Canal Energia. 2021. Energia eólica chega a 18 GW de capacidade instalada no Brasil. Disponível em: https://canalenergia.com.br/?noticia=energia-eolica-chega-a-18-gw-de-capacidade-instalada-no-brasil Acesso em: [07/05/2021].  
 
-McGuinness, S.; C. Muldoon; N. Tierney; S. Cummins; A. Murray; S. Egan & O. Crowe. 2015. Bird Sensitivity Mapping for Wind Energy Developments and Associated Infrastructure in the Republic of Ireland. BirdWatch Ireland, Kilcoole, Wicklow.  
 
-MME. Ministério de Minas e Energia. 2020a. Plano Decenal de Expansão de Energia 2030. Empresa de Pesquisa Energética. Brasília: MME/EPE.
+CCEE (Câmara de Comercialização de Energia Elétrica). 2021. Custo final da energia eólica é o mais baixo entre as fontes renováveis. Disponível em: https://www.ccee.org.br/portal/faces/pages_publico/noticias-opiniao/noticias/noticialeitura?contentid=CCEE_656850&_adf.ctrl-state=olewrvrsm_1&_afrLoop=23076559182296#!%40%40%3Fcontentid%3DCCEE_656850%26_afrLoop%3D23076559182296%26_adf.ctrl-state%3Dolewrvrsm_5 Acesso em: [07/05/2021]. 
 
-MME. Ministério de Minas e Energia. 2020b. Plano Nacional de Energia 2050. Empresa de Pesquisa Energética. Brasília: MME/EPE.
+Choi, D.Y., Wittig, T.W., Kluever, B.M. 2020. An evaluation of bird and bat mortality at wind turbines in the Northeastern United States. PLoS ONE 15(8): e0238034. https://doi.org/10.1371/journal.pone.0238034
 
-MME. Ministério de Minas e Energia. 2020c. Roadmap Eólica Offshore Brasil: perspectivas e caminhos para a energia eólica marítima. NT-EPE-PR-001/2020-r2. Empresa de Pesquisa Energética. Brasília: MME/EPE.
+Ciclovivo. 2021. Energia eólica começa 2021 em alta no Brasil. Disponível em: https://ciclovivo.com.br/planeta/energia/energia-eolica-comeca-2021-em-alta-no-brasil/ Acesso em: [07/05/2021].  
 
-MME. Ministério de Minas e Energia. 2020d. Plano Decenal de Expansão de Energia 2029. Empresa de Pesquisa Energética. Brasília: MME/EPE.  
+Dai, K., Bergot, A., Liang, C., Xiang, W.-N., Huang, Z. 2015. Environmental issues associated with wind energy – a review. Renewable Energy 75: 911–921. https://doi.org/10.1016/j.renene.2014.10.074  
 
-MME (Ministério de Minas e Energia). 2021a. Modernização do Setor Elétrico. Disponível em: <https://www.gov.br/mme/pt-br/assuntos/secretarias/secretaria-executiva/modernizacao-do-setor-eletrico/gt-modernizacao>. Acesso em: [10/11/2021].  
+Gorayeb, A., Brannstrom, C., Meireles, A.J.A. (org.) 2019. Impactos socioambientais da implantação dos parques de energia eólica no Brasil. Edições UFC. Fortaleza. Disponível em: http://www.observatoriodaenergiaeolica.ufc.br/wp-content/uploads/2019/07/livro_web.pdf Acesso em: [07/05/2021]. 
 
-MME. Ministério de Minas e Energia. 2021b. Emprendimentos eólicos ao fim da vida útil: situação atual e alternativas futuras. EPE-DEE-NT-012/2021. Empresa de Pesquisa Energética. Brasília: MME/EPE.
+GWEC (Global Wind Energy Council). 2021. Global Wind Report 2021. Disponível em: https://gwec.net/global-wind-report-2021 Acesso em: [07/05/2021].
 
-Morales Udaeta, M. E. 1997. Planejamento Integrado de Recursos Energéticos - PIR - para o setor elétrico (pensando o desenvolvimento sustentável). Tese (Doutorado em Sistemas de Potência) - Escola Politécnica, Universidade de São Paulo, São Paulo, 1997. doi:10.11606/T.3.1997.tde-09082001-113018.    
+IBGE (Instituto Brasileiro de Geografia e Estatística). 2021. População do Brasil. Disponível em https://www.ibge.gov.br/apps/populacao/projecao/box_popclock.php  Acesso em: [07/05/2021]. 
 
-Morkūnė R.; M. Marčiukaitis; V. Jurkin; G. Gecevičius; J. Morkūnas; L. Raudonikis et al. 2020. Wind energy development and wildlife conservation in Lithuania: A mapping tool for conflict assessment. PLoS ONE 15(1): e0227735.
-<https://doi.org/10.1371/journal.pone.0227735>.     
+Marinho PH et al. 2021. O vento levará nossa biodiversidade? Disponível em: https://www.oeco.org.br/analises/o-vento-levara-nossa-biodiversidade/ Acesso em: [08/09/2021].  
 
-Neria, M.; D. Jameli; E. Bernard & F. P.L. Melo. 2019. Green versus green? Adverting potential conflicts between wind power generation and biodiversity conservation in Brazil. Perspectives in Ecology and Conservation 17: 131–135. 
 
-Oliveira, G.; A. Z. Curi; P. S. Felini & T. R. A. Ficarelli. 2020. Impactos socioeconômicos e ambientais da geração de energia eólica no Brasil. Relatório. GO Associados.  
+McGuinness, S., Muldoon, C., Tierney, N., Cummins, S., Murray, A., Egan, S., Crowe, O. 2015. Bird Sensitivity Mapping for Wind Energy Developments and Associated Infrastructure in the Republic of Ireland. BirdWatch Ireland. Kilcoole. Wicklow. Disponível em: https://tethys.pnnl.gov/sites/default/files/publications/McGuinness-2015.pdf Acesso em: [07/05/2021].
 
-Pinto, R. J. & V. M. L. Santos. 2019. Energia eólica no Brasil: evolução, desafios e perspectivas. Journal on Innovation and Sustainability. v. 10, nº 1, p. 124-142. <http://dx.doi.org/10.24212/2179-3565.2019v10i1p124-142>.
+MME (Ministério de Minas e Energia). 2007. Plano Nacional de Energia 2030. Empresa de Pesquisa Energética. Brasília. Disponível em: https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/Plano-Nacional-de-Energia-PNE-2030 Acesso em: [07/05/2021].
 
-Schöll, E. M. & U. Nopp-Mayr. 2021. Impact of wind power plants on mammalian and avian wildlife species in
-shrub- and woodlands.Biological Conservation 256:109037. <https://doi.org/10.1016/j.biocon.2021.109037>.  
+MME (Ministério de Minas e Energia). 2019. Consumo anual de energia elétrica por classe (nacional). Empresa de Pesquisa Energética. Brasília. Disponível em: https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/consumo-de-energia-eletrica/consumo-anual-de-energia-eletrica-por-classe-(nacional) Acesso em: [07/05/2021].
 
-Turkovska, O., G. Castro, M. Klingler, F. Nitsch, P. Regner, A. C. Soterroni, & J. Schmidt. 2021. Land-use impacts of Brazilian wind power expansion. Environmental Research Letters 16:024010. 
+MME (Ministério de Minas e Energia). 2020a. Plano Decenal de Expansão de Energia 2030. Empresa de Pesquisa Energética. Brasília. Disponível em: https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2030 Acesso em: [07/05/2021].
+
+MME (Ministério de Minas e Energia). 2020b. Plano Nacional de Energia 2050. Empresa de Pesquisa Energética. Brasília. Disponível em: https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/Plano-Nacional-de-Energia-2050 Acesso em: [07/05/2021].
+
+MME (Ministério de Minas e Energia). 2020c. Roadmap Eólica Offshore Brasil: perspectivas e caminhos para a energia eólica marítima. NT-EPE-PR-001/2020-r2. Empresa de Pesquisa Energética. Brasília. Disponível em: https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-456/Roadmap_Eolica_Offshore_EPE_versao_R2.pdf Acesso em: [07/05/2021].
+
+MME (Ministério de Minas e Energia). 2020d. Plano Decenal de Expansão de Energia 2029. Empresa de Pesquisa Energética. Brasília. https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2029 Acesso em: [07/05/2021].  
+
+MME (Ministério de Minas e Energia). 2021a. Modernização do Setor Elétrico. Disponível em: https://www.gov.br/mme/pt-br/assuntos/secretarias/secretaria-executiva/modernizacao-do-setor-eletrico/gt-modernizacao Acesso em: [10/11/2021].  
+
+MME (Ministério de Minas e Energia). 2021b. Empreendimentos eólicos ao fim da vida útil: situação atual e alternativas futuras. EPE-DEE-NT-012/2021. Empresa de Pesquisa Energética. Brasília. Disponível em: https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-563/NT-EPE-DEE-012-2021.pdf Acesso em: [07/05/2021].
+
+Morales Udaeta, M.E. 1997. Planejamento Integrado de Recursos Energéticos – PIR - para o setor elétrico (pensando o desenvolvimento sustentável). Tese de Doutorado. Universidade de São Paulo. São Paulo. Doi:10.11606/T.3.1997.tde-09082001-113018.   
+
+Morkūnė, R., Marčiukaitis, M., Jurkin, V., Gecevičius, G., Morkūnas, J., Raudonikis, L. et al. 2020. Wind energy development and wildlife conservation in Lithuania: A mapping tool for conflict assessment. PLoS ONE 15(1): e0227735. https://doi.org/10.1371/journal.pone.0227735
+
+Neri, M., Jameli, D., Bernard, E., Melo, F.P.L. 2019. Green versus green? Adverting potential conflicts between wind power generation and biodiversity conservation in Brazil. Perspectives in Ecology and Conservation 17(3): 131–135. https://doi.org/10.1016/j.pecon.2019.08.004 
+
+Oliveira, G., Curi, A.Z., Felini, P.S., Ficarelli, T.R.A. 2020. Impactos socioeconômicos e ambientais da geração de energia eólica no Brasil. Relatório. GO Associados. São Paulo. Disponível em: https://epbr.com.br/wp-content/uploads/2021/02/ABEEolica_GO-Associados-V.-Final.pdf Acesso em: [07/05/2021].  
+
+Pinto, R.J., Santos, V.M.L. 2019. Energia eólica no Brasil: evolução, desafios e perspectivas. Journal on Innovation and Sustainability 10(1): 124-142. http://dx.doi.org/10.24212/2179-3565.2019v10i1p124-142.
+
+Schöll, E.M., Nopp-Mayr, U. 2021. Impact of wind power plants on mammalian and avian wildlife species in shrub- and woodlands. Biological Conservation 256: 109037. https://doi.org/10.1016/j.biocon.2021.109037  
+
+Turkovska, O., Castro, G., Klingler, M., Nitsch, F., Regner, P., Soterroni, A. C., Schmidt, J. 2021. Land-use impacts of Brazilian wind power expansion. Environmental Research Letters 16(2): 024010. DOI: 10.13140/RG.2.2.29794.76480
 

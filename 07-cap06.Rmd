@@ -55,8 +55,7 @@ library(ggplot2)
 *BR-230 Km 10*  
 *58108-012 Cabedelo, PB*  
    
-## O que é monitoramento
- 
+
 Iniciativas de monitoramento comumente têm como objetivo medir estados e tendências da biodiversidade (Lee et al. 2005). O monitoramento eficaz, na perspectiva conservacionista, é aquele que nos permite avaliar as respostas de populações e ecossistemas às práticas de conservação e aos impactos das diversas atividades humanas.  
 
 No caso do monitoramento de impactos, um bom monitoramento deve ser capaz de informar a respeito do resultado das intervenções realizadas e das medidas de mitigação adotadas sobre as populações das espécies que vivem ou usam determinado local ou recurso.  
@@ -80,7 +79,7 @@ Na geração de energia por parques eólicos *onshore* (em contraposição aos *
 
 </br>
 
-```{r 18, echo = FALSE, out.width = '60%', fig.pos = 'H', fig.align="center", fig.cap = 'Montagem de um aerogerador ou turbina eólica.'}
+```{r 18, echo = FALSE, out.width = '50%', fig.pos = 'H', fig.align="center", fig.cap = 'Montagem de um aerogerador ou turbina eólica. Fonte: Pixabay.com'}
 
 knitr::include_graphics("imagens/cap06/Figura_6.1.jpg")
 
@@ -95,7 +94,7 @@ O monitoramento deve ser capaz de avaliar a magnitude dos distintos impactos à 
 
 </br>
 
-```{r 19, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Exemplo de interação entre monitoramento e gestão de conflitos (Adaptado de: Bennun et al. 2021)'}
+```{r 19, echo = FALSE, out.width = '85%', fig.align="center", fig.cap = 'Exemplo de interação entre monitoramento e gestão de conflitos. Adaptado de: Bennun et al. (2021)'}
 
 knitr::include_graphics("imagens/cap06/Figura_6.2.jpg")
 
@@ -120,11 +119,11 @@ Considerando a longa vida útil destes empreendimentos, o monitoramento também 
  
 Como já mencionado, tanto a magnitude dos distintos impactos à fauna, sejam diretos ou indiretos, quanto a efetividade das medidas mitigadoras adotadas devem ser contempladas pelo monitoramento, proporcionando subsídios à gestão do parque (Smallwood 2017, Bennun et al. 2021).  
 
-Os protocolos empregados para o monitoramento da ocorrência e uso do espaço por aves nos parques eólicos, assim como dos impactos desses empreendimentos sobre esse grupo animal ainda são relativamente simples no Brasil, consistindo em observações de campo e métodos clássicos da ornitologia, como ponto de escuta, listas de Mackinnon e uso de redes de neblina, somados ao monitoramento de carcaças (Figura \@ref(fig:20)AB). No entanto, novas tecnologias que permitem o monitoramento remoto, contínuo, mesmo durante a noite, e em tempo real, a despeito das condições climáticas, despontam como alternativas interessantes, ainda mais quando se considera que os monitoramentos correntes nos parques eólicos do país tendem a ser concentrados em curtos períodos de alguns dias, espaçados por vários meses. Dentre essas tecnologias de monitoramento remoto temos: câmeras de vídeo, radares verticais e horizontais, sistemas de detecção termais baseados em câmeras de infravermelho, sensores acústicos e de pressão, essenciais para o monitoramento de parques *offshore*, dado o contexto em que se inserem (Desholm et al. 2004, Walls et al. 2009, Wang et al. 2015), mas que também devem ser aplicadas no monitoramento onshore, devido às inúmeras vantagens citadas acima.  
+Os protocolos empregados para o monitoramento da ocorrência e uso do espaço por aves nos parques eólicos, assim como dos impactos desses empreendimentos sobre esse grupo animal ainda são relativamente simples no Brasil, consistindo em observações de campo e métodos clássicos da ornitologia, como ponto de escuta, listas de Mackinnon e uso de redes de neblina, somados ao monitoramento de carcaças (Figura \@ref(fig:20)). No entanto, novas tecnologias que permitem o monitoramento remoto, contínuo, mesmo durante a noite, e em tempo real, a despeito das condições climáticas, despontam como alternativas interessantes, ainda mais quando se considera que os monitoramentos correntes nos parques eólicos do país tendem a ser concentrados em curtos períodos de alguns dias, espaçados por vários meses. Dentre essas tecnologias de monitoramento remoto temos: câmeras de vídeo, radares verticais e horizontais, sistemas de detecção termais baseados em câmeras de infravermelho, sensores acústicos e de pressão, essenciais para o monitoramento de parques *offshore*, dado o contexto em que se inserem (Desholm et al. 2004, Walls et al. 2009, Wang et al. 2015), mas que também devem ser aplicadas no monitoramento *onshore*, devido às inúmeras vantagens citadas acima.  
 
 </br>
 
-```{r 20, echo = FALSE, out.width = '75%', fig.pos = 'H', fig.align="center", fig.cap = 'Captura por rede de neblina; B. Busca ativa por aves mortas por colisão e eletroplessão. (Fotos: Emanuel Sousa e Flávia Regina Domingos)'}
+```{r 20, echo = FALSE, out.width = '75%', fig.align="center", fig.pos = 'H', fig.cap = 'A. Captura por rede de neblina; B. Busca ativa por aves mortas por colisão e eletroplessão. Fotos: Emanuel Sousa e Flávia Regina Domingos'}
 
 knitr::include_graphics("imagens/cap06/Figura_6.3ab.jpg")
 
@@ -139,7 +138,7 @@ A habituação das aves às estruturas dos empreendimentos eólicos, em especial
 
 Num parque ou complexo eólico é esperado que alguns aerogeradores respondam significativamente por mais fatalidades. Portanto, quando da implantação de um novo empreendimento, é fundamental o acompanhamento contínuo do desempenho de cada aerogerador, a fim de identificar aqueles mais fatais e, a partir deste reconhecimento, adotar medidas mitigadoras. Em casos extremos, com prejuízos relevantes a populações de espécies de especial interesse para a conservação, deveria ser considerada inclusive a realocação ou inativação do aerogerador.  
 
-Naturalmente, no monitoramento deve se dar especial atenção para as espécies ameaçadas ou com problemas locais de conservação, mas sem ignorar os demais componentes da comunidade.  
+Naturalmente, no monitoramento deve-se dar especial atenção para as espécies ameaçadas ou com problemas locais de conservação, mas sem ignorar os demais componentes da comunidade.  
 
 Por fim, o esforço ideal de monitoramento tende a apresentar uma correlação positiva com a dimensão do empreendimento já que grandes empreendimentos podem representar barreiras significativas para as aves, além de potencializar a degradação de *habitat*. Da mesma forma, o esforço de monitoramento para empreendimentos localizados em uma área onde há outros empreendimentos instalados deve considerar os efeitos cumulativos do conjunto de empreendimentos. Para um maior detalhamento sobre os métodos correntes em monitoramentos *onshore* e ponderações sobre esforços mínimos de amostragem veja Smallwood (2017).
  
@@ -148,9 +147,9 @@ Por fim, o esforço ideal de monitoramento tende a apresentar uma correlação p
  
 Diversos são os fatores que podem limitar o sucesso de um programa de monitoramento. Desde uma limitação orçamentária até a falta de capacitação específica no tema pelos técnicos responsáveis. Contudo, destaca-se que a ausência de dados pretéritos à construção do empreendimento é um dos limitantes mais óbvios. O Serviço de Pesca e Vida Selvagem Estadunidense (*U.S. Fish and Wildlife Service*) estima que são necessários três anos de acompanhamento para a determinação de picos de abundância de aves (Smallwood 2017).  
 
-Os esforços de campo têm sido, de modo geral, bastante modestos e, talvez, a consequência mais séria ocasionada por um esforço amostral limitado seja não gerar resultados confiáveis e estatisticamente significativos. Destaca-se, também, a ausência de meta-análises com dados de diferentes parques localizados em uma mesma região, buscando avaliar possíveis efeitos cumulativos (Masden et al. 2010), parcialmente explicada pela inexistência de plataformas virtuais que compilam dados e informações geradas nos EIAs e outros estudos ambientais e nos monitoramentos para esta tipologia de empreendimento. No estado do Rio Grande do Sul, o estudo de Falavigna et al. (2020) buscou, por meio de uma análise regional, padrões dos efeitos dos vários parques eólicos no litoral e na campanha gaúcha sobre a avifauna. A comunidade de aves respondeu às mudanças na paisagem, principalmente devido à redução da cobertura florestal nativa e exótica, em áreas afetadas pela instalação e operação de parques eólicos, tanto na composição das espécies quanto nas guildas ambientais. contudo, segundo os autores são necessários levantamentos mais detalhados e mais longos para confirmar esta tendência.  
+Os esforços de campo têm sido, de modo geral, bastante modestos e, talvez, a consequência mais séria ocasionada por um esforço amostral limitado seja não gerar resultados confiáveis e estatisticamente significativos. Destaca-se, também, a ausência de meta-análises com dados de diferentes parques localizados em uma mesma região, buscando avaliar possíveis efeitos cumulativos (Masden et al. 2010), parcialmente explicada pela inexistência de plataformas virtuais que compilam dados e informações geradas nos EIAs e outros estudos ambientais e nos monitoramentos para esta tipologia de empreendimento. No estado do Rio Grande do Sul, Falavigna et al. (2020) buscaram, por meio de uma análise regional, padrões dos efeitos dos vários parques eólicos no litoral e na campanha gaúcha sobre a avifauna. A comunidade de aves respondeu às mudanças na paisagem, principalmente devido à redução da cobertura florestal nativa e exótica, em áreas afetadas pela instalação e operação de parques eólicos, tanto na composição das espécies quanto nas guildas ambientais. Contudo, segundo os autores, são necessários levantamentos mais detalhados e mais longos para confirmar esta tendência.  
 
-Via de regra, a maioria dos estudos foca em colisões e no efeito de deslocamento das populações e não nos efeitos comportamentais (Madders & Whitfield 2006), que podem resultar em uma diminuição da aptidão dos indivíduos com possíveis implicações em seu sucesso reprodutivo, totalmente ignorado até então. Considerando que é uma linha de estudo pouco provável de ser abordada durante o licenciamento, a sociedade científica teria muito a contribuir.  
+Via de regra, a maioria dos estudos foca em colisões e no efeito de deslocamento das populações e não nos efeitos comportamentais (Madders & Whitfield 2006), que podem resultar em uma diminuição da aptidão dos indivíduos com possíveis implicações em seu sucesso reprodutivo, totalmente ignorado até então. Considerando que é uma linha de estudo pouco provável de ser abordada durante o licenciamento, a comunidade científica teria muito a contribuir.  
 
 Diante da adoção ainda incipiente de tecnologias remotas de monitoramento, as estimativas de colisão têm seus resultados fortemente influenciados pela frequência de busca por carcaças, proporção de aerogeradores vistoriados, raio de busca em relação à base do aerogerador e tipo de vegetação do local do empreendimento. Além disso, há um viés provocado pela remoção de animais moribundos ou carcaças por predadores ou espécies necrófagas, além das limitações inerentes do observador, sendo fortemente recomendado o uso de métodos alternativos a partir de radares, imagens térmicas e detecção acústica (Drewitt & Langston 2006). Caso esses métodos não possam ser aplicados, os estudos devem estimar previamente a taxa de remoção de carcaças.  
 
@@ -174,41 +173,41 @@ Por fim, deve-se disponibilizar às instituições de controle e gestão ambient
  
 ## Referências bibliográficas
  
-Argentina. 2019. Guía de Buenas Prácticas para el Desarrollo Eólico en Argentina: Gestión de Impactos en Aves y Murciélagos. BID, IFC & Subsecretaría de Energías Renovables y Eficiencia Energética. Washington, D.C. 87p. Disponível em: https://www.argentina.gob.ar/sites/default/files/guia_buenas_practicas_energia_eolica_y_biodiversidad_-_final_web.pdf Acesso em: [02/03/2022].  
+Argentina. 2019. Guía de Buenas Prácticas para el Desarrollo Eólico en Argentina: Gestión de Impactos en Aves y Murciélagos. BID, IFC & Subsecretaría de Energías Renovables y Eficiencia Energética. Washington D.C. 87p. Disponível em: https://www.argentina.gob.ar/sites/default/files/guia_buenas_practicas_energia_eolica_y_biodiversidad_-_final_web.pdf Acesso em: [02/03/2022].  
 
-Bennun, L., van Bochove, J., Ng, C., Fletcher, C., Wilson, D., Phair, N., Carbone, G. 2021. Mitigating biodiversity impacts associated with solar and wind energy development: guidelines for project developers. Gland, Switzerland: IUCN and Cambridge, UK: The Biodiversity Consultancy. https://doi.org/10.2305/IUCN.CH.2021.04.en  
+Bennun, L., van Bochove, J., Ng, C., Fletcher, C., Wilson, D., Phair, N., Carbone, G. 2021. Mitigating biodiversity impacts associated with solar and wind energy development: guidelines for project developers. IUCN/The Biodiversity Consultancy. Gland/Cambridge. https://doi.org/10.2305/IUCN.CH.2021.04.en  
 
-Choi, D.Y., Wittig, T.W., Kluever, B.M. 2020. An evaluation of bird and bat mortality at wind turbines in the Northeastern United States. PLOS ONE 15(8), e0238034. https://doi.org/10.1371/journal.pone.0238034  
+Choi, D.Y., Wittig, T.W., Kluever, B.M. 2020. An evaluation of bird and bat mortality at wind turbines in the Northeastern United States. PLoS ONE 15(8): e0238034. https://doi.org/10.1371/journal.pone.0238034  
 
-Desholm, M., Fox, A, Beasley, P. 2004. Best Practice Guidance for the Use of Remote Techniques for Observing Bird Behaviour in Relation to Offshore Wind Farms (Report No. REMOTE-05-2004). Report by National Environmental Research Institute (NERI). Report for Collaborative Offshore Wind Research into the Environment (COWRIE). 93p. Disponível em: https://tethys.pnnl.gov/sites/default/files/publications/Desholm-et-al-2004.pdf Acesso em: [22/02/2022].  
+Desholm, M., Fox, A. Beasley, P. 2004. Best Practice Guidance for the Use of Remote Techniques for Observing Bird Behaviour in Relation to Offshore Wind Farms (Report No. REMOTE-05-2004). Collaborative Offshore Wind Research into the Environment (COWRIE). 93p. Disponível em: https://tethys.pnnl.gov/sites/default/files/publications/Desholm-et-al-2004.pdf Acesso em: [22/02/2022].  
 
-Drewitt, A.L., Langston, R.H.W. 2006. Assessing the impacts of wind farms on birds. Ibis 148, 29–42. https://doi/10.1111/j.1474-919X.2006.00516.x  
+Drewitt, A.L., Langston, R.H.W. 2006. Assessing the impacts of wind farms on birds. Ibis 148: 29–42. https://doi/10.1111/j.1474-919X.2006.00516.x  
 
-Falavigna, T.J., Pereira, D., Rippel, M.L., Petry, M.V. 2020. Changes in bird species composition after a wind farm installation: A case study in South America. Environmental Impact Assessment Review 83, 106387. https://doi.org/10.1016/J.EIAR.2020.106387   
+Falavigna, T.J., Pereira, D., Rippel, M.L., Petry, M.V. 2020. Changes in bird species composition after a wind farm installation: A case study in South America. Environmental Impact Assessment Review 83: 106387. https://doi.org/10.1016/J.EIAR.2020.106387   
 
 GenEst. 2022. A Generalized Estimator of Mortality. Disponível em: https://www.usgs.gov/node/279364 Acesso em: [22/02/2022].  
 
-Kuvlesky, W.P., Brennan, L.A., Morrison, M.L., Boydston, K.K., Ballard, B.M., Bryant, F.C. 2007. Wind energy development and wildlife conservation: Challenges and opportunities. The Journal of Wildlife Management 71(8), 2487–2498. Disponível em: http://www.jstor.org/stable/4496368 Acesso em: [22/02/2022].  
+Kuvlesky, W.P., Brennan, L.A., Morrison, M.L., Boydston, K.K., Ballard, B.M., Bryant, F.C. 2007. Wind energy development and wildlife conservation: Challenges and opportunities. The Journal of Wildlife Management 71(8): 2487–2498. Disponível em: http://www.jstor.org/stable/4496368 Acesso em: [22/02/2022].  
 
-Laranjeiro, T., May, R., Verones, F. 2018. Impacts of onshore wind energy production on birds and bats: recommendations for future life cycle impact assessment developments. The International Journal of Life Cycle Assessment 23(10), 2007-2023. https://doi.org/10.1007/s11367-017-1434-4  
+Laranjeiro, T., May, R., Verones, F. 2018. Impacts of onshore wind energy production on birds and bats: recommendations for future life cycle impact assessment developments. The International Journal of Life Cycle Assessment 23(10): 2007-2023. https://doi.org/10.1007/s11367-017-1434-4  
 
-Lee, W., McGlone, M., Wright, E. 2005. A review of national and international systems and a proposed framework for future biodiversity monitoring by the Department of Conservation. Landcare Research Contract Report: LC0405/122.  
+Lee, W., McGlone, M., Wright, E. 2005. A review of national and international systems and a proposed framework for future biodiversity monitoring by the Department of Conservation. Landcare Research Contract Report: LC0405/122. Wellington. 216p.  
 
-Madders, M., Whitfield, D.P. 2006. Upland raptors and the assessment of wind farm impacts. Ibis 148, 43–56. https://doi.org/10.1111/j.1474-919X.2006.0  
+Madders, M., Whitfield, D.P. 2006. Upland raptors and the assessment of wind farm impacts. Ibis 148: 43–56. https://doi.org/10.1111/j.1474-919X.2006.0  
 
-Marques, A.T., Batalha, H., Rodrigues, S., Costa, H., Pereira, M.J.R., Fonseca, C., Mascarenhas, M., Bernardino, J. 2014. Understanding bird collisions at wind farms: An updated review on the causes and possible mitigation strategies. Biological Conservation 179, 40–52. https://doi.org/10.1016/j.biocon.2014.08.017  
+Marques, A.T., Batalha, H., Rodrigues, S., Costa, H., Pereira, M.J.R., Fonseca, C., Mascarenhas, M., Bernardino, J. 2014. Understanding bird collisions at wind farms: An updated review on the causes and possible mitigation strategies. Biological Conservation 179: 40–52. https://doi.org/10.1016/j.biocon.2014.08.017  
 
-Masden, E.A., Fox, A.D., Furness, R.W., Bullman, R., Haydon, D. 2010. Cumulative impact assessments and bird/wind farm interactions: Developing a conceptual framework. Environmental Impact Assessment Review 30(1), 1-7. https://doi.org/10.1016/j.eiar.2009.05.002  
+Masden, E.A., Fox, A.D., Furness, R.W., Bullman, R., Haydon, D. 2010. Cumulative impact assessments and bird/wind farm interactions: Developing a conceptual framework. Environmental Impact Assessment Review 30(1): 1-7. https://doi.org/10.1016/j.eiar.2009.05.002  
 
-Paton, S.R., Smallie, J., Pearson, A., Ramalho, R. 2017. Wind energy’s impacts on birds in South Africa: A preliminary review of the results of operational monitoring at the first wind farms of the Renewable Energy Independent Power Producer Procurement Programme in South Africa. BirdLife South Africa Occasional Report Series No. 2. BirdLife South Africa, Johannesburg, South Africa, 28p. Disponível em: https://tethys.pnnl.gov/sites/default/files/publications/Ralston-Paton-et-al-2017.pdf Acesso em: [22/02/2022].  
+Paton, S.R., Smallie, J., Pearson, A., Ramalho, R. 2017. Wind energy’s impacts on birds in South Africa: A preliminary review of the results of operational monitoring at the first wind farms of the Renewable Energy Independent Power Producer Procurement Programme in South Africa. BirdLife South Africa Occasional Report Series No. 2. BirdLife South Africa. Johannesburg. 28p. Disponível em: https://tethys.pnnl.gov/sites/default/files/publications/Ralston-Paton-et-al-2017.pdf Acesso em: [22/02/2022].  
 
-Simonis, J., Dalthorp, D.H., Huso, M.M., Mintz, J.M., Madsen, L., Rabie, P., Studyvin, J. 2018. GenEst User Guide — Software for a Generalized Estimator of Mortality: U.S. Geological Survey Techniques and Methods 7 (C19), 72, https://doi.org/10.3133/tm7C19  
+Simonis, J., Dalthorp, D.H., Huso, M.M., Mintz, J.M., Madsen, L., Rabie, P., Studyvin, J. 2018. GenEst User Guide — Software for a Generalized Estimator of Mortality: U.S. Geological Survey Techniques and Methods 7 (C19): 72. https://doi.org/10.3133/tm7C19  
 
-Smallwood, K.S. 2017. Monitoring birds. In: Perrow MR (ed.). Wildlife and Wind Farms, Conflicts and Solutions. Volume 2 Onshore: Monitoring and Mitigation. Pelagic Publishing. Exeter, UK.  
+Smallwood, K.S. 2017. Monitoring birds. In: Perrow MR (ed). Wildlife and Wind Farms, Conflicts and Solutions. Volume 2 Onshore: Monitoring and Mitigation. Pelagic Publishing. Exeter.  
 
-Walls, R., Pendlebury, C., Budgey, R., Brookes, K., Thompson, P. 2009. Revised best practice guidance for the use of remote techniques for ornithological monitoring at offshore windfarms. Published by COWRIE Ltd. UK. Disponível em: https://tethys.pnnl.gov/sites/default/files/publications/Revised_Best_Practice_for_Ornithological_Monitoring.pdf Acesso em: [22/02/2022].  
+Walls, R., Pendlebury, C., Budgey, R., Brookes, K., Thompson, P. 2009. Revised best practice guidance for the use of remote techniques for ornithological monitoring at offshore windfarms. Collaborative Offshore Wind Research into the Environment (COWRIE). Disponível em: https://tethys.pnnl.gov/sites/default/files/publications/Revised_Best_Practice_for_Ornithological_Monitoring.pdf Acesso em: [22/02/2022].  
 
-Wang, S., Wang, S., Smith, P. 2015. Ecological impacts of wind farms on birds: Questions, hypotheses, and research needs. Renewable and Sustainable Energy Reviews 44, 599–607. https://doi.org/10.1016/j.rser.2015.01.031  
+Wang, S., Wang, S., Smith, P. 2015. Ecological impacts of wind farms on birds: Questions, hypotheses, and research needs. Renewable and Sustainable Energy Reviews 44: 599–607. https://doi.org/10.1016/j.rser.2015.01.031  
 
 
 

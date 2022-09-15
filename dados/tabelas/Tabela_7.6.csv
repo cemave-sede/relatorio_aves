@@ -1,14 +1,14 @@
-﻿Estado;Número de aerogeradores;Soma da área de varredura das pás (m2);Soma da área de varredura das pás em projeção vertical, com 100 m de altura (comprimento total em km)
-BA;6113;92366748,66;923,67
-CE;1705;21389264,02;213,89
-MA;193;2229425,16;22,29
-MG;320;6247513,62;62,48
-PB;1003;16221772,19;162,22
-PE;698;8337202,50;83,37
-PI;1641;20960472,05;209,6
-PR;34;281965,69;2,82
-RJ;12;63370,34;0,63
-RN;4693;61088354,36;610,88
-RS;1530;16832971,43;168,3
-SC;164;713224,17;7,13
-SE;23;124140,64;1,24
+﻿Estado;Número de aerogeradores;Soma da área de varredura das pás (m2);Dimensão em projeção vertical, com 100 m de altura, da soma da área de varredura das pás (km)
+BA;6113;92366749;923,67
+RN;4693;61088354;610,88
+CE;1705;21389264;213,89
+PI;1641;20960472;209,60
+RS;1530;16832971;168,32
+PB;1003;16221772;162,22
+PE;698;8337202;83,37
+MG;320;6247513;62,48
+MA;193;2229425;22,29
+SC;164;713224;7,13
+PR;34;281966;2,82
+SE;23;1241401;1,24
+RJ;12;63370;0,63

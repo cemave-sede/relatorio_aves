@@ -2009,11 +2009,11 @@ A2. Critérios relativos ao escore de vulnerabilidade de aves migratórias a par
   </tr>
   <tr>
    <td style="text-align:left;width: 5cm; "> Sensibilidade a impactos decorrentes das estruturas de apoio (exceto colisão com torres e hélices) </td>
-   <td style="text-align:left;width: 10cm; "> Vulnerabilidade registrada ou observada frente a outras estruturas do empreendimento eólico (electrocussões, perda e degradação de habitat etc.). </td>
+   <td style="text-align:left;width: 10cm; "> Vulnerabilidade registrada ou observada frente a outras estruturas do empreendimento eólico (eletroplessões, perda e degradação de habitat etc.). </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 5cm; "> Massa corporal média </td>
-   <td style="text-align:left;width: 10cm; "> Refere-se à maior massa corpórea de um indivíduo adulto de qualquer sexo ( 0,25 pontos quando maior que 300 g ). </td>
+   <td style="text-align:left;width: 10cm; "> Refere-se à maior massa corpórea de um indivíduo adulto de qualquer sexo (0,25 pontos quando maior que 300 g). </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 5cm; "> Categoria de ameaça </td>

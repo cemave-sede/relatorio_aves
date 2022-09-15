@@ -14,16 +14,16 @@ bookdown::gitbook:
       linkedin: yes
       whatsapp: yes
     info: no
-bookdown::pdf_book:
-  #pandoc_args: --top-level-division=chapter
-  keep_text: yes
-  keep_tex:  true
-  includes:
-    in_header: preamble.tex
-  template: template.tex
-  latex_engine: xelatex
-  citation_package: natbib
-  extra_dependencies: ["flafter"]
-bookdown::epub_book: default
+# bookdown::pdf_book:
+#   #pandoc_args: --top-level-division=chapter
+#   keep_text: yes
+#   keep_tex:  true
+#   includes:
+#     in_header: preamble.tex
+#   template: template.tex
+#   latex_engine: xelatex
+#   citation_package: natbib
+#   extra_dependencies: ["flafter"]
+# bookdown::epub_book: default
  
 
