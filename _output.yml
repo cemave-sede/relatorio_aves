@@ -8,7 +8,7 @@ bookdown::gitbook:
         <li><a href="./">Relatório de Áreas de Concentração de Aves Migratórias no Brasil"</a></li>
       after: |
         <li><a href="https://bookdown.org/yihui/bookdown/" target="blank">Published with bookdown</a></li>
-    download: null
+    download: false
     sharing:
       facebook: no
       linkedin: yes
